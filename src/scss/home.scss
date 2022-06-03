@@ -1,0 +1,348 @@
+//====================================================================================================
+.page {
+
+    // .page__promo
+    &__promo {
+    }
+
+    // .page__catalog
+    &__catalog {
+    }
+
+    // .page__contact
+    &__contact {
+    }
+
+    // .page__information
+    &__information {
+    }
+
+    // .page__basket
+    &__basket {
+    }
+}
+.promo {
+    padding-bottom: percent(473,1920);
+    background-color: #F4F4F4;
+    position: relative;
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+//====================================================================================================
+
+.catalog {
+    padding-top: rem(35);
+    padding-bottom: rem(105);
+    // .catalog__container
+
+    &__container {
+    }
+
+    // .catalog__title
+    &__title {
+        text-align: center;
+        margin-bottom: rem(20);
+    }
+
+    // .catalog__body
+    &__body {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(rem(270), 1fr));
+        row-gap: rem(40);
+        column-gap: rem(20);
+        justify-items: center;
+    }
+
+    // .catalog__item
+    &__item {
+    }
+}
+
+.item-catalog {
+    padding-bottom: rem(10);
+    // .item-catalog__tabs
+    &__tabs {
+        
+    }
+
+    // .item-catalog__card
+
+    &__card {
+    }
+
+    // .item-catalog__colors
+
+    &__colors {
+        display: flex;
+        gap: rem(3);
+    }
+
+    // .item-catalog__color
+    &__color {
+        flex: 0 0 rem(10);
+        height: rem(10);
+        border: 1px solid #000;
+
+        &_white {
+            background-color: #fff;
+        }
+
+        &_black {
+            background-color: #000;
+        }
+
+        &._tab-active {
+            border: 1px solid $accentColor;
+        }
+    }
+}
+.card-catalog {
+    @media (any-hover: hover){
+        &:hover{
+            .card-catalog__title {
+                color: $accentColor;
+            }
+        }
+    }
+    // .card-catalog__image
+    &__image {
+        width: rem(270);
+        height: rem(270);
+        position: relative;
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+    // .card-catalog__information
+	&__information {
+        
+	}
+
+    // .card-catalog__title
+
+    &__title {
+        font-size: rem(13);
+        font-weight: 400;
+        transition: all 0.3s ease 0s;
+    }
+
+    // .card-catalog__category
+
+    &__category {
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 1.2;
+        color: #757575;
+        margin-bottom: rem(5);
+    }
+
+    // .card-catalog__price
+    &__price {
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 1.2;
+        color: #000;
+        margin-bottom: rem(3);
+        span{
+            display: inline-block;
+            margin-right: rem(4);
+        }
+    }
+}
+
+//====================================================================================================
+
+.contact {
+    padding-bottom: rem(110);
+    padding-bottom: rem(55);
+    // .contact__container
+
+    &__container {
+    }
+
+    // .contact__title
+
+    &__title {
+        padding-left: rem(8);
+        margin-bottom: rem(50);
+    }
+
+    // .contact__body
+
+    &__body {
+        display: flex;
+    }
+
+    // .contact__body-item
+
+    &__body-item {
+        flex: 0 1 50%;
+    }
+
+    // .contact__image
+
+    &__image {
+    }
+
+    // .contact__content
+
+    &__content {
+        line-height: 1.57;
+        padding-left: rem(40);
+    }
+}
+
+.content-contact {
+
+    // .content-contact__title
+
+    &__title {
+        font-size: rem(14);
+        text-transform: uppercase;
+        margin-bottom: rem(25);
+    }
+
+    // .content-contact__subtitle
+    &__subtitle {
+        font-weight: 300;
+        margin-bottom: rem(25);
+    }
+
+    // .content-contact__item
+    &__item {
+        &:not(:last-child) {
+            margin-bottom: rem(25);
+        }
+    }
+}
+.item-content-contact {
+
+    // .item-content-contact__title
+    &__title {
+        font-weight: 600;
+    }
+
+    // .item-content-contact__link
+    &__link {
+        color: $accentColor;
+        transition: all 0.3s ease 0s;
+        border-bottom: 1px solid transparent;
+        @media (any-hover: hover){
+            &:hover{
+                border-bottom: 1px solid $accentColor;
+            }
+        }
+    }
+}
+
+//====================================================================================================
+
+.information {
+    padding-bottom: rem(110);
+    // .information__container
+    &__container {
+        display: flex;
+    }
+
+    // .information__wrapper
+	&__wrapper {
+        flex: 0 1 percent(1024,1173);
+        padding-left: rem(9);
+	}
+
+    // .information__title
+    &__title {
+        margin-bottom: rem(48);
+        // .information__title_question
+        &_question {
+            font-size: 16px;
+            margin-bottom: rem(42);
+        }
+    }
+
+    // .information__main
+
+    &__main {
+        margin-bottom: rem(65);
+    }
+
+    // .information__item
+
+    &__item {
+    }
+
+    // .information__questions
+
+    &__questions {
+    }
+}
+
+.item-information {
+    
+    border-bottom: 1px solid #EEEEEE;
+    padding: rem(13) 0;
+    &:first-child {
+        border-top: 1px solid #EEEEEE;
+    }
+    // .item-information__title
+
+    &__title {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        font-size: 14px;
+        cursor: pointer;
+        &::before{
+            transition: all 0.3s ease 0s;
+            font-size: rem(19);
+            color: #141414;
+        }
+        &._spoller-active {
+            &::before{
+                transform: rotate(135deg);
+            }
+        }
+    }
+
+    // .item-information__content
+    &__content {
+        padding-top: rem(17);
+        padding-bottom: rem(4);
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 1.58;
+        color: #000;
+    }
+}
+
+//====================================================================================================
+
+//====================================================================================================
+
+//====================================================================================================
+
+//====================================================================================================
+
+//====================================================================================================
+
+//====================================================================================================
+
+//====================================================================================================
+
+//====================================================================================================
+
+//====================================================================================================
+
+//====================================================================================================

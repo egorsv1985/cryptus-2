@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('html/_head.htm',{
+	"title":"Главная"
+	})
+	<body>
+		<div class="wrapper">
+			@@include('html/_header.htm',{})
+			<main class="page">
+				<div class="page__product-card product-card">
+					<div class="product-card__container">
+						<div class="product-card__body">
+							<div class="product-card__column">
+								<div class="product-card__slider">
+									<div class="product-card__main-slider main-slider">
+										<div class="main-slider__slider">
+											<div class="main-slider__swiper">
+												<div class="main-slider__slide main-slider__slide-ibg">
+													<img src="@img/product/1.jpg" alt="Фото">
+												</div>
+												<div class="main-slider__slide main-slider__slide-ibg">
+													<img src="@img/product/2.jpg" alt="Фото">
+												</div>
+												<div class="main-slider__slide main-slider__slide-ibg">
+													<img src="@img//catalog/1.jpg" alt="Фото">
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="product-card__thumbnail thumbnail">
+										<div class="thumbnail__slider">
+											<div class="thumbnail__swiper">
+												<div class="thumbnail__slide thumbnail__slide-ibg">
+													<img src="@img/product/1.jpg" alt="Фото">
+												</div>
+												<div class="thumbnail__slide thumbnail__slide-ibg">
+													<img src="@img/product/2.jpg" alt="Фото">
+												</div>
+												<div class="thumbnail__slide thumbnail__slide-ibg">
+													<img src="@img//catalog/1.jpg" alt="Фото">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="product-card__column">
+								<div class="product-card__info ">
+									<h2 class="info-product-card__title title">Футболка “HODL”</h2>
+									<a href="#" class="info-product-card__back">Вернуться в каталог</a>
+									<div class="info-product-card__price"><span>4 990</span>₽</div>
+									<div class="info-product-card__options options">
+										<div class="options__item">
+											<input hidden id="o_1" class="options__input" checked type="radio" value="1" name="option">
+											<label for="o_1" class="options__label"><span class="options__text">S-M</span></label>
+										</div>
+										<div class="options__item">
+											<input hidden id="o_2" class="options__input" type="radio" value="2" name="option">
+											<label for="o_2" class="options__label"><span class="options__text">L-XL</span></label>
+										</div>
+									</div>
+									<div class="info-product-card__colors colors-product-card">
+										<p class="colors-product-card__title"></p>
+										<ul class="colors-product-card__list">
+											<li><a href="#" class="colors-product-card__link colors-product-card__link_white" title="Белый"></a></li>
+											<li><a href="#" class="colors-product-card__link colors-product-card__link_black" title="Черный"></a></li>
+										</ul>
+									</div>
+									<a href="#" class="info-product-card__button">В корзину</a>
+									<div class="info-product-card__about about-product" data-spollers>
+										<div class="about-product__item">
+											<h3 class="about-product__title _icon-arrow" data-spoller>О товаре</h3>
+											<p class="about-product__text">
+												Доставка по РФ<br>
+												Свободная футболка из хлопковой ткани. С Круглым вырезом, короткие рукава.<br>
+												Состав - 100% хлопок
+												Cotton from Turkey
+												Made in St. Petersburg<br>
+												Размер на модели L-XL
+											</p>
+										</div>
+										<div class="about-product__item">
+											<h3 class="about-product__title _icon-arrow" data-spoller>Рекомендации по уходу</h3>
+											<p class="about-product__text">
+												Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum magnam voluptates fugiat quis a saepe facilis. Vitae fugit enim beatae?
+											</p>
+										</div>
+										<div class="about-product__item">
+											<h3 class="about-product__title _icon-arrow" data-spoller>Размерная сетка</h3>
+											<p class="about-product__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet molestias dolorum numquam sapiente nesciunt id?</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</main>
+			@@include('html/_footer.htm',{})
+		</div>
+		@@include('html/_popup.htm',{})
+		@@include('html/_js.htm',{})
+	</body>
+</html>

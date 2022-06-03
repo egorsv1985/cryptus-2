@@ -1,0 +1,304 @@
+
+//====================================================================================================
+.page {
+
+    // .page__product-card
+    &__product-card {
+    }
+}
+.product-card {
+    padding-top: rem(42);
+    padding-bottom: rem(230);
+    // .product-card__container
+    &__container {
+        max-width: rem(901);
+    }
+
+    // .product-card__body
+
+    &__body {
+        display: flex;
+    }
+
+    // .product-card__column
+
+    &__column {
+        min-width: 0;
+        &:first-child {
+            flex: 1 1 100%;
+            padding-right: rem(48);
+        }
+        &:last-child {
+            flex: 0 0 rem(202);
+        }
+    }
+
+    // .product-card__slider
+
+    &__slider {
+        min-width: 0;
+    }
+
+    // .product-card__main-slider
+
+    &__main-slider {
+        margin-bottom: rem(38);
+    }
+
+    // .product-card__thumbnail
+
+    &__thumbnail {
+    }
+
+    // .product-card__info
+
+    &__info {
+    }
+}
+.main-slider {
+
+    // .main-slider__slider
+
+    &__slider {
+    }
+
+    // .main-slider__swiper
+
+    &__swiper {
+    }
+
+    // .main-slider__slide
+    &__slide {
+        width: rem(650);
+        height: rem(650);
+        img {
+            object-fit: contain;
+        }
+    }
+}
+.thumbnail {
+
+    // .thumbnail__slider
+
+    &__slider {
+    }
+
+    // .thumbnail__swiper
+
+    &__swiper {
+    }
+
+    // .thumbnail__slide
+    &__slide {
+        width: rem(305);
+        height: rem(305);
+        img {
+            object-fit: contain;
+        }
+    }
+}
+.info-product-card {
+
+    // .info-product-card__title
+
+    &__title {
+        font-size: rem(20);
+        margin-bottom: rem(11);
+    }
+
+    // .info-product-card__back
+    &__back {
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 1.2;
+        color: #767676;
+        display: inline-block;
+        margin-bottom: rem(20);
+        transition: all 0.3s ease 0s;
+        @media (any-hover: hover){
+            &:hover{
+                color: #161616;
+            }
+        }
+    }
+
+    // .info-product-card__price
+    &__price {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 1.2;
+        color: #000000;
+        margin-bottom: rem(12);
+        span {
+            display: inline-block;
+            margin-right: rem(4);
+        }
+    }
+
+    // .info-product-card__options
+    &__options {
+    }
+
+    // .info-product-card__colors
+    &__colors {
+        margin-bottom: rem(23);
+    }
+
+    // .info-product-card__button
+    &__button {
+        display: flex;
+        min-height: rem(35);
+        justify-content: center;
+        align-items: center;
+        padding: rem(5);
+        background: #1F1F1F;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 1.2;
+        color: #FFFFFF;
+        margin-bottom: rem(14);
+    }
+
+    // .info-product-card__about
+    &__about {
+    }
+}
+.options {
+    display: flex;
+    gap: rem(5);
+    margin-bottom: rem(10);
+    // .options__item
+    &__item {
+        flex: 0 0 rem(32);
+        height: rem(32);
+        
+        position: relative;
+    }
+
+    // .options__input
+    &__input {
+        display: none;
+    }
+
+    // .options__label
+    &__label {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #FFFFFF;
+        border: 1px solid #DBDBDB;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    // .options__text
+
+    &__text {
+        font-size: 10px;
+        line-height: 1.2;
+        color: #000000;
+    }
+}
+.options__input:checked+.options__label {
+    border: 1px solid $accentColor;
+}
+
+.colors-product-card {
+
+    // .colors-product-card__title
+
+    &__title {
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 14px;
+        color: #767676;
+    }
+
+    // .colors-product-card__list
+    &__list {
+        display: flex;
+        gap: rem(3);
+        li {
+            flex: 0 0 rem(10);
+        }
+    }
+
+    // .colors-product-card__link
+    &__link {
+        display: inline-block;
+        width: rem(10);
+        height: rem(10);
+        border: 1px solid #000;
+        &_white {
+            background-color: #fff;
+        }
+        &_black {
+            background-color: #000;
+        }
+    }
+}
+
+.about-product {
+
+    // .about-product__item
+    &__item {
+    }
+
+    // .about-product__title
+    &__title {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.2;
+        color: #000000;
+        margin-bottom: rem(11);
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: start;
+        gap: rem(6);
+        align-items: center;
+        &::before{
+            font-size: rem(4);
+            transition: all 0.3s ease 0s;
+        }
+        &._spoller-active {
+            &::before{
+                transform: rotate(180deg);
+            }
+        }
+    }
+
+    // .about-product__text
+    &__text {
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 1.42;
+        color: #767676;
+        margin-bottom: rem(8);
+    }
+}
+
+
+//====================================================================================================
+
+//====================================================================================================
+
+//====================================================================================================
+
+//====================================================================================================
+
+//====================================================================================================
+
+//====================================================================================================
+
+//====================================================================================================
+
+//====================================================================================================
+
+//====================================================================================================
+
+//====================================================================================================
+
+//====================================================================================================

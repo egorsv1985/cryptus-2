@@ -1,0 +1,46 @@
+.page {
+
+    // .page__personal
+    &__personal {
+    }
+}
+.personal {
+    padding-top: rem(50);
+    padding-bottom: rem(50);
+    // .personal__container
+    &__container {
+    }
+
+    // .personal__wrapper
+    &__wrapper {
+        padding-left: rem(9);
+    }
+
+    // .personal__title
+
+    &__title {
+        margin-bottom: rem(38);
+    }
+
+    // .personal__body
+
+    &__body {
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 14px;
+        color: #767676;
+        padding-left: rem(26);
+
+        p,div,h3 {
+            &:not(:last-child) {
+                margin-bottom: rem(30);
+            }
+        }
+        li {
+            &:not(:last-child) {
+                margin-bottom: rem(15);
+            }
+        }
+    }
+}
+

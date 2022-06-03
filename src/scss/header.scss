@@ -1,0 +1,168 @@
+//====================================================================================================
+.header {
+
+	// .header__top
+	&__top {
+		
+	}
+
+	// .header__container
+	&__container {
+	}
+
+	// .header__menu
+
+	&__menu {
+	}
+}
+.top-header {
+	background-color: #040404;
+	min-height: rem(82);
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: end;
+	padding: 0 rem(51);
+	// .top-header__logo
+	&__logo {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%,-50%);
+	}
+
+	// .top-header__search
+	&__search {
+		&::before{
+			font-size: rem(22);
+			color: #fff;
+			transition: all 0.3s ease 0s;
+		}
+		@media (any-hover: hover){
+			&:hover{
+				&::before{
+					color: $accentColor;
+				}
+				
+			}
+		}
+	}
+}
+.logo {
+	&::before{
+		color: #fff;
+		font-size: rem(32);
+		transition: all 0.3s ease 0s;
+	}
+	@media (any-hover: hover){
+		&:hover{
+			&::before{
+				color: $accentColor;
+			}
+			
+		}
+	}
+}
+
+.menu {
+
+	// .menu__icon
+	&__icon {
+	}
+
+	// .menu__body
+	&__body {
+	}
+
+	// .menu__list
+	&__list {
+		display: flex;
+		justify-content: center;
+		min-height: rem(41);
+		align-items: center;
+	}
+
+	// .menu__item
+	&__item {
+		&:not(:last-child) {
+			@include adaptiveValue("margin-right",60,20);
+		}
+	}
+
+	// .menu__link
+	&__link {
+		display: inline-flex;
+		align-items: center;
+		flex-direction: row-reverse;
+		color: $mainColor;
+		text-transform: uppercase;
+		&::before{
+			font-size: rem(14);
+			margin-left: rem(13);
+		}
+		span {
+			border-bottom: 1px solid transparent;
+			transition: all 0.3s ease 0s;
+		}
+		
+		@media (any-hover: hover){
+			&:hover{
+				span {
+					border-bottom: 1px solid $mainColor;
+				}
+			}
+		}
+	}
+}
+.icon-menu {
+}
+
+//====================================================================================================
+
+//Burger
+/*
+.icon-menu {
+	display: none;
+	@media (max-width: $mobile) {
+		display: block;
+		position: relative;
+		width: 30px;
+		height: 18px;
+		cursor: pointer;
+		z-index: 5;
+		span,
+		&::before,
+		&::after {
+			content: "";
+			transition: all 0.3s ease 0s;
+			left: 0px;
+			position: absolute;
+			width: 100%;
+			height: 2px;
+			background-color: #000;
+		}
+		&::before {
+			top: 0px;
+		}
+		&::after {
+			bottom: 0px;
+		}
+		span {
+			top: calc(50% - 1px);
+		}
+		.menu-open & {
+			span {
+				transform: scale(0);
+			}
+			&::before {
+				transform: rotate(-45deg);
+				top: calc(50% - 1px);
+			}
+			&::after {
+				transform: rotate(45deg);
+				bottom: calc(50% - 1px);
+			}
+		}
+	}
+}
+*/

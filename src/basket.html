@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('html/_head.htm',{
+	"title":"Главная"
+	})
+	<body>
+		<div class="wrapper">
+			@@include('html/_header.htm',{})
+			<main class="page">
+				<section class="page__basket basket">
+					<div class="basket__container">
+						<div class="basket__wrapper">
+							<div class="basket__header">
+								<div class="basket__header-item">
+									<h2 class="basket__title title">Корзина</h2>
+									<div class="basket__breadcrumbs breadcrumbs">
+										<ul class="breadcrumbs__list">
+											<li><a href="#" class="breadcrumbs__link">Магазин</a></li>
+											<li><a href="#" class="breadcrumbs__link">Корзина</a></li>
+										</ul>
+									</div>
+								</div>
+								<!-- <div class="basket__header-item"></div> -->
+							</div>
+							
+							<div class="basket__body body-basket">
+								<p class="body-basket__message">Ваша корзина пуста</p>
+								<a href="#" class="body-basket__link">Смотреть товары</a>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+			@@include('html/_footer.htm',{})
+		</div>
+		@@include('html/_popup.htm',{})
+		@@include('html/_js.htm',{})
+	</body>
+</html>
