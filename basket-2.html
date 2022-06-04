@@ -2,11 +2,11 @@
 <html lang="ru">
 
 <head>
-	<title>Главная</title>
+	<title>Корзина с товаром</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220603063944">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220603234529">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,6 +19,7 @@
 				<a href="#" class="top-header__logo logo _icon-logo"></a>
 				<a href="#" class="top-header__search _icon-search"></a>
 			</div>
+			<h1 class="header-main-title">CRYPTUS SHOP - Магазин мерча от команды CRYPTUS</h1>
 			<div class="header__container">
 				<div class="header__menu menu">
 					<!-- <button type="button" class="menu__icon icon-menu"><span></span></button> -->
@@ -37,7 +38,7 @@
 		<main class="page">
 			<section class="page__basket basket">
 				<div class="basket__container">
-					<div class="basket__wrapper">
+					<form action="#" class="basket__wrapper">
 						<div class="basket__header">
 							<div class="basket__header-item">
 								<h2 class="basket__title title">Корзина</h2>
@@ -54,11 +55,71 @@
 							</div>
 						</div>
 						<div class="basket__body body-basket">
-							<form action="#">
-
-							</form>
+							<div class="body-basket__row">
+								<div class="body-basket__column">
+									<div class="body-basket__order order-basket">
+										<div class="order-basket__list">
+											<div class="order-basket__item item-order">
+												<div class="item-order__image">
+													<picture><source srcset="img/product/1.webp" type="image/webp"><img src="img/product/1.jpg" alt="Photo"></picture>
+												</div>
+												<div class="item-order__content">
+													<div class="item-order__header">
+														<a href="#" class="item-order__title">Футболка “HODL”</a>
+														<button class="item-order__delete _icon-delet"></button>
+													</div>
+													<p class="item-order__sizes">Размер: <span>S-M</span></p>
+													<div class="item-order__footer">
+														<p class="item-order__quantity">Кол-во: <span>1</span></p>
+														<p class="item-order__price"><span>3890</span>₽</p>
+													</div>
+												</div>
+											</div>
+											<div class="order-basket__item item-order">
+												<div class="item-order__image">
+													<picture><source srcset="img/product/2.webp" type="image/webp"><img src="img/product/2.jpg" alt="Photo"></picture>
+												</div>
+												<div class="item-order__content">
+													<div class="item-order__header">
+														<a href="#" class="item-order__title">Футболка “HODL”</a>
+														<button class="item-order__delete _icon-delet"></button>
+													</div>
+													<p class="item-order__sizes">Размер: <span>S-M</span></p>
+													<div class="item-order__footer">
+														<p class="item-order__quantity">Кол-во: <span>2</span></p>
+														<p class="item-order__price"><span>3890</span>₽</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="order-basket__total">
+											<p class="order-basket__total-text">Итого</p>
+											<p class="order-basket__total-price"><span>6780</span>₽</p>
+										</div>
+										<a href="#" class="order-basket__link">Что-то забыли? Вернитесь в каталог товаров</a>
+									</div>
+								</div>
+								<div class="body-basket__column">
+									<div class="body-basket__form form-body-basket">
+										<div class="form-body-basket__body">
+											<label for="email" class="form-body-basket__label">Почта</label>
+											<input id="email" class="form-body-basket__input" type="email" name="form[]" data-error="Ошибка" placeholder="Ваш адрес электронной почты">
+										</div>
+										<div class="form-body-basket__checkbox checkbox">
+											<input id="c_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+											<label for="c_1" class="checkbox__label _icon-check">
+												<span class="checkbox__text">
+													Я принимаю условия: Условия доставки и оплаты / Shipping and Payment, Согласие на обработку<br>
+													персональных данных / Consent to the Processing of Personal Data
+												</span>
+											</label>
+										</div>
+										<button type="submit" class="form-body-basket__button">Оформить заказ</button>
+									</div>
+								</div>
+							</div>
 						</div>
-					</div>
+					</form>
 				</div>
 			</section>
 		</main>
@@ -104,7 +165,7 @@
 </div>
  -->
 
-	<script src="js/app.min.js?_v=20220603063944"></script>
+	<script src="js/app.min.js?_v=20220603234529"></script>
 </body>
 
-</html>personal
+</html>
