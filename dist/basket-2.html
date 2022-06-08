@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Корзина с товаром</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20220608112021">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__top top-header">
+				<a href="#" class="top-header__logo logo _icon-logo"></a>
+				<div class="top-header__right-block">
+					<a href="#" class="top-header__search _icon-search"></a>
+				</div>
+
+			</div>
+			<h1 class="header-main-title">CRYPTUS SHOP - Магазин мерча от команды CRYPTUS</h1>
+			<div class="header__container">
+				<div class="header__menu menu">
+					<!-- <button type="button" class="menu__icon icon-menu"><span></span></button> -->
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="#" class="menu__link"><span class="menu__text">ГЛАВНАЯ</span></a></li>
+							<li class="menu__item"><a href="#" class="menu__link"><span class="menu__text">КАТАЛОГ</span></a></li>
+							<li class="menu__item"><a href="#" data-goto="#information" class="menu__link"><span class="menu__text">ДОСТАВКА И ОПЛАТА</span> </a></li>
+							<li class="menu__item"><a href="#" data-goto="#contacts" class="menu__link"><span class="menu__text">КОНТАКТЫ</span></a></li>
+							<li class="menu__item"><a href="#" data-da=".top-header__right-block,767,98" class="menu__link link-basket"><span class="link-basket__text">КОРЗИНА</span><span class="link-basket__basket _icon-cart"><span>1</span></span></a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+		<main id="page" class="page">
+			<section class="page__basket basket basket_complete">
+				<div class="basket__container">
+					<form action="#" class="basket__wrapper">
+						<div class="basket__header">
+							<div class="basket__header-item">
+								<h2 class="basket__title title">Корзина</h2>
+								<div class="basket__breadcrumbs breadcrumbs">
+									<ul class="breadcrumbs__list">
+										<li><a href="#" class="breadcrumbs__link">Магазин</a></li>
+										<li><a href="#" class="breadcrumbs__link">Корзина</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="basket__header-item">
+								<h2 class="basket__title title">Оформление заказа</h2>
+								<p class="basket__instruction">Введите адрес своей электронной почты. На этот адрес будут отправляться уведомления о статусе заказа.</p>
+							</div>
+						</div>
+						<div class="basket__body body-basket">
+							<div class="body-basket__row">
+								<div class="body-basket__column">
+									<div class="body-basket__order order-basket">
+										<div class="order-basket__list">
+											<div class="order-basket__item item-order">
+												<div class="item-order__image">
+													<picture><source srcset="img/product/1.webp" type="image/webp"><img src="img/product/1.jpg" alt="Photo"></picture>
+												</div>
+												<div class="item-order__content">
+													<div class="item-order__header">
+														<a href="#" class="item-order__title">Футболка “HODL”</a>
+														<button class="item-order__delete _icon-delet"></button>
+													</div>
+													<p class="item-order__sizes">Размер: <span>S-M</span></p>
+													<div class="item-order__footer">
+														<p class="item-order__quantity">Кол-во: <span>1</span></p>
+														<p class="item-order__price"><span>3890</span>₽</p>
+													</div>
+												</div>
+											</div>
+											<div class="order-basket__item item-order">
+												<div class="item-order__image">
+													<picture><source srcset="img/product/2.webp" type="image/webp"><img src="img/product/2.jpg" alt="Photo"></picture>
+												</div>
+												<div class="item-order__content">
+													<div class="item-order__header">
+														<a href="#" class="item-order__title">Футболка “HODL”</a>
+														<button class="item-order__delete _icon-delet"></button>
+													</div>
+													<p class="item-order__sizes">Размер: <span>S-M</span></p>
+													<div class="item-order__footer">
+														<p class="item-order__quantity">Кол-во: <span>2</span></p>
+														<p class="item-order__price"><span>3890</span>₽</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="order-basket__total">
+											<p class="order-basket__total-text">Итого</p>
+											<p class="order-basket__total-price"><span>6780</span>₽</p>
+										</div>
+										<a href="#" class="order-basket__link">Что-то забыли? Вернитесь в каталог товаров</a>
+									</div>
+								</div>
+								<div class="body-basket__column">
+									<div class="body-basket__form form-body-basket">
+										<div class="form-body-basket__body">
+											<label for="email" class="form-body-basket__label">Почта</label>
+											<input id="email" class="form-body-basket__input" type="email" name="form[]" data-error="Ошибка" placeholder="Ваш адрес электронной почты">
+										</div>
+										<div class="form-body-basket__checkbox checkbox">
+											<input id="c_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+											<label for="c_1" class="checkbox__label _icon-check">
+												<span class="checkbox__text">
+													Я принимаю условия: Условия доставки и оплаты / Shipping and Payment, Согласие на обработку
+													персональных данных / Consent to the Processing of Personal Data
+												</span>
+											</label>
+										</div>
+										<button type="submit" class="form-body-basket__button">Оформить заказ</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</section>
+		</main>
+		<a href="#" data-goto="#page" class="go-top _icon-arrow"></a>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__body">
+					<div class="footer__main main-footer">
+						<a href="#" class="main-footer__logo logo _icon-logo"></a>
+						<div class="main-footer__socials">
+							<a href="#" class="main-footer__social _icon-youtube"></a>
+							<a href="#" class="main-footer__social _icon-instagram"></a>
+							<a href="#" class="main-footer__social _icon-telegram"></a>
+						</div>
+						<p class="main-footer__copy">© 2022 CRYPTUS</p>
+					</div>
+					<div class="footer__info info-footer">
+						<h4 class="info-footer__title footer-title">ИНФОРМАЦИЯ</h4>
+						<ul class="info-footer__list">
+							<li><a href="#" class="info-footer__link">Главная</a></li>
+							<li><a href="#" class="info-footer__link">Каталог</a></li>
+							<li><a href="#" class="info-footer__link">Контакты</a></li>
+							<li><a href="#" class="info-footer__link">Доставка и оплата</a></li>
+							<li><a href="#" class="info-footer__link">Обработка персональных данных</a></li>
+						</ul>
+					</div>
+					<div class="footer__email email-footer">
+						<h4 class="email-footer__title footer-title">почта</h4>
+						<a href="mailto:shop@cryptusshop.com" class="email-footer__link">shop@cryptusshop.com</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<!-- 
+<div id="popup" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">Закрыть</button>
+			<div class="popup__text">
+			</div>
+		</div>
+	</div>
+</div>
+ -->
+
+	<script src="js/app.min.js?_v=20220608112021"></script>
+</body>
+
+</html>
