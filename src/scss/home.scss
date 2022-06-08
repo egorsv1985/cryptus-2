@@ -47,6 +47,7 @@
     padding-top: rem(35);
     padding-bottom: rem(105);
     @media (max-width:$mobile){
+        padding-top: 26px;
         padding-bottom: rem(30);
     }
     // .catalog__container
@@ -60,6 +61,7 @@
         margin-bottom: rem(20);
         @media (max-width:$mobile){
             margin-bottom: rem(13); 
+            letter-spacing: 2px;
         }
     }
 
@@ -148,6 +150,7 @@
         width: rem(270);
         height: rem(270);
         position: relative;
+        margin-bottom: 10px;
         @media (max-width:$mobile){
             width: rem(290);
             height: rem(290); 
@@ -172,6 +175,8 @@
         font-size: rem(13);
         font-weight: 400;
         transition: all 0.3s ease 0s;
+        letter-spacing: .4px;
+        margin-bottom: 5px;
     }
 
     // .card-catalog__category
@@ -190,10 +195,12 @@
         font-size: 13px;
         line-height: 1.2;
         color: #000;
-        margin-bottom: rem(3);
+        letter-spacing: 1.8px;
+        margin-bottom: 15px;
         span{
             display: inline-block;
             margin-right: rem(4);
+            
         }
     }
 }
