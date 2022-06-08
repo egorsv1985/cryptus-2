@@ -7,6 +7,10 @@
 .personal {
     padding-top: rem(50);
     padding-bottom: rem(50);
+    @media (max-width:$mobile){
+        padding-top: rem(11);
+        padding-bottom: rem(30);
+    }
     // .personal__container
     &__container {
     }
@@ -14,12 +18,18 @@
     // .personal__wrapper
     &__wrapper {
         padding-left: rem(9);
+        @media (max-width:$mobile){
+            padding: 0 rem(25) 0 rem(15); 
+        }
     }
 
     // .personal__title
 
     &__title {
-        margin-bottom: rem(38);
+        margin-bottom: rem(14);
+        @media (max-width:$mobile){
+            font-size: rem(20); 
+        }
     }
 
     // .personal__body
@@ -29,8 +39,10 @@
         font-size: 12px;
         line-height: 14px;
         color: #767676;
-        padding-left: rem(26);
-
+        // padding-left: rem(26);
+        @media (max-width:$mobile){
+            font-size: 10px; 
+        }
         p,div,h3 {
             &:not(:last-child) {
                 margin-bottom: rem(30);

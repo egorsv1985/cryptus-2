@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="ru">
 	@@include('html/_head.htm',{
-	"title":"Главная"
+	"title":"Корзина с товаром"
 	})
 	<body>
 		<div class="wrapper">
 			@@include('html/_header.htm',{})
-			<main class="page">
-				<section class="page__basket basket">
+			<main id="page"  class="page">
+				<section class="page__basket basket basket_complete">
 					<div class="basket__container">
-						<div class="basket__wrapper">
+						<form action="#" class="basket__wrapper">
 							<div class="basket__header">
 								<div class="basket__header-item">
 									<h2 class="basket__title title">Корзина</h2>
@@ -26,11 +26,71 @@
 								</div>
 							</div>
 							<div class="basket__body body-basket">
-								<form action="#">
-
-								</form>
+								<div class="body-basket__row">
+									<div class="body-basket__column">
+										<div class="body-basket__order order-basket">
+											<div class="order-basket__list">
+												<div class="order-basket__item item-order">
+													<div class="item-order__image">
+														<img src="@img/product/1.jpg" alt="Photo">
+													</div>
+													<div class="item-order__content">
+														<div class="item-order__header">
+															<a href="#" class="item-order__title">Футболка “HODL”</a>
+															<button class="item-order__delete _icon-delet"></button>
+														</div>
+														<p class="item-order__sizes">Размер: <span>S-M</span></p>
+														<div class="item-order__footer">
+															<p class="item-order__quantity">Кол-во: <span>1</span></p>
+															<p class="item-order__price"><span>3890</span>₽</p>                                
+														</div>
+													</div>
+												</div>
+												<div class="order-basket__item item-order">
+													<div class="item-order__image">
+														<img src="@img/product/2.jpg" alt="Photo">
+													</div>
+													<div class="item-order__content">
+														<div class="item-order__header">
+															<a href="#" class="item-order__title">Футболка “HODL”</a>
+															<button class="item-order__delete _icon-delet"></button>
+														</div>
+														<p class="item-order__sizes">Размер: <span>S-M</span></p>
+														<div class="item-order__footer">
+															<p class="item-order__quantity">Кол-во: <span>2</span></p>
+															<p class="item-order__price"><span>3890</span>₽</p>                                
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="order-basket__total">
+												<p class="order-basket__total-text">Итого</p>
+												<p class="order-basket__total-price"><span>6780</span>₽</p>
+											</div>
+											<a href="#" class="order-basket__link">Что-то забыли? Вернитесь в каталог товаров</a>
+										</div>
+									</div>
+									<div class="body-basket__column">
+										<div class="body-basket__form form-body-basket">
+											<div class="form-body-basket__body">
+												<label for="email" class="form-body-basket__label">Почта</label>
+												<input id="email" class="form-body-basket__input" type="email" name="form[]" data-error="Ошибка" placeholder="Ваш адрес электронной почты">
+											</div>
+											<div class="form-body-basket__checkbox checkbox">
+												<input id="c_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+												<label for="c_1" class="checkbox__label _icon-check">
+													<span class="checkbox__text">
+														Я принимаю условия: Условия доставки и оплаты / Shipping and Payment, Согласие на обработку
+														персональных данных / Consent to the Processing of Personal Data
+													</span>
+												</label>
+											</div>
+											<button type="submit" class="form-body-basket__button">Оформить заказ</button>
+										</div>
+									</div>
+								</div>
 							</div>
-						</div>
+						</form>
 					</div>
 				</section>
 			</main>
@@ -39,4 +99,4 @@
 		@@include('html/_popup.htm',{})
 		@@include('html/_js.htm',{})
 	</body>
-</html>personal
+</html>

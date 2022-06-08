@@ -5,6 +5,9 @@
     font-size: 22px;
     line-height: 1.2;
     color: #000;
+    @media (max-width:$mobile){
+        font-size: rem(24);
+    }
 }
 
 .footer-title {
@@ -13,4 +16,7 @@
     line-height: 1.2;
     color: #575757;
     text-transform: uppercase;
+    @media (max-width:$mobile){
+        font-size: rem(12); 
+    }
 }

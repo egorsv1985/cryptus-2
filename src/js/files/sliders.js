@@ -7,7 +7,7 @@
 // Подключаем слайдер Swiper из node_modules
 // При необходимости подключаем дополнительные модули слайдера, указывая их в {} через запятую
 // Пример: { Navigation, Autoplay }
-import Swiper, { Thumbs } from 'swiper';
+import Swiper, { Thumbs, Pagination } from 'swiper';
 /*
 Основниые модули слайдера:
 Navigation, Pagination, Autoplay, 
@@ -70,10 +70,10 @@ function initSliders() {
 			//preloadImages: false,
 			//lazy: true,
 			// Dotts
-			//pagination: {
-			//	el: '.slider-quality__pagging',
-			//	clickable: true,
-			//},
+			// pagination: {
+			// 	el: '.main-slider__dotts',
+			// 	clickable: true,
+			// },
 			// Arrows
 			// navigation: {
 			// 	nextEl: '.about__more .more__item_next',
@@ -108,7 +108,7 @@ function initSliders() {
 			// Подключаем модули слайдера
 			// для конкретного случая
 			//modules: [Navigation, Pagination],
-			modules: [Thumbs],
+			modules: [Thumbs, Pagination],
 			/*
 			effect: 'fade',
 			autoplay: {
@@ -131,11 +131,11 @@ function initSliders() {
 			//preloadImages: false,
 			//lazy: true,
 			// Dotts
-			// pagination: {
-			// 	el: '.products-new__dotts',
-			// 	clickable: true,
-			// 	dynamicBullets: true
-			// },
+			pagination: {
+				el: '.main-slider__dotts',
+				clickable: true,
+				// 	dynamicBullets: true
+			},
 			// Arrows
 			// navigation: {
 			// 	nextEl: '.main-slider__arrow_next',

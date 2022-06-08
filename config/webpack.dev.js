@@ -19,11 +19,22 @@ if (!pugPages.length) {
 			"indent-with-tabs": true,
 			'indent_size': 3
 		},
-		replace: [
-			{ regex: '<link rel="stylesheet" href="css/style.min.css">', to: '' },
-			{ regex: '../img', to: 'img' },
-			{ regex: '@img', to: 'img' },
-			{ regex: 'NEW_PROJECT_NAME', to: rootFolder }
+		replace: [{
+				regex: '<link rel="stylesheet" href="css/style.min.css">',
+				to: ''
+			},
+			{
+				regex: '../img',
+				to: 'img'
+			},
+			{
+				regex: '@img',
+				to: 'img'
+			},
+			{
+				regex: 'NEW_PROJECT_NAME',
+				to: rootFolder
+			}
 		],
 	})];
 }
@@ -52,7 +63,7 @@ const config = {
 		static: paths.build,
 		open: true,
 		compress: true,
-		port: 8080,
+		port: 8000,
 		hot: true,
 		watchFiles: [
 			`${paths.src}/**/*.html`,
@@ -62,57 +73,53 @@ const config = {
 		],
 	},
 	module: {
-		rules: [
-			{
-				test: /\.(scss|css)$/,
-				exclude: `${paths.src}/fonts`,
-				use: [
-					'style-loader',
-					{
-						loader: 'string-replace-loader',
-						options: {
-							search: '@img',
-							replace: '../img',
-							flags: 'g'
-						}
-					}, {
-						loader: 'css-loader',
-						options: {
-							sourceMap: true,
-							importLoaders: 1,
-							modules: false,
-							url: {
-								filter: (url, resourcePath) => {
-									if (url.includes("img/") || url.includes("fonts/")) {
-										return false;
-									}
-									return true;
-								},
+		rules: [{
+			test: /\.(scss|css)$/,
+			exclude: `${paths.src}/fonts`,
+			use: [
+				'style-loader',
+				{
+					loader: 'string-replace-loader',
+					options: {
+						search: '@img',
+						replace: '../img',
+						flags: 'g'
+					}
+				}, {
+					loader: 'css-loader',
+					options: {
+						sourceMap: true,
+						importLoaders: 1,
+						modules: false,
+						url: {
+							filter: (url, resourcePath) => {
+								if (url.includes("img/") || url.includes("fonts/")) {
+									return false;
+								}
+								return true;
 							},
 						},
-					}, {
-						loader: 'sass-loader',
-						options: {
-							sourceMap: true,
-						}
+					},
+				}, {
+					loader: 'sass-loader',
+					options: {
+						sourceMap: true,
 					}
-				],
+				}
+			],
+		}, {
+			test: /\.pug$/,
+			use: [{
+				loader: 'pug-loader'
 			}, {
-				test: /\.pug$/,
-				use: [
-					{
-						loader: 'pug-loader'
-					}, {
-						loader: 'string-replace-loader',
-						options: {
-							search: '@img',
-							replace: 'img',
-							flags: 'g'
-						}
-					}
-				]
-			}
-		],
+				loader: 'string-replace-loader',
+				options: {
+					search: '@img',
+					replace: 'img',
+					flags: 'g'
+				}
+			}]
+		}],
 	},
 	plugins: [
 		...htmlPages,
@@ -122,20 +129,21 @@ const config = {
 			filename: `${pugPage.replace(/\.pug/, '.html')}`
 		})),
 		new CopyPlugin({
-			patterns: [
-				{
-					from: `${srcFolder}/img`, to: `img`,
-					noErrorOnMissing: true,
-					force: true
-				}, {
-					from: `${srcFolder}/files`, to: `files`,
-					noErrorOnMissing: true,
-					force: true
-				}, {
-					from: `${paths.src}/favicon.ico`, to: `./`,
-					noErrorOnMissing: true
-				}
-			],
+			patterns: [{
+				from: `${srcFolder}/img`,
+				to: `img`,
+				noErrorOnMissing: true,
+				force: true
+			}, {
+				from: `${srcFolder}/files`,
+				to: `files`,
+				noErrorOnMissing: true,
+				force: true
+			}, {
+				from: `${paths.src}/favicon.ico`,
+				to: `./`,
+				noErrorOnMissing: true
+			}],
 		}),
 	],
 	resolve: {
