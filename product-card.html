@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220603234529">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220608093015">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,7 +17,10 @@
 		<header class="header">
 			<div class="header__top top-header">
 				<a href="#" class="top-header__logo logo _icon-logo"></a>
-				<a href="#" class="top-header__search _icon-search"></a>
+				<div class="top-header__right-block">
+					<a href="#" class="top-header__search _icon-search"></a>
+				</div>
+
 			</div>
 			<h1 class="header-main-title">CRYPTUS SHOP - Магазин мерча от команды CRYPTUS</h1>
 			<div class="header__container">
@@ -25,17 +28,17 @@
 					<!-- <button type="button" class="menu__icon icon-menu"><span></span></button> -->
 					<nav class="menu__body">
 						<ul class="menu__list">
-							<li class="menu__item"><a href="#" class="menu__link"><span>ГЛАВНАЯ</span></a></li>
-							<li class="menu__item"><a href="#" class="menu__link"><span>КАТАЛОГ</span></a></li>
-							<li class="menu__item"><a href="#" class="menu__link"><span>ДОСТАВКА И ОПЛАТА</span> </a></li>
-							<li class="menu__item"><a href="#" class="menu__link"><span>КОНТАКТЫ</span></a></li>
-							<li class="menu__item"><a href="#" class="menu__link _icon-cart"><span>КОРЗИНА</span></a></li>
+							<li class="menu__item"><a href="#" class="menu__link"><span class="menu__text">ГЛАВНАЯ</span></a></li>
+							<li class="menu__item"><a href="#" class="menu__link"><span class="menu__text">КАТАЛОГ</span></a></li>
+							<li class="menu__item"><a href="#" data-goto="#information" class="menu__link"><span class="menu__text">ДОСТАВКА И ОПЛАТА</span> </a></li>
+							<li class="menu__item"><a href="#" data-goto="#contacts" class="menu__link"><span class="menu__text">КОНТАКТЫ</span></a></li>
+							<li class="menu__item"><a href="#" data-da=".top-header__right-block,767,98" class="menu__link link-basket"><span class="link-basket__text">КОРЗИНА</span><span class="link-basket__basket _icon-cart"><span>1</span></span></a></li>
 						</ul>
 					</nav>
 				</div>
 			</div>
 		</header>
-		<main class="page">
+		<main id="page" class="page">
 			<div class="page__product-card product-card">
 				<div class="product-card__container">
 					<div class="product-card__body">
@@ -44,28 +47,29 @@
 								<div class="product-card__main-slider main-slider">
 									<div class="main-slider__slider">
 										<div class="main-slider__swiper">
-											<div class="main-slider__slide main-slider__slide-ibg">
+											<div class="main-slider__slide-ibg">
 												<picture><source srcset="img/product/1.webp" type="image/webp"><img src="img/product/1.jpg" alt="Фото"></picture>
 											</div>
-											<div class="main-slider__slide main-slider__slide-ibg">
+											<div class="main-slider__slide-ibg">
 												<picture><source srcset="img/product/2.webp" type="image/webp"><img src="img/product/2.jpg" alt="Фото"></picture>
 											</div>
-											<div class="main-slider__slide main-slider__slide-ibg">
+											<div class="main-slider__slide-ibg">
 												<picture><source srcset="img//catalog/1.webp" type="image/webp"><img src="img//catalog/1.jpg" alt="Фото"></picture>
 											</div>
 										</div>
+										<div class="main-slider__dotts"></div>
 									</div>
 								</div>
 								<div class="product-card__thumbnail thumbnail">
 									<div class="thumbnail__slider">
 										<div class="thumbnail__swiper">
-											<div class="thumbnail__slide thumbnail__slide-ibg">
+											<div class="thumbnail__slide-ibg">
 												<picture><source srcset="img/product/1.webp" type="image/webp"><img src="img/product/1.jpg" alt="Фото"></picture>
 											</div>
-											<div class="thumbnail__slide thumbnail__slide-ibg">
+											<div class="thumbnail__slide-ibg">
 												<picture><source srcset="img/product/2.webp" type="image/webp"><img src="img/product/2.jpg" alt="Фото"></picture>
 											</div>
-											<div class="thumbnail__slide thumbnail__slide-ibg">
+											<div class="thumbnail__slide-ibg">
 												<picture><source srcset="img//catalog/1.webp" type="image/webp"><img src="img//catalog/1.jpg" alt="Фото"></picture>
 											</div>
 										</div>
@@ -75,25 +79,31 @@
 						</div>
 						<div class="product-card__column">
 							<div class="product-card__info ">
-								<h2 class="info-product-card__title title">Футболка “HODL”</h2>
-								<a href="#" class="info-product-card__back">Вернуться в каталог</a>
-								<div class="info-product-card__price"><span>4 990</span>₽</div>
-								<div class="info-product-card__options options">
-									<div class="options__item">
-										<input hidden id="o_1" class="options__input" checked type="radio" value="1" name="option">
-										<label for="o_1" class="options__label"><span class="options__text">S-M</span></label>
+								<div class="product-card__wrapper-row">
+									<div class="product-card__wrapper-column">
+										<h2 class="info-product-card__title title">Футболка “HODL”</h2>
+										<a href="#" class="info-product-card__back">Вернуться в каталог</a>
+										<div class="info-product-card__price"><span>4 990</span>₽</div>
+										<div class="info-product-card__options options">
+											<div class="options__item">
+												<input hidden id="o_1" class="options__input" checked type="radio" value="1" name="option">
+												<label for="o_1" class="options__label"><span class="options__text">S-M</span></label>
+											</div>
+											<div class="options__item">
+												<input hidden id="o_2" class="options__input" type="radio" value="2" name="option">
+												<label for="o_2" class="options__label"><span class="options__text">L-XL</span></label>
+											</div>
+										</div>
 									</div>
-									<div class="options__item">
-										<input hidden id="o_2" class="options__input" type="radio" value="2" name="option">
-										<label for="o_2" class="options__label"><span class="options__text">L-XL</span></label>
+									<div class="product-card__wrapper-column">
+										<div class="info-product-card__colors colors-product-card">
+											<p class="colors-product-card__title">Цвет:</p>
+											<ul class="colors-product-card__list">
+												<li><a href="#" class="colors-product-card__link colors-product-card__link_white" title="Белый"></a></li>
+												<li><a href="#" class="colors-product-card__link colors-product-card__link_black" title="Черный"></a></li>
+											</ul>
+										</div>
 									</div>
-								</div>
-								<div class="info-product-card__colors colors-product-card">
-									<p class="colors-product-card__title"></p>
-									<ul class="colors-product-card__list">
-										<li><a href="#" class="colors-product-card__link colors-product-card__link_white" title="Белый"></a></li>
-										<li><a href="#" class="colors-product-card__link colors-product-card__link_black" title="Черный"></a></li>
-									</ul>
 								</div>
 								<a href="#" class="info-product-card__button">В корзину</a>
 								<div class="info-product-card__about about-product" data-spollers>
@@ -125,6 +135,7 @@
 				</div>
 			</div>
 		</main>
+		<a href="#" data-goto="#page" class="go-top _icon-arrow"></a>
 		<footer class="footer">
 			<div class="footer__container">
 				<div class="footer__body">
@@ -167,7 +178,7 @@
 </div>
  -->
 
-	<script src="js/app.min.js?_v=20220603234529"></script>
+	<script src="js/app.min.js?_v=20220608093015"></script>
 </body>
 
 </html>

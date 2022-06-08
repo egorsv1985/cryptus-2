@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220603234529">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220608093015">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,7 +17,10 @@
 		<header class="header">
 			<div class="header__top top-header">
 				<a href="#" class="top-header__logo logo _icon-logo"></a>
-				<a href="#" class="top-header__search _icon-search"></a>
+				<div class="top-header__right-block">
+					<a href="#" class="top-header__search _icon-search"></a>
+				</div>
+
 			</div>
 			<h1 class="header-main-title">CRYPTUS SHOP - Магазин мерча от команды CRYPTUS</h1>
 			<div class="header__container">
@@ -25,18 +28,18 @@
 					<!-- <button type="button" class="menu__icon icon-menu"><span></span></button> -->
 					<nav class="menu__body">
 						<ul class="menu__list">
-							<li class="menu__item"><a href="#" class="menu__link"><span>ГЛАВНАЯ</span></a></li>
-							<li class="menu__item"><a href="#" class="menu__link"><span>КАТАЛОГ</span></a></li>
-							<li class="menu__item"><a href="#" class="menu__link"><span>ДОСТАВКА И ОПЛАТА</span> </a></li>
-							<li class="menu__item"><a href="#" class="menu__link"><span>КОНТАКТЫ</span></a></li>
-							<li class="menu__item"><a href="#" class="menu__link _icon-cart"><span>КОРЗИНА</span></a></li>
+							<li class="menu__item"><a href="#" class="menu__link"><span class="menu__text">ГЛАВНАЯ</span></a></li>
+							<li class="menu__item"><a href="#" class="menu__link"><span class="menu__text">КАТАЛОГ</span></a></li>
+							<li class="menu__item"><a href="#" data-goto="#information" class="menu__link"><span class="menu__text">ДОСТАВКА И ОПЛАТА</span> </a></li>
+							<li class="menu__item"><a href="#" data-goto="#contacts" class="menu__link"><span class="menu__text">КОНТАКТЫ</span></a></li>
+							<li class="menu__item"><a href="#" data-da=".top-header__right-block,767,98" class="menu__link link-basket"><span class="link-basket__text">КОРЗИНА</span><span class="link-basket__basket _icon-cart"><span>1</span></span></a></li>
 						</ul>
 					</nav>
 				</div>
 			</div>
 		</header>
-		<main class="page">
-			<section class="page__basket basket">
+		<main id="page" class="page">
+			<section class="page__basket basket basket_complete">
 				<div class="basket__container">
 					<form action="#" class="basket__wrapper">
 						<div class="basket__header">
@@ -109,7 +112,7 @@
 											<input id="c_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
 											<label for="c_1" class="checkbox__label _icon-check">
 												<span class="checkbox__text">
-													Я принимаю условия: Условия доставки и оплаты / Shipping and Payment, Согласие на обработку<br>
+													Я принимаю условия: Условия доставки и оплаты / Shipping and Payment, Согласие на обработку
 													персональных данных / Consent to the Processing of Personal Data
 												</span>
 											</label>
@@ -123,6 +126,7 @@
 				</div>
 			</section>
 		</main>
+		<a href="#" data-goto="#page" class="go-top _icon-arrow"></a>
 		<footer class="footer">
 			<div class="footer__container">
 				<div class="footer__body">
@@ -165,7 +169,7 @@
 </div>
  -->
 
-	<script src="js/app.min.js?_v=20220603234529"></script>
+	<script src="js/app.min.js?_v=20220608093015"></script>
 </body>
 
 </html>
