@@ -338,6 +338,9 @@ h6 {
 .menu__link {
   color: #4E4E4E;
   text-transform: uppercase;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.8px;
 }
 @media (any-hover: hover) {
   .menu__link:hover .menu__text {
@@ -680,6 +683,7 @@ h6 {
 }
 @media (max-width: 47.99875em) {
   .catalog {
+    padding-top: 26px;
     padding-bottom: 1.875rem;
   }
 }
@@ -690,6 +694,7 @@ h6 {
 @media (max-width: 47.99875em) {
   .catalog__title {
     margin-bottom: 0.8125rem;
+    letter-spacing: 2px;
   }
 }
 .catalog__body {
@@ -753,6 +758,7 @@ h6 {
   width: 16.875rem;
   height: 16.875rem;
   position: relative;
+  margin-bottom: 10px;
 }
 @media (max-width: 47.99875em) {
   .card-catalog__image {
@@ -772,6 +778,8 @@ h6 {
   font-size: 0.8125rem;
   font-weight: 400;
   transition: all 0.3s ease 0s;
+  letter-spacing: 0.4px;
+  margin-bottom: 5px;
 }
 .card-catalog__category {
   font-weight: 300;
@@ -785,7 +793,8 @@ h6 {
   font-size: 13px;
   line-height: 1.2;
   color: #000;
-  margin-bottom: 0.1875rem;
+  letter-spacing: 1.8px;
+  margin-bottom: 15px;
 }
 .card-catalog__price span {
   display: inline-block;
