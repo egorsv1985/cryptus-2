@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Корзина с товаром"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main id="page" class="page">
+			<section class="page__basket basket basket_delivery">
+				<div class="basket__container">
+					<form action="#" class="basket__wrapper">
+						<div class="basket__header">
+							<div class="basket__header-item">
+								<h2 class="basket__title title">Корзина</h2>
+								<div class="basket__breadcrumbs breadcrumbs">
+									<ul class="breadcrumbs__list">
+										<li><a href="#" class="breadcrumbs__link">Магазин</a></li>
+										<li><a href="#" class="breadcrumbs__link">Корзина</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="basket__header-item">
+								<h2 class="basket__title title">Оформление заказа</h2>
+								<div class="basket__box">
+									<p class="basket__instruction basket__instruction--check">pochtausera@gmal.com</p>
+									<a href="#" class="basket__link">Изменить адрес почты</a>
+								</div>
+
+							</div>
+						</div>
+						<div class="basket__body body-basket">
+							<div class="body-basket__row">
+								<div class="body-basket__column">
+									<div class="body-basket__order order-basket">
+										<div class="order-basket__list">
+											<div class="order-basket__item item-order">
+												<div class="item-order__image">
+													<img src="@img/product/1.jpg" alt="Photo">
+												</div>
+												<div class="item-order__content">
+													<div class="item-order__header">
+														<a href="#" class="item-order__title">Футболка “HODL”</a>
+														<button class="item-order__delete _icon-delet"></button>
+													</div>
+													<p class="item-order__sizes">Размер: <span>S-M</span></p>
+													<div class="item-order__footer">
+														<p class="item-order__quantity">Кол-во: <span>1</span></p>
+														<p class="item-order__price"><span>3890</span>₽</p>
+													</div>
+												</div>
+											</div>
+											<div class="order-basket__item item-order">
+												<div class="item-order__image">
+													<img src="@img/product/2.jpg" alt="Photo">
+												</div>
+												<div class="item-order__content">
+													<div class="item-order__header">
+														<a href="#" class="item-order__title">Футболка “HODL”</a>
+														<button class="item-order__delete _icon-delet"></button>
+													</div>
+													<p class="item-order__sizes">Размер: <span>S-M</span></p>
+													<div class="item-order__footer">
+														<p class="item-order__quantity">Кол-во: <span>2</span></p>
+														<p class="item-order__price"><span>3890</span>₽</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="order-basket__total">
+											<p class="order-basket__total-text">Итого</p>
+											<p class="order-basket__total-price"><span>6780</span>₽</p>
+										</div>
+										<a href="#" class="order-basket__link">Что-то забыли? Вернитесь в каталог
+											товаров</a>
+									</div>
+								</div>
+								<div class="body-basket__column">
+									<div class="body-basket__form form-body-basket">
+										<h3 class="form-body-basket__subtitle">Доставка</h3>
+										<div class="form-body-basket__body">
+
+											<div class="form-body-basket__box">
+												<label for="country" class="form-body-basket__label"></label>
+												<input type="text" id="country" name="form[]" data-error="Ошибка"
+													placeholder="Россия" class="form-body-basket__input">
+											</div>
+											<div class="form-body-basket__box">
+												<label for="name" class="form-body-basket__label"></label>
+												<input type="text" id="name" name="form[]" data-error="Ошибка"
+													placeholder="Имя, Фамилия, Отчество"
+													class="form-body-basket__input">
+											</div>
+											<div class="form-body-basket__box">
+												<label for="tel" class="form-body-basket__label"></label>
+												<input type="tel" id="tel" name="form[]" data-error="Ошибка"
+													placeholder="+7 912 345 67 89" class="form-body-basket__input">
+											</div>
+											<div class="form-body-basket__box">
+												<label for="address" class="form-body-basket__label">Улица,дом,квартира
+													(Укажите свой адрес полностью)</label>
+												<input type="text" id="address" name="form[]" data-error="Ошибка"
+													placeholder="Петровский бульвар 7, 1426"
+													class="form-body-basket__input">
+											</div>
+											<div class="form-body-basket__box">
+												<label for="city" class="form-body-basket__label">Город</label>
+												<input type="text" id="city" name="form[]" data-error="Ошибка"
+													placeholder="Мурино" class="form-body-basket__input">
+											</div>
+											<div class="form-body-basket__box">
+												<label for="city" class="form-body-basket__label">Индекс
+													(необязательно)</label>
+												<input type="text" id="city" name="form[]" data-error="Ошибка"
+													placeholder="188662" class="form-body-basket__input">
+											</div>
+
+
+
+
+										</div>
+
+										<button type="submit" class="form-body-basket__button">Продолжить</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</section>
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
+</body>
+
+</html>
