@@ -8,7 +8,7 @@
 	<div class="wrapper">
 		@@include('html/_header.htm',{})
 		<main id="page" class="page">
-			<section class="page__basket basket basket_delivery">
+			<section class="page__basket basket basket_payment">
 				<div class="basket__container">
 					<form action="#" class="basket__wrapper">
 						<div class="basket__header">
@@ -23,6 +23,10 @@
 							</div>
 							<div class="basket__header-item">
 								<h2 class="basket__title title">Оформление заказа</h2>
+								<div class="basket__box">
+									<p class="basket__instruction basket__instruction--check">pochtausera@gmal.com</p>
+									<a href="#" class="basket__link">Изменить адрес почты</a>
+								</div>
 								<div class="basket__box">
 									<p class="basket__instruction basket__instruction--check">pochtausera@gmal.com</p>
 									<a href="#" class="basket__link">Изменить адрес почты</a>
@@ -72,13 +76,10 @@
 											<p class="order-basket__total-text">Итого</p>
 											<p class="order-basket__total-price"><span>6780</span>₽</p>
 										</div>
-									</div>
-									<div class="basket__box basket__box--none">
-										<p class="basket__instruction basket__instruction--check">pochtausera@gmal.com</p>
-										<a href="#" class="basket__link">Изменить адрес почты</a>
+										<a href="#" class="order-basket__link">Что-то забыли? Вернитесь в каталог
+											товаров</a>
 									</div>
 								</div>
-								
 								<div class="body-basket__column">
 									<div class="body-basket__form form-body-basket">
 										<h3 class="form-body-basket__subtitle">Доставка</h3>

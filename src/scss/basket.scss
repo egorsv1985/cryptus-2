@@ -511,6 +511,7 @@
     // .basket__instruction
     &__instruction {
         position: relative;
+        padding-left: 20px;
 
         &--check::before {
             content: "";
@@ -539,18 +540,60 @@
 }
 
 .basket_delivery {
+
+    // .basket__header-item
+    .basket__header-item {
+        &:first-child {
+            flex: 0 0 rem(338);
+            padding-right: rem(55);
+        }
+
+        &:last-child {
+            flex: 1 1 auto;
+        }
+
+        @media (max-width: rem(768)) {
+            &:first-child {
+                flex: 1 1 auto;
+            }
+
+            &:last-child {
+                display: none;
+            }
+        }
+    }
+
     &__title {
         margin-bottom: 15px;
     }
 
     .body-basket {
         padding-top: 25px;
+        // .body-basket__row
+
+        &__row {
+            display: flex;
+            padding-top: rem(5);
+
+            @media (max-width: rem(768)) {
+                display: block;
+            }
+        }
 
         // .body-basket__column
         &__column {}
 
         // .body-basket__form
         &__form {}
+    }
+
+    .basket__box.basket__box--none {
+        display: none;
+
+        @media (max-width: rem(768)) {
+            display: flex;
+        }
+
     }
 
     .form-body-basket {
@@ -568,6 +611,10 @@
             letter-spacing: 1.6px;
             margin-bottom: 20px;
 
+            @media (max-width: rem(768)) {
+                margin-top: 20px;
+            }
+
 
         }
 
@@ -580,7 +627,7 @@
             height: 100%;
             border: none;
 
-            @media (max-width: rem(667)) {
+            @media (max-width: rem(768)) {
                 grid-template-columns: 1fr;
             }
 
@@ -593,7 +640,7 @@
             &:first-child {
                 grid-area: 1 / 1 / 2 / 3;
 
-                @media (max-width: rem(667)) {
+                @media (max-width: rem(768)) {
                     grid-area: unset;
                 }
             }
@@ -601,7 +648,7 @@
             &:nth-child(4) {
                 grid-area: 3 / 1 / 4 / 3;
 
-                @media (max-width: rem(667)) {
+                @media (max-width: rem(768)) {
                     grid-area: unset;
                 }
             }
