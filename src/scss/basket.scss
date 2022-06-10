@@ -501,42 +501,47 @@
 }
 
 .basket {
+    &-delivery {
 
-    // .basket__box
-    &__box {
-        display: flex;
-        gap: 10px;
-    }
+        // .basket__box
+        &__box {
+            display: flex;
+            gap: 10px;
+        }
 
-    // .basket__instruction
-    &__instruction {
-        position: relative;
-        padding-left: 20px;
+        // .basket__instruction
+        &__instruction {
+            position: relative;
+            padding-left: 20px;
+            color: #2B2B2B;
 
-        &--check::before {
-            content: "";
-            display: block;
-            width: 16px;
-            height: 16px;
-            position: absolute;
-            top: 0;
-            left: 0;
-            background: url("@img/icons/basket-check.svg") center no-repeat;
+            &--check::before {
+                content: "";
+                display: block;
+                width: 16px;
+                height: 16px;
+                position: absolute;
+                top: 0;
+                left: 0;
+                background: url("@img/icons/basket-check.svg") center no-repeat;
+
+            }
+        }
+
+        // .basket__link
+        &__link {
+
+            font-weight: 300;
+            font-size: 12px;
+            line-height: 14px;
+
+            color: #999999;
+
 
         }
     }
 
-    // .basket__link
-    &__link {
 
-        font-weight: 300;
-        font-size: 12px;
-        line-height: 14px;
-
-        color: #999999;
-
-
-    }
 }
 
 .basket_delivery {
@@ -700,4 +705,395 @@
         &__button {}
     }
 
+}
+
+.wrapper {}
+
+.page {
+
+    // .page__basket
+    &__basket {}
+}
+
+.basket {
+
+    // .basket_payment
+    &_payment {
+
+        .body-basket {
+            padding-top: 25px;
+
+            // .body-basket__row
+            &__row {}
+
+            // .body-basket__column
+            &__column {}
+
+            // .body-basket__order
+            &__order {}
+
+            // .body-basket__form
+            &__form {
+                display: flex;
+                flex-direction: column;
+
+                @media (max-width: rem(768)) {
+                    margin-top: 30px;
+                }
+            }
+        }
+
+        .order-basket {
+
+            // .order-basket__list
+            &__list {}
+
+            // .order-basket__item
+            &__item {}
+
+            // .order-basket__total
+            &__total {}
+
+            // .order-basket__total-text
+            &__total-text {}
+
+            // .order-basket__total-price
+            &__total-price {}
+        }
+
+        .item-order {
+
+            // .item-order__image
+            &__image {}
+
+            // .item-order__content
+            &__content {}
+
+            // .item-order__header
+            &__header {}
+
+            // .item-order__title
+            &__title {}
+
+            // .item-order__delete
+            &__delete {}
+
+            // .item-order__sizes
+            &__sizes {}
+
+            // .item-order__footer
+            &__footer {}
+
+            // .item-order__quantity
+            &__quantity {}
+
+            // .item-order__price
+            &__price {}
+        }
+
+        .form-body-basket {
+
+
+            // .form-body-basket__subtitle
+            &__subtitle {
+
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 19px;
+
+                color: #000000;
+                letter-spacing: 1.6px;
+                margin-bottom: 10px;
+                margin-top: 40px;
+
+
+            }
+
+            // .form-body-basket__body
+            &__body {
+                height: 100%;
+                width: 100%;
+                border: none;
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+            }
+
+            // .form-body-basket__box
+            &__box {
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+                margin-bottom: 15px;
+            }
+
+            // .form-body-basket__label
+            &__label {
+
+                font-weight: 300;
+                font-size: 12px;
+                line-height: 14px;
+
+                color: #4F4F4F;
+                letter-spacing: 1.6px;
+            }
+
+            // .form-body-basket__list
+            &__list {
+                display: flex;
+                flex-direction: column;
+
+            }
+
+            // .form-body-basket__item
+            &__item {
+                position: relative;
+
+                &::before {
+                    display: block;
+                    content: "";
+                    background: url("@img/icons/pay.svg") center no-repeat;
+                    width: 22px;
+                    height: 22px;
+                    position: absolute;
+                    top: 50%;
+                    left: 20px;
+                    transform: translateY(-50%);
+                    z-index: 1;
+                }
+            }
+
+            #pay {
+                width: 265px;
+                display: flex;
+                align-items: center;
+                padding: 15px 55px;
+
+            }
+
+            // .form-body-basket__input
+            &__input {
+                position: relative;
+                min-width: 265px;
+                max-width: 614px;
+                width: 100%;
+                height: 44px;
+
+
+                background: #FFFFFF;
+                border: 1px solid #C6C6C6;
+
+
+
+                &::placeholder {
+
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 14px;
+
+                    color: #2B2B2B;
+
+
+                }
+
+                &:focus-visible,
+                &:focus,
+                &:active {
+
+                    border: 1px solid #606060;
+
+                }
+
+            }
+
+            // .form-body-basket__input--pay
+            &__input--pay {}
+
+            // .form-body-basket__textarea
+            &__textarea {
+                width: 100%;
+
+                max-width: 614px;
+                height: 71px;
+                padding: 10px;
+
+                background: #FFFFFF;
+                border: 1px solid #C6C6C6;
+                resize: vertical;
+            }
+
+            // .form-body-basket__button
+            &__button {
+                margin-bottom: 30px;
+            }
+
+            // .form-body-basket__text
+            &__text {
+
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 19px;
+
+                color: #000000;
+
+                display: flex;
+                gap: 35px;
+
+            }
+
+            // .form-body-basket__link
+            &__link {
+
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 19px;
+
+                color: #09DC77;
+                align-self: flex-end;
+                position: relative;
+
+                &::before {
+                    display: block;
+                    content: "";
+                    background: url("@img/icons/telegram.svg") center no-repeat;
+                    width: 24px;
+                    height: 24px;
+                    position: absolute;
+                    top: 50%;
+                    left: -30px;
+                    transform: translateY(-50%);
+                }
+
+            }
+        }
+
+        .form-body-basket--wallet {
+
+            width: 511px;
+            height: 23px;
+
+
+            background: rgba(114, 255, 136, 0.1);
+            border: none;
+
+        }
+
+
+    }
+
+    // .basket__container
+    &__container {}
+
+    // .basket__wrapper
+    &__wrapper {}
+
+    // .basket__header
+    &__header {}
+
+    // .basket__header-item
+    &__header-item {}
+
+    // .basket__title
+    &__title {}
+
+    // .basket__breadcrumbs
+    &__breadcrumbs {}
+
+    // .basket__box
+    &__box {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+
+       
+    }
+
+    // .basket__instruction
+    &__instruction {
+        position: relative;
+        padding-left: 20px;
+        color: #2B2B2B;
+
+
+        &--check::before {
+            content: "";
+            display: block;
+            width: 16px;
+            height: 16px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: url("@img/icons/basket-check.svg") center no-repeat;
+
+        }
+    }
+
+    // .basket__link
+    &__link {
+
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 14px;
+
+        color: #999999;
+
+        @media (max-width: rem(768)) {
+            padding-left: 30px;
+        }
+
+
+    }
+
+    // .basket__instruction
+    &__instruction {}
+
+    // .basket__instruction--check
+    &__instruction--check {}
+
+    // .basket__link
+    &__link {}
+
+    // .basket__box-content
+    &__box-content {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 400px;
+
+
+    }
+
+    // .basket__link--end
+    &__link--end {
+        align-self: flex-end;
+
+        @media (max-width: rem(768)) {
+            padding-left: 22px;
+            align-self: unset;
+        }
+    }
+
+    // .basket__body
+    &__body {}
+
+    // .basket__box--none
+    &__box--none {
+        display: none;
+
+        @media (max-width: rem(768)) {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+    }
+}
+
+.title {}
+
+.breadcrumbs {
+
+    // .breadcrumbs__list
+    &__list {}
+
+    // .breadcrumbs__link
+    &__link {}
 }
