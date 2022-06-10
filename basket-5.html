@@ -2,7 +2,7 @@
 <html lang="ru">
 
 <head>
-	<title>Пустая корзина</title>
+	<title>Корзина с товаром</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
@@ -39,9 +39,9 @@
 			</div>
 		</header>
 		<main id="page" class="page">
-			<section class="page__basket basket">
+			<section class="page__basket basket basket_order">
 				<div class="basket__container">
-					<div class="basket__wrapper">
+					<form action="#" class="basket__wrapper">
 						<div class="basket__header">
 							<div class="basket__header-item">
 								<h2 class="basket__title title">Корзина</h2>
@@ -52,16 +52,98 @@
 									</ul>
 								</div>
 							</div>
-							<div class="basket__header-item"></div>
-						</div>
+							<div class="basket__header-item">
+								<h2 class="basket__title title">Заказ оформлен</h2>
+								<div class="basket__box">
+									<p class="basket__instruction basket__instruction--check">pochtausera@gmal.com</p>
+									<a href="#" class="basket__link">Изменить адрес почты</a>
+								</div>
 
-						<div class="basket__body body-basket">
-							<div class="body-basket__empty">
-								<p class="body-basket__message">Ваша корзина пуста</p>
-								<a href="#" class="body-basket__link">Смотреть товары</a>
+
 							</div>
 						</div>
-					</div>
+						<div class="basket__body body-basket">
+							<div class="body-basket__row">
+								<div class="body-basket__column">
+									<div class="body-basket__order order-basket">
+										<div class="order-basket__list">
+											<div class="order-basket__item item-order">
+												<div class="item-order__image">
+													<picture><source srcset="img/product/1.webp" type="image/webp"><img src="img/product/1.jpg" alt="Photo"></picture>
+												</div>
+												<div class="item-order__content">
+													<div class="item-order__header">
+														<a href="#" class="item-order__title">Футболка “HODL”</a>
+														<button class="item-order__delete _icon-delet"></button>
+													</div>
+													<p class="item-order__sizes">Размер: <span>S-M</span></p>
+													<div class="item-order__footer">
+														<p class="item-order__quantity">Кол-во: <span>1</span></p>
+														<p class="item-order__price"><span>3890</span>₽</p>
+													</div>
+												</div>
+											</div>
+											<div class="order-basket__item item-order">
+												<div class="item-order__image">
+													<picture><source srcset="img/product/2.webp" type="image/webp"><img src="img/product/2.jpg" alt="Photo"></picture>
+												</div>
+												<div class="item-order__content">
+													<div class="item-order__header">
+														<a href="#" class="item-order__title">Футболка “HODL”</a>
+														<button class="item-order__delete _icon-delet"></button>
+													</div>
+													<p class="item-order__sizes">Размер: <span>S-M</span></p>
+													<div class="item-order__footer">
+														<p class="item-order__quantity">Кол-во: <span>2</span></p>
+														<p class="item-order__price"><span>3890</span>₽</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="order-basket__total">
+											<p class="order-basket__total-text">Итого</p>
+											<p class="order-basket__total-price"><span>6780</span>₽</p>
+										</div>
+									</div>
+									<div class="basket__box basket__box--none">
+										<p class="basket__instruction basket__instruction--check">pochtausera@gmal.com
+										</p>
+										<a href="#" class="basket__link">Изменить адрес почты</a>
+									</div>
+
+								</div>
+
+								<div class="body-basket__column">
+									<div class="body-basket__form form-body-basket">
+										<div class="basket__box">
+											<div class="basket__box-content">
+												<p class="basket__instruction">Имя Фамилия Отчество</p>
+												<p class="basket__instruction basket__instruction--check">Петровский
+													бульвар 7,
+													1426, Санкт-Петербург +7 912 345 67 89</p>
+											</div>
+
+											<a href="#" class="basket__link basket__link--end">Изменить адрес
+												доставки</a>
+										</div>
+										<div class="basket__box">
+											<div class="basket__box-content">
+												<p class="basket__instruction">Хэш транзакции </p>
+												<p class="basket__instruction basket__instruction--check">
+													(F958nBS1kX9iEJ7d2AVzA9WdBiuWnscitvQ3MBcEJMg9)</p>
+											</div>
+
+											<a href="#" class="basket__link basket__link--end">Изменить хэш
+												транзакции</a>
+										</div>
+
+										<p class="form-body-basket__text">Ура! С вами свяжется наш менеджер и т.д.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</form>
 				</div>
 			</section>
 		</main>

@@ -39,7 +39,7 @@
 			</div>
 		</header>
 		<main id="page" class="page">
-			<section class="page__basket basket basket_complete">
+			<section class="page__basket basket basket_payment">
 				<div class="basket__container">
 					<form action="#" class="basket__wrapper">
 						<div class="basket__header">
@@ -54,7 +54,12 @@
 							</div>
 							<div class="basket__header-item">
 								<h2 class="basket__title title">Оформление заказа</h2>
-								<p class="basket__instruction">Введите адрес своей электронной почты. На этот адрес будут отправляться уведомления о статусе заказа.</p>
+								<div class="basket__box">
+									<p class="basket__instruction basket__instruction--check">pochtausera@gmal.com</p>
+									<a href="#" class="basket__link">Изменить адрес почты</a>
+								</div>
+
+
 							</div>
 						</div>
 						<div class="basket__body body-basket">
@@ -99,25 +104,63 @@
 											<p class="order-basket__total-text">Итого</p>
 											<p class="order-basket__total-price"><span>6780</span>₽</p>
 										</div>
-										<a href="#" class="order-basket__link">Что-то забыли? Вернитесь в каталог товаров</a>
 									</div>
+									<div class="basket__box basket__box--none">
+										<p class="basket__instruction basket__instruction--check">pochtausera@gmal.com
+										</p>
+										<a href="#" class="basket__link">Изменить адрес почты</a>
+									</div>
+
 								</div>
+
 								<div class="body-basket__column">
 									<div class="body-basket__form form-body-basket">
+										<div class="basket__box">
+											<div class="basket__box-content">
+												<p class="basket__instruction">Имя Фамилия Отчество</p>
+												<p class="basket__instruction basket__instruction--check">Петровский бульвар 7,
+													1426, Санкт-Петербург +7 912 345 67 89</p>
+											</div>
+
+											<a href="#" class="basket__link basket__link--end">Изменить адрес доставки</a>
+										</div>
+										<h3 class="form-body-basket__subtitle">Оплата</h3>
 										<div class="form-body-basket__body">
-											<label for="email" class="form-body-basket__label">Почта</label>
-											<input id="email" class="form-body-basket__input" type="email" name="form[]" data-error="Ошибка" placeholder="Ваш адрес электронной почты">
+
+											<div class="form-body-basket__box">
+												<label for="pay" class="form-body-basket__label">Выберите способ
+													оплаты:</label>
+												<ul class="form-body-basket__list">
+													<li class="form-body-basket__item">
+														<input type="button" id="pay" name="form[]" data-error="Ошибка" placeholder="USDT (BEP20)" value="USDT (BEP20)" class="form-body-basket__input form-body-basket__input--pay">
+													</li>
+													<li class="form-body-basket__item">
+														<input type="button" id="pay" name="form[]" data-error="Ошибка" placeholder="USDT (TRC20)" value="USDT (TRC20)" class="form-body-basket__input form-body-basket__input--pay">
+													</li>
+												</ul>
+
+
+											</div>
+											<div class="form-body-basket__box">
+												<label for="wallet" class="form-body-basket__label">Адрес кошелька
+													(BEP20) :</label>
+												<input type="text" id="wallet" name="form[]" data-error="Ошибка" placeholder="0x9f9be35c51af4eb1fa6ffd9d44c2506976867edc" class="form-body-basket__input form-body-basket--wallet">
+											</div>
+											<div class="form-body-basket__box">
+												<label for="hash" class="form-body-basket__label">Введите хэш
+													транзакции</label>
+												<input type="text" id="hash" name="form[]" data-error="Ошибка" placeholder="хэш транзакции" class="form-body-basket__input">
+											</div>
+											<div class="form-body-basket__box">
+												<label for="telegram" class="form-body-basket__label">Укажите адресс
+													вашего телеграма или других соц сетей</label>
+												<textarea name="telegram" id="telegram" placeholder="Ваш @telegram" class="form-body-basket__textarea"></textarea>
+											</div>
 										</div>
-										<div class="form-body-basket__checkbox checkbox">
-											<input id="c_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-											<label for="c_1" class="checkbox__label _icon-check">
-												<span class="checkbox__text">
-													Я принимаю условия: Условия доставки и оплаты / Shipping and Payment, Согласие на обработку
-													персональных данных / Consent to the Processing of Personal Data
-												</span>
-											</label>
-										</div>
-										<button type="submit" class="form-body-basket__button">Оформить заказ</button>
+
+										<button type="submit" class="form-body-basket__button">Продолжить</button>
+										<p class="form-body-basket__text">Появились проблемы с оплатой? <br>
+											Можете обратиться к нашему менеджеру : <a href="#" class="form-body-basket__link">@cryptusshop</a></p>
 									</div>
 								</div>
 							</div>

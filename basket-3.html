@@ -39,7 +39,7 @@
 			</div>
 		</header>
 		<main id="page" class="page">
-			<section class="page__basket basket basket_complete">
+			<section class="page__basket basket basket_delivery">
 				<div class="basket__container">
 					<form action="#" class="basket__wrapper">
 						<div class="basket__header">
@@ -54,7 +54,11 @@
 							</div>
 							<div class="basket__header-item">
 								<h2 class="basket__title title">Оформление заказа</h2>
-								<p class="basket__instruction">Введите адрес своей электронной почты. На этот адрес будут отправляться уведомления о статусе заказа.</p>
+								<div class="basket__box">
+									<p class="basket__instruction basket__instruction--check">pochtausera@gmal.com</p>
+									<a href="#" class="basket__link">Изменить адрес почты</a>
+								</div>
+
 							</div>
 						</div>
 						<div class="basket__body body-basket">
@@ -99,25 +103,52 @@
 											<p class="order-basket__total-text">Итого</p>
 											<p class="order-basket__total-price"><span>6780</span>₽</p>
 										</div>
-										<a href="#" class="order-basket__link">Что-то забыли? Вернитесь в каталог товаров</a>
+									</div>
+									<div class="basket__box basket__box--none">
+										<p class="basket__instruction basket__instruction--check">pochtausera@gmal.com
+										</p>
+										<a href="#" class="basket__link">Изменить адрес почты</a>
 									</div>
 								</div>
+
 								<div class="body-basket__column">
 									<div class="body-basket__form form-body-basket">
+										<h3 class="form-body-basket__subtitle">Доставка</h3>
 										<div class="form-body-basket__body">
-											<label for="email" class="form-body-basket__label">Почта</label>
-											<input id="email" class="form-body-basket__input" type="email" name="form[]" data-error="Ошибка" placeholder="Ваш адрес электронной почты">
+
+											<div class="form-body-basket__box">
+												<label for="country" class="form-body-basket__label"></label>
+												<input type="text" id="country" name="form[]" data-error="Ошибка" placeholder="Россия" class="form-body-basket__input">
+											</div>
+											<div class="form-body-basket__box">
+												<label for="name" class="form-body-basket__label"></label>
+												<input type="text" id="name" name="form[]" data-error="Ошибка" placeholder="Имя, Фамилия, Отчество" class="form-body-basket__input">
+											</div>
+											<div class="form-body-basket__box">
+												<label for="tel" class="form-body-basket__label"></label>
+												<input type="tel" id="tel" name="form[]" data-error="Ошибка" placeholder="+7 912 345 67 89" class="form-body-basket__input">
+											</div>
+											<div class="form-body-basket__box">
+												<label for="address" class="form-body-basket__label">Улица,дом,квартира
+													(Укажите свой адрес полностью)</label>
+												<input type="text" id="address" name="form[]" data-error="Ошибка" placeholder="Петровский бульвар 7, 1426" class="form-body-basket__input">
+											</div>
+											<div class="form-body-basket__box">
+												<label for="city" class="form-body-basket__label">Город</label>
+												<input type="text" id="city" name="form[]" data-error="Ошибка" placeholder="Мурино" class="form-body-basket__input">
+											</div>
+											<div class="form-body-basket__box">
+												<label for="city" class="form-body-basket__label">Индекс
+													(необязательно)</label>
+												<input type="text" id="city" name="form[]" data-error="Ошибка" placeholder="188662" class="form-body-basket__input">
+											</div>
+
+
+
+
 										</div>
-										<div class="form-body-basket__checkbox checkbox">
-											<input id="c_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-											<label for="c_1" class="checkbox__label _icon-check">
-												<span class="checkbox__text">
-													Я принимаю условия: Условия доставки и оплаты / Shipping and Payment, Согласие на обработку
-													персональных данных / Consent to the Processing of Personal Data
-												</span>
-											</label>
-										</div>
-										<button type="submit" class="form-body-basket__button">Оформить заказ</button>
+
+										<button type="submit" class="form-body-basket__button">Продолжить</button>
 									</div>
 								</div>
 							</div>
