@@ -6,451 +6,488 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220608141305">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220609135804">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
-	<div class="wrapper">
+	<div class="wrapper wrapper-home">
 		<header class="header">
-			<div class="header__top top-header">
-				<a href="#" class="top-header__logo logo _icon-logo"></a>
-				<div class="top-header__right-block">
-					<a href="#" class="top-header__search _icon-search"></a>
+			<div class="container header__wrapper">
+				<div class="header__block">
+					<a href="home.html" class="header__logo logo">
+						<img src="img/logo.svg" alt="logo" class="logo__img">
+					</a>
+					<button type="button" class="header__burger burger">
+						<div class="burger__inner">
+							<span></span>
+						</div>
+					</button>
 				</div>
 
-			</div>
-			<h1 class="header-main-title">CRYPTUS SHOP - Магазин мерча от команды CRYPTUS</h1>
-			<div class="header__container">
-				<div class="header__menu menu">
-					<!-- <button type="button" class="menu__icon icon-menu"><span></span></button> -->
-					<nav class="menu__body">
-						<ul class="menu__list">
-							<li class="menu__item"><a href="#" class="menu__link"><span class="menu__text">ГЛАВНАЯ</span></a></li>
-							<li class="menu__item"><a href="#" class="menu__link"><span class="menu__text">КАТАЛОГ</span></a></li>
-							<li class="menu__item"><a href="#" data-goto="#information" class="menu__link"><span class="menu__text">ДОСТАВКА И ОПЛАТА</span> </a></li>
-							<li class="menu__item"><a href="#" data-goto="#contacts" class="menu__link"><span class="menu__text">КОНТАКТЫ</span></a></li>
-							<li class="menu__item"><a href="#" data-da=".top-header__right-block,767,98" class="menu__link link-basket"><span class="link-basket__text">КОРЗИНА</span><span class="link-basket__basket _icon-cart"><span>1</span></span></a></li>
+				<div class="header__inner">
+					<nav class="header__nav nav nav--top">
+						<ul class="nav__list">
+							<li class="nav__item nav__item--map">
+								<a href="https://goo.gl/maps/GgVJZ6m5fuVRE7P77" class="nav__link">г. Красноярск, ул. Академика Киренского 25а</a>
+							</li>
+							<li class="nav__item nav__item--work">Пн-пт 10:00-18:00</li>
+							<li class="nav__item nav__item--mail">
+								<a href="mailto:info@vitaplus.ru" class="nav__link">info@vitaplus.ru</a>
+							</li>
+							<li class="nav__item nav__item--tel">
+								<a href="tel:+79999999999" class="nav__link">+7 (999) 999-99-99</a>
+							</li>
 						</ul>
 					</nav>
+					<nav class="header__nav nav nav--bottom">
+						<ul class="nav__list">
+							<li class="nav__item nav__item--services">
+								<a href="" class="nav__link">Услуги</a>
+							</li>
+							<li class="nav__item">
+								<a href="doctors.html" class="nav__link">Врачи</a>
+							</li>
+							<li class="nav__item">
+								<a href="reviews.html" class="nav__link">Отзывы</a>
+							</li>
+							<li class="nav__item">
+								<a href="" class="nav__link">Контакты</a>
+							</li>
+						</ul>
+						<a href="#" class="nav__tel">Заказать звонок</a>
+					</nav>
 				</div>
+
 			</div>
 		</header>
-		<main id="page" class="page">
-			<div class="page__promo promo">
-				<picture><source srcset="img/contact.webp" type="image/webp"><img src="img/contact.jpg" alt="Promo"></picture>
-			</div>
-			<section class="page__catalog catalog">
-				<div class="catalog__container">
-					<h2 class="catalog__title title">Каталог</h2>
-					<div class="catalog__body">
-						<article class="catalog__item item-catalog" data-tabs>
-							<div class="item-catalog__tabs" data-tabs-body>
-								<a href="#" class="item-catalog__card card-catalog">
-									<div class="card-catalog__image">
-										<picture><source srcset="img/catalog/1.webp" type="image/webp"><img src="img/catalog/1.jpg" alt="Name"></picture>
-									</div>
-									<div class="card-catalog__information">
-										<h3 class="card-catalog__title title">Футболка “HODL”</h3>
-										<p class="card-catalog__category">limited edition</p>
-										<div class="card-catalog__price"><span>4490</span>₽</div>
-									</div>
-								</a>
-								<a href="#" class="item-catalog__card card-catalog">
-									<div class="card-catalog__image">
-										<picture><source srcset="img/catalog/2.webp" type="image/webp"><img src="img/catalog/2.jpg" alt="Name"></picture>
-									</div>
-									<div class="card-catalog__information">
-										<h3 class="card-catalog__title title">Футболка “HODL”</h3>
-										<p class="card-catalog__category">limited edition</p>
-										<div class="card-catalog__price"><span>4490</span>₽</div>
-									</div>
+		<main class="page">
+			<section class="hero" id="hero">
 
-								</a>
-							</div>
-							<div class="item-catalog__colors" data-tabs-titles>
-								<div class="item-catalog__color item-catalog__color_white _tab-active"></div>
-								<div class="item-catalog__color item-catalog__color_black"></div>
-							</div>
-						</article>
-						<article class="catalog__item item-catalog" data-tabs>
-							<div class="item-catalog__tabs" data-tabs-body>
-								<a href="#" class="item-catalog__card card-catalog">
-									<div class="card-catalog__image">
-										<picture><source srcset="img/catalog/2.webp" type="image/webp"><img src="img/catalog/2.jpg" alt="Name"></picture>
-									</div>
-									<div class="card-catalog__information">
-										<h3 class="card-catalog__title title">Футболка “Elon Mask”</h3>
-										<p class="card-catalog__category">limited edition</p>
-										<div class="card-catalog__price"><span>5490</span>₽</div>
-									</div>
-								</a>
-								<a href="#" class="item-catalog__card card-catalog">
-									<div class="card-catalog__image">
-										<picture><source srcset="img/catalog/1.webp" type="image/webp"><img src="img/catalog/1.jpg" alt="Name"></picture>
-									</div>
-									<div class="card-catalog__information">
-										<h3 class="card-catalog__title title">Футболка “Elon Mask”</h3>
-										<p class="card-catalog__category">limited edition</p>
-										<div class="card-catalog__price"><span>5490</span>₽</div>
-									</div>
+				<div class="container">
 
-								</a>
-							</div>
-							<div class="item-catalog__colors" data-tabs-titles>
-								<div class="item-catalog__color item-catalog__color_white _tab-active"></div>
-								<div class="item-catalog__color item-catalog__color_black"></div>
-							</div>
-						</article>
-						<article class="catalog__item item-catalog" data-tabs>
-							<div class="item-catalog__tabs" data-tabs-body>
-								<a href="#" class="item-catalog__card card-catalog">
-									<div class="card-catalog__image">
-										<picture><source srcset="img/catalog/3.webp" type="image/webp"><img src="img/catalog/3.jpg" alt="Name"></picture>
-									</div>
-									<div class="card-catalog__information">
-										<h3 class="card-catalog__title title">Футболка “CRYPTUS”</h3>
-										<p class="card-catalog__category">limited edition</p>
-										<div class="card-catalog__price"><span>3490</span>₽</div>
-									</div>
-								</a>
-								<a href="#" class="item-catalog__card card-catalog">
-									<div class="card-catalog__image">
-										<picture><source srcset="img/catalog/4.webp" type="image/webp"><img src="img/catalog/4.jpg" alt="Name"></picture>
-									</div>
-									<div class="card-catalog__information">
-										<h3 class="card-catalog__title title">Футболка “CRYPTUS”</h3>
-										<p class="card-catalog__category">limited edition</p>
-										<div class="card-catalog__price"><span>3490</span>₽</div>
-									</div>
-								</a>
-							</div>
-							<div class="item-catalog__colors" data-tabs-titles>
-								<div class="item-catalog__color item-catalog__color_white _tab-active"></div>
-								<div class="item-catalog__color item-catalog__color_black"></div>
-							</div>
-						</article>
-						<article class="catalog__item item-catalog" data-tabs>
-							<div class="item-catalog__tabs" data-tabs-body>
-								<a href="#" class="item-catalog__card card-catalog">
-									<div class="card-catalog__image">
-										<picture><source srcset="img/catalog/4.webp" type="image/webp"><img src="img/catalog/4.jpg" alt="Name"></picture>
-									</div>
-									<div class="card-catalog__information">
-										<h3 class="card-catalog__title title">Футболка “BIG BROTHER”</h3>
-										<p class="card-catalog__category">limited edition</p>
-										<div class="card-catalog__price"><span>5490</span>₽</div>
-									</div>
-								</a>
-								<a href="#" class="item-catalog__card card-catalog">
-									<div class="card-catalog__image">
-										<picture><source srcset="img/catalog/3.webp" type="image/webp"><img src="img/catalog/3.jpg" alt="Name"></picture>
-									</div>
-									<div class="card-catalog__information">
-										<h3 class="card-catalog__title title">Футболка “BIG BROTHER”</h3>
-										<p class="card-catalog__category">limited edition</p>
-										<div class="card-catalog__price"><span>5490</span>₽</div>
-									</div>
 
-								</a>
-							</div>
-							<div class="item-catalog__colors" data-tabs-titles>
-								<div class="item-catalog__color item-catalog__color_white _tab-active"></div>
-								<div class="item-catalog__color item-catalog__color_black"></div>
-							</div>
-						</article>
-						<article class="catalog__item item-catalog" data-tabs>
-							<div class="item-catalog__tabs" data-tabs-body>
-								<a href="#" class="item-catalog__card card-catalog">
-									<div class="card-catalog__image">
-										<picture><source srcset="img/catalog/2.webp" type="image/webp"><img src="img/catalog/2.jpg" alt="Name"></picture>
-									</div>
-									<div class="card-catalog__information">
-										<h3 class="card-catalog__title title">Футболка “Elon Mask”</h3>
-										<p class="card-catalog__category">limited edition</p>
-										<div class="card-catalog__price"><span>5490</span>₽</div>
-									</div>
-								</a>
-								<a href="#" class="item-catalog__card card-catalog">
-									<div class="card-catalog__image">
-										<picture><source srcset="img/catalog/1.webp" type="image/webp"><img src="img/catalog/1.jpg" alt="Name"></picture>
-									</div>
-									<div class="card-catalog__information">
-										<h3 class="card-catalog__title title">Футболка “Elon Mask”</h3>
-										<p class="card-catalog__category">limited edition</p>
-										<div class="card-catalog__price"><span>5490</span>₽</div>
-									</div>
+					<div class="hero__wrapper">
 
-								</a>
-							</div>
-							<div class="item-catalog__colors" data-tabs-titles>
-								<div class="item-catalog__color item-catalog__color_white _tab-active"></div>
-								<div class="item-catalog__color item-catalog__color_black"></div>
-							</div>
-						</article>
-						<article class="catalog__item item-catalog" data-tabs>
-							<div class="item-catalog__tabs" data-tabs-body>
-								<a href="#" class="item-catalog__card card-catalog">
-									<div class="card-catalog__image">
-										<picture><source srcset="img/catalog/1.webp" type="image/webp"><img src="img/catalog/1.jpg" alt="Name"></picture>
-									</div>
-									<div class="card-catalog__information">
-										<h3 class="card-catalog__title title">Футболка “HODL”</h3>
-										<p class="card-catalog__category">limited edition</p>
-										<div class="card-catalog__price"><span>4490</span>₽</div>
-									</div>
-								</a>
-								<a href="#" class="item-catalog__card card-catalog">
-									<div class="card-catalog__image">
-										<picture><source srcset="img/catalog/2.webp" type="image/webp"><img src="img/catalog/2.jpg" alt="Name"></picture>
-									</div>
-									<div class="card-catalog__information">
-										<h3 class="card-catalog__title title">Футболка “HODL”</h3>
-										<p class="card-catalog__category">limited edition</p>
-										<div class="card-catalog__price"><span>4490</span>₽</div>
-									</div>
-
-								</a>
-							</div>
-							<div class="item-catalog__colors" data-tabs-titles>
-								<div class="item-catalog__color item-catalog__color_white _tab-active"></div>
-								<div class="item-catalog__color item-catalog__color_black"></div>
-							</div>
-						</article>
-						<article class="catalog__item item-catalog" data-tabs>
-							<div class="item-catalog__tabs" data-tabs-body>
-								<a href="#" class="item-catalog__card card-catalog">
-									<div class="card-catalog__image">
-										<picture><source srcset="img/catalog/4.webp" type="image/webp"><img src="img/catalog/4.jpg" alt="Name"></picture>
-									</div>
-									<div class="card-catalog__information">
-										<h3 class="card-catalog__title title">Футболка “BIG BROTHER”</h3>
-										<p class="card-catalog__category">limited edition</p>
-										<div class="card-catalog__price"><span>5490</span>₽</div>
-									</div>
-								</a>
-								<a href="#" class="item-catalog__card card-catalog">
-									<div class="card-catalog__image">
-										<picture><source srcset="img/catalog/3.webp" type="image/webp"><img src="img/catalog/3.jpg" alt="Name"></picture>
-									</div>
-									<div class="card-catalog__information">
-										<h3 class="card-catalog__title title">Футболка “BIG BROTHER”</h3>
-										<p class="card-catalog__category">limited edition</p>
-										<div class="card-catalog__price"><span>5490</span>₽</div>
-									</div>
-
-								</a>
-							</div>
-							<div class="item-catalog__colors" data-tabs-titles>
-								<div class="item-catalog__color item-catalog__color_white _tab-active"></div>
-								<div class="item-catalog__color item-catalog__color_black"></div>
-							</div>
-						</article>
-						<article class="catalog__item item-catalog" data-tabs>
-							<div class="item-catalog__tabs" data-tabs-body>
-								<a href="#" class="item-catalog__card card-catalog">
-									<div class="card-catalog__image">
-										<picture><source srcset="img/catalog/3.webp" type="image/webp"><img src="img/catalog/3.jpg" alt="Name"></picture>
-									</div>
-									<div class="card-catalog__information">
-										<h3 class="card-catalog__title title">Футболка “CRYPTUS”</h3>
-										<p class="card-catalog__category">limited edition</p>
-										<div class="card-catalog__price"><span>3490</span>₽</div>
-									</div>
-								</a>
-								<a href="#" class="item-catalog__card card-catalog">
-									<div class="card-catalog__image">
-										<picture><source srcset="img/catalog/4.webp" type="image/webp"><img src="img/catalog/4.jpg" alt="Name"></picture>
-									</div>
-									<div class="card-catalog__information">
-										<h3 class="card-catalog__title title">Футболка “CRYPTUS”</h3>
-										<p class="card-catalog__category">limited edition</p>
-										<div class="card-catalog__price"><span>3490</span>₽</div>
-									</div>
-
-								</a>
-							</div>
-							<div class="item-catalog__colors" data-tabs-titles>
-								<div class="item-catalog__color item-catalog__color_white _tab-active"></div>
-								<div class="item-catalog__color item-catalog__color_black"></div>
-							</div>
-						</article>
-					</div>
-				</div>
-			</section>
-			<section id="contacts" class="page__contact contact">
-				<div class="contact__container">
-					<h2 class="contact__title title">Контакты</h2>
-					<div class="contact__body">
-						<div class="contact__body-item">
-							<div class="contact__image-ibg">
-								<picture><source srcset="img/contact.webp" type="image/webp"><img src="img/contact.jpg" alt="contact"></picture>
+						<div class="hero__content">
+							<h1 class="hero__title title">Сеть стоматологических клиник <span class="title--color">в
+									Красноярске</span></h1>
+							<p class="hero__text text">Итоговые планы лечения<br> пациентов в нашей клинике<br> получаются ниже
+								средних цен на рынке стоматологических услуг Красноярска</p>
+							<div class="hero__buttons">
+								<a class="hero__btn btn btn-primary" data-popup="#callback" href="#callback" role="button">Оставить заявку</a>
+								<a class="hero__btn btn btn-secondary" href="#" role="button">Узнать подробнее</a>
 							</div>
 						</div>
-						<div class="contact__body-item">
-							<div class="contact__content content-contact">
-								<h3 class="content-contact__title title">CRYPTUS SHOP</h3>
-								<p class="content-contact__subtitle">Магазин мерча от команды CRYPTUS</p>
-								<div class="content-contact__item item-content-contact">
-									<div class="item-content-contact__title">Вопросы о заказах и товарах:</div>
-									<a href="mailto:shop@cryptus.media" class="item-content-contact__link">shop@cryptus.media</a>
-								</div>
-								<div class="content-contact__item item-content-contact">
-									<div class="item-content-contact__title">Наш телеграм-магазин:</div>
-									<a href="t.me/cryptusshop" class="item-content-contact__link">t.me/cryptusshop</a>
-								</div>
-								<div class="content-contact__item item-content-contact">
-									<a href="" class="item-content-contact__link">Youtube</a> /
-									<a href="" class="item-content-contact__link">Instagram</a> /
-									<a href="" class="item-content-contact__link">Telegram</a>
-								</div>
-							</div>
+						<div class="hero__block-img">
+							<picture><source srcset="img/hero-img.webp" type="image/webp"><img src="img/hero-img.png" alt="hero" class="hero__img"></picture>
 						</div>
 					</div>
 				</div>
 			</section>
-			<section id="information" class="page__information information">
-				<div class="information__container">
-					<div class="information__wrapper">
-						<h2 class="information__title title">Доставка и оплата</h2>
-						<div class="information__main" data-spollers>
-							<div class="information__item item-information">
-								<h4 class="item-information__title title _icon-plus" data-spoller>Оплата</h4>
-								<div class="item-information__content">
-									<ul>
-										<li>- Мы работаем по 100% предоплате.</li>
-										<li>- Оплата только с банковской карты или переводом на Яндекс.Деньги</li>
-										<li>- Отправка товара только после полной оплаты заказа</li>
-									</ul>
+			<section class="services" id="services">
+				<div class="container">
+					<h2 class="services__title title">Услуги и цены</h2>
+					<div class="services__wrapper">
+						<div class="services__top">
+							<p class="services__subtitle subtitle">Услуги</p>
+							<p class="services__subtitle subtitle">Наша цена</p>
+							<p class="services__subtitle subtitle">Средняя в Красноярске</p>
+						</div>
+						<div class="services__spollers-box">
+							<div class="services__spollers spollers" data-spollers>
+								<div class="spollers__item">
+									<h4 class="spollers__title _icon-plus" data-spoller>Лечение зубов</h4>
+									<div class="spollers__body">
+										<div class="spollers__grid">
+											<div class="spollers__box">
+												<span class="spollers__text text text--decoration">Лечение кариеса</span>
+												<span class="spollers__text text text--decoration">Лечение пульпита</span>
+												<span class="spollers__text text text--decoration">Лечение кисты</span>
+											</div>
+											<div class="spollers__box">
+												<span class="spollers__text text">4 440 ₽</span>
+												<span class="spollers__text text">8 850 ₽</span>
+												<span class="spollers__text text">4 450 ₽</span>
+											</div>
+											<div class="spollers__box">
+												<span class="spollers__text text">5 900 ₽</span>
+												<span class="spollers__text text">11 300 ₽</span>
+												<span class="spollers__text text">6 400 ₽</span>
+											</div>
+										</div>
+									</div>
 								</div>
-							</div>
-							<div class="information__item item-information">
-								<h4 class="item-information__title title _icon-plus" data-spoller>Доставка</h4>
-								<div class="item-information__content">
-									<p>
-										Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam eos ab, iste dolorum ex consequatur eius, eveniet aut ad accusantium commodi in, placeat natus cumque animi laborum fugit similique saepe!
-										Voluptate, quod ea rerum voluptatem culpa ipsum consequatur sequi ducimus magnam adipisci, sunt deserunt repudiandae beatae dicta, inventore incidunt laudantium molestias. Fugiat molestiae perferendis veniam ipsa, porro doloremque excepturi ratione?
-									</p>
+								<div class="spollers__item">
+									<h4 class="spollers__title _icon-plus" data-spoller>Диагностика</h4>
+									<div class="spollers__body">
+										<div class="spollers__grid">
+											<div class="spollers__box">
+												<span class="spollers__text text text--decoration">Лечение кариеса</span>
+												<span class="spollers__text text text--decoration">Лечение пульпита</span>
+												<span class="spollers__text text text--decoration">Лечение кисты</span>
+											</div>
+											<div class="spollers__box">
+												<span class="spollers__text text">4 440 ₽</span>
+												<span class="spollers__text text">8 850 ₽</span>
+												<span class="spollers__text text">4 450 ₽</span>
+											</div>
+											<div class="spollers__box">
+												<span class="spollers__text text">5 900 ₽</span>
+												<span class="spollers__text text">11 300 ₽</span>
+												<span class="spollers__text text">6 400 ₽</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="spollers__item">
+									<h4 class="spollers__title _icon-plus" data-spoller>Профессиональная гигиена</h4>
+									<div class="spollers__body">
+										<div class="spollers__grid">
+											<div class="spollers__box">
+												<span class="spollers__text text text--decoration">Лечение кариеса</span>
+												<span class="spollers__text text text--decoration">Лечение пульпита</span>
+												<span class="spollers__text text text--decoration">Лечение кисты</span>
+											</div>
+											<div class="spollers__box">
+												<span class="spollers__text text">4 440 ₽</span>
+												<span class="spollers__text text">8 850 ₽</span>
+												<span class="spollers__text text">4 450 ₽</span>
+											</div>
+											<div class="spollers__box">
+												<span class="spollers__text text">5 900 ₽</span>
+												<span class="spollers__text text">11 300 ₽</span>
+												<span class="spollers__text text">6 400 ₽</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="spollers__item">
+									<h4 class="spollers__title _icon-plus" data-spoller>Отбеливание зубов</h4>
+									<div class="spollers__body">
+										<div class="spollers__grid">
+											<div class="spollers__box">
+												<span class="spollers__text text text--decoration">Лечение кариеса</span>
+												<span class="spollers__text text text--decoration">Лечение пульпита</span>
+												<span class="spollers__text text text--decoration">Лечение кисты</span>
+											</div>
+											<div class="spollers__box">
+												<span class="spollers__text text">4 440 ₽</span>
+												<span class="spollers__text text">8 850 ₽</span>
+												<span class="spollers__text text">4 450 ₽</span>
+											</div>
+											<div class="spollers__box">
+												<span class="spollers__text text">5 900 ₽</span>
+												<span class="spollers__text text">11 300 ₽</span>
+												<span class="spollers__text text">6 400 ₽</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="spollers__item">
+									<h4 class="spollers__title _icon-plus" data-spoller>Брекеты</h4>
+									<div class="spollers__body">
+										<div class="spollers__grid">
+											<div class="spollers__box">
+												<span class="spollers__text text text--decoration">Лечение кариеса</span>
+												<span class="spollers__text text text--decoration">Лечение пульпита</span>
+												<span class="spollers__text text text--decoration">Лечение кисты</span>
+											</div>
+											<div class="spollers__box">
+												<span class="spollers__text text">4 440 ₽</span>
+												<span class="spollers__text text">8 850 ₽</span>
+												<span class="spollers__text text">4 450 ₽</span>
+											</div>
+											<div class="spollers__box">
+												<span class="spollers__text text">5 900 ₽</span>
+												<span class="spollers__text text">11 300 ₽</span>
+												<span class="spollers__text text">6 400 ₽</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="spollers__item">
+									<h4 class="spollers__title _icon-plus" data-spoller>Элайнеры</h4>
+									<div class="spollers__body">
+										<div class="spollers__grid">
+											<div class="spollers__box">
+												<span class="spollers__text text text--decoration">Лечение кариеса</span>
+												<span class="spollers__text text text--decoration">Лечение пульпита</span>
+												<span class="spollers__text text text--decoration">Лечение кисты</span>
+											</div>
+											<div class="spollers__box">
+												<span class="spollers__text text">4 440 ₽</span>
+												<span class="spollers__text text">8 850 ₽</span>
+												<span class="spollers__text text">4 450 ₽</span>
+											</div>
+											<div class="spollers__box">
+												<span class="spollers__text text">5 900 ₽</span>
+												<span class="spollers__text text">11 300 ₽</span>
+												<span class="spollers__text text">6 400 ₽</span>
+											</div>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
-						<h3 class="information__title information__title_question title">Ответы на часто задаваемые вопросы</h3>
-						<div class="information__questions" data-spollers>
-							<div class="information__item item-information">
-								<h4 class="item-information__title title _icon-plus" data-spoller>Отменить заказ?</h4>
-								<div class="item-information__content">
-									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, animi optio laborum saepe expedita adipisci! Illo, accusantium nihil recusandae maxime maiores vel doloribus, quo quaerat possimus enim eos deleniti assumenda!
-										Assumenda similique ut quasi, libero incidunt ex, porro a expedita cupiditate odio, dolores suscipit hic culpa commodi ea tempore aliquam ipsum amet at accusamus deserunt tenetur. Labore eius praesentium optio!
-									</p>
-								</div>
+					</div>
+
+
+					<a class="services__btn btn btn-secondary" href="#" role="button">Все услуги</a>
+
+				</div>
+			</section>
+			<section class="about" id="about">
+				<div class="container">
+					<div class="about__wrapper">
+						<div class="about__content">
+							<picture><source srcset="img/doctor-about.webp" type="image/webp"><img class="about__img" src="img/doctor-about.png" alt="doctor"></picture>
+							<span class="about__subtitle subtitle">О нас</span>
+							<h2 class="about__title title">Стоматологический центр Vita+ <span class="title--color">на 32% доступнее </span>других стоматологий Красноярска</h2>
+							<p class="about__text text">В клиниках «Vita+» используется система работы «в четыре руки», т.е. один врач плюс один ассистент около кресла с пациентом. Использование ассистента в данном случае не только способствует увеличению производительности труда врача, но и существенно повышает качество проводимого лечения.</p>
+							<a class="about__btn btn btn-primary" href="#" role="button">Подробнее</a>
+						</div>
+						<div class="about__wrap">
+							<div class="about__box">
+								<h3 class="about__achievement title title--color">20+</h3>
+								<p class="about__achievement-text text">Лет на рынке</p>
 							</div>
-							<div class="information__item item-information">
-								<h4 class="item-information__title title _icon-plus" data-spoller>Изменить заказ?</h4>
-								<div class="item-information__content">
-									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, animi optio laborum saepe expedita adipisci! Illo, accusantium nihil recusandae maxime maiores vel doloribus, quo quaerat possimus enim eos deleniti assumenda!
-										Assumenda similique ut quasi, libero incidunt ex, porro a expedita cupiditate odio, dolores suscipit hic culpa commodi ea tempore aliquam ipsum amet at accusamus deserunt tenetur. Labore eius praesentium optio!
-									</p>
-								</div>
+							<div class="about__box">
+								<h2 class="about__achievement title title--color">1500+</h2>
+								<p class="about__achievement-text text">Здоровых пациентов</p>
 							</div>
-							<div class="information__item item-information">
-								<h4 class="item-information__title title _icon-plus" data-spoller>Где мой заказ?</h4>
-								<div class="item-information__content">
-									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, animi optio laborum saepe expedita adipisci! Illo, accusantium nihil recusandae maxime maiores vel doloribus, quo quaerat possimus enim eos deleniti assumenda!
-										Assumenda similique ut quasi, libero incidunt ex, porro a expedita cupiditate odio, dolores suscipit hic culpa commodi ea tempore aliquam ipsum amet at accusamus deserunt tenetur. Labore eius praesentium optio!
-									</p>
-								</div>
+							<div class="about__box">
+								<h2 class="about__achievement title title--color">23</h2>
+								<p class="about__achievement-text text">Врача-профессионала</p>
 							</div>
-							<div class="information__item item-information">
-								<h4 class="item-information__title title _icon-plus" data-spoller>Почему так долго не обрабатывают мой заказ?</h4>
-								<div class="item-information__content">
-									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, animi optio laborum saepe expedita adipisci! Illo, accusantium nihil recusandae maxime maiores vel doloribus, quo quaerat possimus enim eos deleniti assumenda!
-										Assumenda similique ut quasi, libero incidunt ex, porro a expedita cupiditate odio, dolores suscipit hic culpa commodi ea tempore aliquam ipsum amet at accusamus deserunt tenetur. Labore eius praesentium optio!
-									</p>
+						</div>
+					</div>
+
+				</div>
+			</section>
+			<section class="consultations" id="consultations">
+				<div class="container">
+					<div class="consultations__content consultations__content--color">
+						<h2 class="consultations__title title">Консультация, снимок и план лечения <span class="title--color">бесплатно</span></h2>
+						<p class="consultations__text text">Укажите свой номер телефона, мы перезвоним и подберём для вас удобное время приёма. Или позвоните нам сами — <a href="tel:+74999555067" class="consultations__link">+7 499955-50-67</a></p>
+						<div class="consultations__buttons">
+							<a class="consultations__btn btn consultations__btn-primary btn-primary" href="#" role="button">Телефон</a>
+							<a class="consultations__btn btn consultations__btn-secondary btn-secondary" href="#" role="button">Оставить заявку</a>
+						</div>
+						<picture><source srcset="img/consultations.webp" type="image/webp"><img class="consultations__img" src="img/consultations.png" alt=""></picture>
+					</div>
+				</div>
+			</section>
+			<section class="doctors" id="doctors">
+				<div class="container">
+					<div class="doctors__wrapper">
+						<h2 class="doctors__title title">Наши врачи</h2>
+						<!-- Slider main container -->
+						<div class="swiper doctorsSwiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="swiper__item">
+										<div class="swiper__box-img">
+											<picture><source srcset="img/doctor.webp" type="image/webp"><img class="swiper__img" src="img/doctor.png" alt="doctor"></picture>
+										</div>
+										<div class="swiper__box">
+											<h3 class="swiper__subtitle subtitle">Константинопольский Константин Владимирович</h3>
+											<p class="swiper__text text">врач-стоматолог, хирург</p>
+											<button class="swiper__btn btn btn-primary">Подробнее</button>
+										</div>
+									</div>
 								</div>
-							</div>
-							<div class="information__item item-information">
-								<h4 class="item-information__title title _icon-plus" data-spoller>Мне не пришел трек номер. Что делать?</h4>
-								<div class="item-information__content">
-									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, animi optio laborum saepe expedita adipisci! Illo, accusantium nihil recusandae maxime maiores vel doloribus, quo quaerat possimus enim eos deleniti assumenda!
-										Assumenda similique ut quasi, libero incidunt ex, porro a expedita cupiditate odio, dolores suscipit hic culpa commodi ea tempore aliquam ipsum amet at accusamus deserunt tenetur. Labore eius praesentium optio!
-									</p>
+								<div class="swiper-slide">
+									<div class="swiper__item">
+										<div class="swiper__box-img">
+											<picture><source srcset="img/doctor.webp" type="image/webp"><img class="swiper__img" src="img/doctor.png" alt="doctor"></picture>
+										</div>
+										<div class="swiper__box">
+											<h3 class="swiper__subtitle subtitle">Константинопольский Константин Владимирович</h3>
+											<p class="swiper__text text">врач-стоматолог, хирург</p>
+											<button class="swiper__btn btn btn-primary">Подробнее</button>
+										</div>
+									</div>
 								</div>
-							</div>
-							<div class="information__item item-information">
-								<h4 class="item-information__title title _icon-plus" data-spoller>Могу ли я вернуть вещь, если она не подошла мне?</h4>
-								<div class="item-information__content">
-									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, animi optio laborum saepe expedita adipisci! Illo, accusantium nihil recusandae maxime maiores vel doloribus, quo quaerat possimus enim eos deleniti assumenda!
-										Assumenda similique ut quasi, libero incidunt ex, porro a expedita cupiditate odio, dolores suscipit hic culpa commodi ea tempore aliquam ipsum amet at accusamus deserunt tenetur. Labore eius praesentium optio!
-									</p>
+								<div class="swiper-slide">
+									<div class="swiper__item">
+										<div class="swiper__box-img">
+											<picture><source srcset="img/doctor.webp" type="image/webp"><img class="swiper__img" src="img/doctor.png" alt="doctor"></picture>
+										</div>
+										<div class="swiper__box">
+											<h3 class="swiper__subtitle subtitle">Константинопольский Константин Владимирович</h3>
+											<p class="swiper__text text">врач-стоматолог, хирург</p>
+											<button class="swiper__btn btn btn-primary">Подробнее</button>
+										</div>
+									</div>
 								</div>
-							</div>
-							<div class="information__item item-information">
-								<h4 class="item-information__title title _icon-plus" data-spoller>Как выбрать размер?</h4>
-								<div class="item-information__content">
-									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, animi optio laborum saepe expedita adipisci! Illo, accusantium nihil recusandae maxime maiores vel doloribus, quo quaerat possimus enim eos deleniti assumenda!
-										Assumenda similique ut quasi, libero incidunt ex, porro a expedita cupiditate odio, dolores suscipit hic culpa commodi ea tempore aliquam ipsum amet at accusamus deserunt tenetur. Labore eius praesentium optio!
-									</p>
+								<div class="swiper-slide">
+									<div class="swiper__item">
+										<div class="swiper__box-img">
+											<picture><source srcset="img/doctor.webp" type="image/webp"><img class="swiper__img" src="img/doctor.png" alt="doctor"></picture>
+										</div>
+										<div class="swiper__box">
+											<h3 class="swiper__subtitle subtitle">Константинопольский Константин Владимирович</h3>
+											<p class="swiper__text text">врач-стоматолог, хирург</p>
+											<button class="swiper__btn btn btn-primary">Подробнее</button>
+										</div>
+									</div>
 								</div>
-							</div>
-							<div class="information__item item-information">
-								<h4 class="item-information__title title _icon-plus" data-spoller>Как ухаживать за одеждой?</h4>
-								<div class="item-information__content">
-									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, animi optio laborum saepe expedita adipisci! Illo, accusantium nihil recusandae maxime maiores vel doloribus, quo quaerat possimus enim eos deleniti assumenda!
-										Assumenda similique ut quasi, libero incidunt ex, porro a expedita cupiditate odio, dolores suscipit hic culpa commodi ea tempore aliquam ipsum amet at accusamus deserunt tenetur. Labore eius praesentium optio!
-									</p>
+								<div class="swiper-slide">
+									<div class="swiper__item">
+										<div class="swiper__box-img">
+											<picture><source srcset="img/doctor.webp" type="image/webp"><img class="swiper__img" src="img/doctor.png" alt="doctor"></picture>
+										</div>
+										<div class="swiper__box">
+											<h3 class="swiper__subtitle subtitle">Константинопольский Константин Владимирович</h3>
+											<p class="swiper__text text">врач-стоматолог, хирург</p>
+											<button class="swiper__btn btn btn-primary">Подробнее</button>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="swiper__item">
+										<div class="swiper__box-img">
+											<picture><source srcset="img/doctor.webp" type="image/webp"><img class="swiper__img" src="img/doctor.png" alt="doctor"></picture>
+										</div>
+										<div class="swiper__box">
+											<h3 class="swiper__subtitle subtitle">Константинопольский Константин Владимирович</h3>
+											<p class="swiper__text text">врач-стоматолог, хирург</p>
+											<button class="swiper__btn btn btn-primary">Подробнее</button>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="swiper__item">
+										<div class="swiper__box-img">
+											<picture><source srcset="img/doctor.webp" type="image/webp"><img class="swiper__img" src="img/doctor.png" alt="doctor"></picture>
+										</div>
+										<div class="swiper__box">
+											<h3 class="swiper__subtitle subtitle">Константинопольский Константин Владимирович</h3>
+											<p class="swiper__text text">врач-стоматолог, хирург</p>
+											<button class="swiper__btn btn btn-primary">Подробнее</button>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
+						<div class="doctors__buttons">
+							<div class="swiper-button-next"></div>
+							<div class="swiper-button-prev"></div>
+						</div>
+						<a class="doctors__btn btn btn-secondary" href="#" role="button">Показать всех</a>
 					</div>
 				</div>
 			</section>
 		</main>
-		<a href="#" data-goto="#page" class="go-top _icon-arrow"></a>
+
 		<footer class="footer">
-			<div class="footer__container">
-				<div class="footer__body">
-					<div class="footer__main main-footer">
-						<a href="#" class="main-footer__logo logo _icon-logo"></a>
-						<div class="main-footer__socials">
-							<a href="#" class="main-footer__social _icon-youtube"></a>
-							<a href="#" class="main-footer__social _icon-instagram"></a>
-							<a href="#" class="main-footer__social _icon-telegram"></a>
-						</div>
-						<p class="main-footer__copy">© 2022 CRYPTUS</p>
+			<div class="footer__wrapper">
+				<a href="home.html" class="footer__logo logo">
+					<img src="img/logo.svg" alt="logo" class="logo__img">
+				</a>
+				<nav class="footer__nav nav">
+					<ul class="nav__list">
+						<li class="nav__item nav__item--map">
+							<a href="https://goo.gl/maps/GgVJZ6m5fuVRE7P77" class="nav__link">г. Красноярск, ул.Академика
+								Киренского 25а</a>
+						</li>
+						<li class="nav__item nav__item--work">Пн-пт 10:00-18:00</li>
+						<li class="nav__item nav__item--mail">
+							<a href="mailto:info@vitaplus.ru" class="nav__link">info@vitaplus.ru</a>
+						</li>
+						<li class="nav__item nav__item--tel">
+							<a href="tel:+79999999999" class="nav__link">+7 (999) 999-99-99</a>
+						</li>
+					</ul>
+				</nav>
+				<nav class="footer__nav nav nav--services">
+					<ul class="nav__list nav__list-grid">
+						<li class="nav__item">
+							<a href="#" class="nav__link">Услуги</a>
+						</li>
+						<li class="nav__item">
+							<a href="reviews.html" class="nav__link">Отзывы</a>
+						</li>
+						<li class="nav__item">
+							<a href="doctors.html" class="nav__link">Врачи</a>
+						</li>
+						<li class="nav__item">
+							<a href="#" class="nav__link">Контакты</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="footer__inner">
+					<a class="footer__btn btn btn-primary" data-popup="#callback" href="#callback">Оставить заявку</a>
+					<ul class="footer__social social">
+						<li class="social__item">
+							<a href="#" class="social__link">
+								<img src="img/VK-icon.svg" alt="vk" class="social__img">
+							</a>
+						</li>
+						<li class="social__item">
+							<a href="#" class="social__link">
+								<img src="img/inst-icon.svg" alt="instagram" class="social__img">
+							</a>
+						</li>
+						<li class="social__item">
+							<a href="#" class="social__link">
+								<img src="img/facebook-icon.svg" alt="facebook" class="social__img">
+							</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="footer__bottom">
+					<div class="footer__wrap">
+						<span class="footer__text text">Vita+ 2022</span>
+						<span class="footer__text text">Все права защищены.</span>
 					</div>
-					<div class="footer__info info-footer">
-						<h4 class="info-footer__title footer-title">ИНФОРМАЦИЯ</h4>
-						<ul class="info-footer__list">
-							<li><a href="#" class="info-footer__link">Главная</a></li>
-							<li><a href="#" class="info-footer__link">Каталог</a></li>
-							<li><a href="#" class="info-footer__link">Контакты</a></li>
-							<li><a href="#" class="info-footer__link">Доставка и оплата</a></li>
-							<li><a href="#" class="info-footer__link">Обработка персональных данных</a></li>
-						</ul>
-					</div>
-					<div class="footer__email email-footer">
-						<h4 class="email-footer__title footer-title">почта</h4>
-						<a href="mailto:shop@cryptus.media" class="email-footer__link">shop@cryptus.media</a>
+					<a class="footer__link" href="#">Политика конфиденциальности</a>
+					<div class="footer__box">
+						<p class="footer__text text">Разработка сайта:</p>
+						<p class="footer__text text">Realines</p>
 					</div>
 				</div>
 			</div>
 		</footer>
 	</div>
-	<!-- 
-<div id="popup" aria-hidden="true" class="popup">
-	<div class="popup__wrapper">
-		<div class="popup__content">
-			<button data-close type="button" class="popup__close">Закрыть</button>
-			<div class="popup__text">
+	<div id="callback" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">
+					<svg width="45" height="46" viewBox="0 0 45 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M22.4999 24.6545L32.7543 34.9117L34.7455 32.9232L24.4883 22.666L34.7455 12.4117L32.7571 10.4204L22.4999 20.6776L12.2455 10.4204L10.2571 12.4117L20.5115 22.666L10.2571 32.9204L12.2455 34.9117L22.4999 24.6545Z" fill="white" />
+					</svg>
+				</button>
+
+				<h2 class="popup__title title">Запишитесь на прием <span class="title--green"> к нашим
+						специалистам</span>
+				</h2>
+				<h3 class="popup__subtitle subtitle">Заполните форму ниже и в ближайшее время с Вами свяжется наш
+					специалист, чтобы уточнить подробности</h3>
+				<form action="#" class="forms__form form">
+					<div class="form__box">
+						<div class="form__wrap">
+							<label for="name" class="form__label"></label>
+							<input type="text" class="form__input" id="name" name="name" placeholder="Имя">
+						</div>
+						<div class="form__wrap">
+							<label for="tel" class="form__label"></label>
+							<input type="tel" class="form__input" id="tel" name="tel" placeholder="Телефон">
+						</div>
+					</div>
+					<div class="form__inner">
+						<a class="form__btn btn btn-primary" href="#" type="submit" role="button">Оставить заявку</a>
+						<p class="form__text text">Нажимая кнопку “Отправит запрос” вы подстверждаете свое <a href="#" class="text--green">согласие на обработку персональных данных</a></p>
+					</div>
+				</form>
 			</div>
 		</div>
 	</div>
-</div>
- -->
-
-	<script src="js/app.min.js?_v=20220608141305"></script>
+	<script src="js/app.min.js?_v=20220609135804"></script>
 </body>
 
 </html>
