@@ -374,26 +374,103 @@
             max-width: 100%;
             height: rem(26);
         }
+
+
     }
 
 
-    // .form-body-basket__input
+    input {
 
-    &__input {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
         font-weight: 300;
         font-size: 14px;
         line-height: 1.2;
         color: #767676;
         padding: 0 rem(10);
+        position: relative;
+        min-width: 265px;
+        max-width: 614px;
+        width: 100%;
+        height: 44px;
+
+        background-color: #FFFFFF;
+        border: 1px solid #C6C6C6;
+
+        &::placeholder {
+            font-size: 14px;
+            line-height: 1.2;
+            color: #2B2B2B;
+        }
+
+        &:focus-visible,
+        &:focus,
+        &:active {
+
+            border: 1px solid #606060;
+
+        }
+
+        &:focus,
+        &:focus-visible {
+            outline-color: #606060;
+        }
+
+        &:focus~label,
+        &:valid~label {
+            top: -20px;
+        }
 
         @media (max-width:rem(768)) {
             font-size: rem(12);
         }
+    }
+
+    textarea {
+        position: relative;
+        width: 100%;
+
+        max-width: 614px;
+        height: 71px;
+        padding: 10px;
+
+        background: #FFFFFF;
+        border: 1px solid #C6C6C6;
+        resize: vertical;
+
+        &::placeholder {
+            font-size: 14px;
+            line-height: 1.2;
+            color: #2B2B2B;
+        }
+
+        &:focus-visible,
+        &:focus,
+        &:active {
+
+            border: 1px solid #606060;
+
+        }
+
+        &:focus,
+        &:focus-visible {
+            outline-color: #606060;
+        }
+
+        &:focus~label,
+        &:valid~label {
+            top: -20px;
+        }
+
+    }
+
+    label {
+        font-size: 12px;
+        line-height: 14px;
+        font-weight: 600;
+        position: absolute;
+        top: 12px;
+        left: 20px;
+        color: #7B7B7B;
+        transition: .5s;
     }
 
     // .form-body-basket__checkbox
@@ -592,7 +669,6 @@
 
             color: #000000;
 
-            letter-spacing: 1.6px;
             margin-bottom: 20px;
 
             @media (max-width: rem(768)) {
@@ -606,13 +682,15 @@
         &__body {
             display: grid;
             grid-template-columns: 2fr 1fr;
-            gap: 14px;
+            row-gap: 25px;
+            column-gap: 15px;
             max-width: 614px;
             height: 100%;
             border: none;
 
             @media (max-width: rem(768)) {
                 grid-template-columns: 1fr;
+                gap: 30px;
             }
 
         }
@@ -626,6 +704,8 @@
 
                 @media (max-width: rem(768)) {
                     grid-area: unset;
+                    position: relative;
+                    z-index: 999;
                 }
             }
 
@@ -636,49 +716,103 @@
                     grid-area: unset;
                 }
             }
-        }
 
-        // .form-body-basket__label
-        &__label {
+            input {
 
-            font-weight: 400;
-            font-size: 8px;
-            line-height: 10px;
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 1.2;
+                color: #767676;
+                padding: 0 rem(10);
+                position: relative;
+                min-width: 265px;
+                max-width: 614px;
+                width: 100%;
+                height: 44px;
 
-            color: #7B7B7B;
+                background-color: #FFFFFF;
+                border: 1px solid #C6C6C6;
 
-            position: absolute;
-            top: 2px;
-            left: 10px;
-            z-index: 1;
+                &::placeholder {
+                    font-size: 14px;
+                    line-height: 1.2;
+                    color: #2B2B2B;
+                }
 
+                &:focus-visible,
+                &:focus,
+                &:active {
 
-        }
+                    border: 1px solid #606060;
 
-        // .form-body-basket__input
-        &__input {
-            max-width: 614px;
-            width: 100%;
-            height: 38px;
-            padding-left: 10px;
+                }
 
-            background: #FFFFFF;
-            border: 1px solid #C6C6C6;
+                &:focus,
+                &:focus-visible {
+                    outline-color: #606060;
+                }
 
-            font-weight: 300;
-            font-size: 14px;
-            line-height: 17px;
+                &:focus~label,
+                &:valid~label {
+                    top: -20px;
+                }
 
-            color: #7B7B7B;
-            position: relative;
-
-            &:focus,
-            &:focus-visible {
-                outline-color: #606060;
+                @media (max-width:rem(768)) {
+                    font-size: rem(12);
+                }
             }
 
+            textarea {
+                position: relative;
+                width: 100%;
+
+                max-width: 614px;
+                height: 71px;
+                padding: 10px;
+
+                background: #FFFFFF;
+                border: 1px solid #C6C6C6;
+                resize: vertical;
+
+                &::placeholder {
+                    font-size: 14px;
+                    line-height: 1.2;
+                    color: #2B2B2B;
+                }
+
+                &:focus-visible,
+                &:focus,
+                &:active {
+
+                    border: 1px solid #606060;
+
+                }
+
+                &:focus,
+                &:focus-visible {
+                    outline-color: #606060;
+                }
+
+                &:focus~label,
+                &:valid~label {
+                    top: -20px;
+                }
+
+            }
+
+            label {
+                font-size: 12px;
+                line-height: 14px;
+                font-weight: 600;
+                position: absolute;
+                top: 12px;
+                left: 20px;
+                color: #7B7B7B;
+                transition: .5s;
+            }
 
         }
+
 
     }
 
@@ -719,7 +853,6 @@
                 line-height: 19px;
 
                 color: #000000;
-                letter-spacing: 1.6px;
                 margin-bottom: 10px;
                 margin-top: 40px;
 
@@ -734,6 +867,7 @@
                 display: flex;
                 flex-direction: column;
                 gap: 16px;
+                position: relative;
             }
 
             // .form-body-basket__box
@@ -742,18 +876,121 @@
                 flex-direction: column;
                 gap: 8px;
                 margin-bottom: 15px;
+                position: relative;
+
+                input {
+
+                    font-weight: 300;
+                    font-size: 14px;
+                    line-height: 1.2;
+                    color: #767676;
+                    padding: 0 rem(10);
+                    position: relative;
+                    min-width: 265px;
+                    max-width: 614px;
+                    width: 100%;
+                    height: 44px;
+
+                    background-color: #FFFFFF;
+                    border: 1px solid #C6C6C6;
+
+                    &::placeholder {
+                        font-size: 14px;
+                        line-height: 1.2;
+                        color: #2B2B2B;
+                    }
+
+                    &:focus-visible,
+                    &:focus,
+                    &:active {
+
+                        border: 1px solid #606060;
+
+                    }
+
+                    &:focus,
+                    &:focus-visible {
+                        outline-color: #606060;
+                    }
+
+                    &:focus~label,
+                    &:valid~label {
+                        top: -20px;
+                    }
+
+                    @media (max-width:rem(768)) {
+                        font-size: rem(12);
+                    }
+                }
+
+                textarea {
+                    position: relative;
+                    width: 100%;
+
+                    max-width: 614px;
+                    height: 71px;
+                    padding: 10px;
+
+                    background: #FFFFFF;
+                    border: 1px solid #C6C6C6;
+                    resize: vertical;
+
+                    &::placeholder {
+                        font-size: 14px;
+                        line-height: 1.2;
+                        color: #2B2B2B;
+                    }
+
+                    &:focus-visible,
+                    &:focus,
+                    &:active {
+
+                        border: 1px solid #606060;
+                        outline-color: #606060;
+
+                    }
+
+                  
+
+                    &:focus~label,
+                    &:valid~label {
+                        top: -20px;
+                    }
+
+                }
+
+                label {
+                    font-size: 12px;
+                    line-height: 14px;
+                    font-weight: 600;
+                    position: absolute;
+                    top: 12px;
+                    left: 20px;
+                    color: #7B7B7B;
+                    transition: .5s;
+                }
+
+                .form-body-basket--wallet {
+
+                    height: 30px;
+        
+        
+                    background-color: rgba(114, 255, 136, 0.1);
+                    border: none;
+                    &:focus-visible,
+                    &:focus,
+                    &:active {
+
+                        border: none;
+                        outline-color: transparent;
+
+                    }
+        
+        
+                }
+
             }
 
-            // .form-body-basket__label
-            &__label {
-
-                font-weight: 300;
-                font-size: 12px;
-                line-height: 14px;
-
-                color: #4F4F4F;
-                letter-spacing: 1.6px;
-            }
 
             // .form-body-basket__list
             &__list {
@@ -788,54 +1025,9 @@
 
             }
 
-            // .form-body-basket__input
-            &__input {
-                position: relative;
-                min-width: 265px;
-                max-width: 614px;
-                width: 100%;
-                height: 44px;
-
-
-                background: #FFFFFF;
-                border: 1px solid #C6C6C6;
 
 
 
-                &::placeholder {
-
-                    font-weight: 400;
-                    font-size: 12px;
-                    line-height: 14px;
-
-                    color: #2B2B2B;
-
-
-                }
-
-                &:focus-visible,
-                &:focus,
-                &:active {
-
-                    border: 1px solid #606060;
-
-                }
-
-            }
-
-
-            // .form-body-basket__textarea
-            &__textarea {
-                width: 100%;
-
-                max-width: 614px;
-                height: 71px;
-                padding: 10px;
-
-                background: #FFFFFF;
-                border: 1px solid #C6C6C6;
-                resize: vertical;
-            }
 
             // .form-body-basket__button
             &__button {
@@ -882,16 +1074,7 @@
             }
         }
 
-        .form-body-basket--wallet {
-
-            width: 511px;
-            height: 23px;
-
-
-            background: rgba(114, 255, 136, 0.1);
-            border: none;
-
-        }
+        
 
 
     }
@@ -971,7 +1154,7 @@
             display: flex;
             flex-wrap: wrap;
             gap: 10px;
-            
+
         }
     }
 }
@@ -987,10 +1170,11 @@
 
         }
     }
-        // .basket__box--none
-        &__box--none {
-            margin-bottom: 30px;
-        }
-    
+
+    // .basket__box--none
+    &__box--none {
+        margin-bottom: 30px;
+    }
+
 
 }
