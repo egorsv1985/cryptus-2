@@ -7,174 +7,6 @@
   font-style: normal;
 }
 @font-face {
-  font-family: RFDewi;
-  font-display: swap;
-  src: url("../fonts/RFDewi-Black.woff2") format("woff2"), url("../fonts/RFDewi-Black.woff") format("woff");
-  font-weight: 900;
-  font-style: normal;
-}
-@font-face {
-  font-family: RFDewi;
-  font-display: swap;
-  src: url("../fonts/RFDewi-Bold.woff2") format("woff2"), url("../fonts/RFDewi-Bold.woff") format("woff");
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: RFDewi;
-  font-display: swap;
-  src: url("../fonts/RFDewi-Light.woff2") format("woff2"), url("../fonts/RFDewi-Light.woff") format("woff");
-  font-weight: 300;
-  font-style: normal;
-}
-@font-face {
-  font-family: RFDewi;
-  font-display: swap;
-  src: url("../fonts/RFDewi-Semibold.woff2") format("woff2"), url("../fonts/RFDewi-Semibold.woff") format("woff");
-  font-weight: 600;
-  font-style: normal;
-}
-@font-face {
-  font-family: RFDewi;
-  font-display: swap;
-  src: url("../fonts/RFDewi-Thin.woff2") format("woff2"), url("../fonts/RFDewi-Thin.woff") format("woff");
-  font-weight: 100;
-  font-style: normal;
-}
-@font-face {
-  font-family: RFDewi;
-  font-display: swap;
-  src: url("../fonts/RFDewi-Regular.woff2") format("woff2"), url("../fonts/RFDewi-Regular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: RFDewi;
-  font-display: swap;
-  src: url("../fonts/RFDewi-Ultrabold.woff2") format("woff2"), url("../fonts/RFDewi-Ultrabold.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: RFDewi;
-  font-display: swap;
-  src: url("../fonts/RFDewi-Ultralight.woff2") format("woff2"), url("../fonts/RFDewi-Ultralight.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "RFDewiCondensed";
-  font-display: swap;
-  src: url("../fonts/RFDewiCondensed-Black.woff2") format("woff2"), url("../fonts/RFDewiCondensed-Black.woff") format("woff");
-  font-weight: 900;
-  font-style: normal;
-}
-@font-face {
-  font-family: "RFDewiCondensed";
-  font-display: swap;
-  src: url("../fonts/RFDewiCondensed-Bold.woff2") format("woff2"), url("../fonts/RFDewiCondensed-Bold.woff") format("woff");
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: "RFDewiCondensed";
-  font-display: swap;
-  src: url("../fonts/RFDewiCondensed-Light.woff2") format("woff2"), url("../fonts/RFDewiCondensed-Light.woff") format("woff");
-  font-weight: 300;
-  font-style: normal;
-}
-@font-face {
-  font-family: "RFDewiCondensed";
-  font-display: swap;
-  src: url("../fonts/RFDewiCondensed-Semibold.woff2") format("woff2"), url("../fonts/RFDewiCondensed-Semibold.woff") format("woff");
-  font-weight: 600;
-  font-style: normal;
-}
-@font-face {
-  font-family: "RFDewiCondensed";
-  font-display: swap;
-  src: url("../fonts/RFDewiCondensed-Thin.woff2") format("woff2"), url("../fonts/RFDewiCondensed-Thin.woff") format("woff");
-  font-weight: 100;
-  font-style: normal;
-}
-@font-face {
-  font-family: "RFDewiCondensed";
-  font-display: swap;
-  src: url("../fonts/RFDewiCondensed-Ultrabold.woff2") format("woff2"), url("../fonts/RFDewiCondensed-Ultrabold.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "RFDewiCondensed";
-  font-display: swap;
-  src: url("../fonts/RFDewiCondensed-Regular.woff2") format("woff2"), url("../fonts/RFDewiCondensed-Regular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "RFDewiCondensed";
-  font-display: swap;
-  src: url("../fonts/RFDewiCondensed-Ultralight.woff2") format("woff2"), url("../fonts/RFDewiCondensed-Ultralight.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "RFDewiExpanded";
-  font-display: swap;
-  src: url("../fonts/RFDewiExpanded-Bold.woff2") format("woff2"), url("../fonts/RFDewiExpanded-Bold.woff") format("woff");
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: "RFDewiExpanded";
-  font-display: swap;
-  src: url("../fonts/RFDewiExpanded-Black.woff2") format("woff2"), url("../fonts/RFDewiExpanded-Black.woff") format("woff");
-  font-weight: 900;
-  font-style: normal;
-}
-@font-face {
-  font-family: "RFDewiExpanded";
-  font-display: swap;
-  src: url("../fonts/RFDewiExpanded-Light.woff2") format("woff2"), url("../fonts/RFDewiExpanded-Light.woff") format("woff");
-  font-weight: 300;
-  font-style: normal;
-}
-@font-face {
-  font-family: "RFDewiExpanded";
-  font-display: swap;
-  src: url("../fonts/RFDewiExpanded-Regular.woff2") format("woff2"), url("../fonts/RFDewiExpanded-Regular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "RFDewiExpanded";
-  font-display: swap;
-  src: url("../fonts/RFDewiExpanded-Semibold.woff2") format("woff2"), url("../fonts/RFDewiExpanded-Semibold.woff") format("woff");
-  font-weight: 600;
-  font-style: normal;
-}
-@font-face {
-  font-family: "RFDewiExpanded";
-  font-display: swap;
-  src: url("../fonts/RFDewiExpanded-Thin.woff2") format("woff2"), url("../fonts/RFDewiExpanded-Thin.woff") format("woff");
-  font-weight: 100;
-  font-style: normal;
-}
-@font-face {
-  font-family: "RFDewiExpanded";
-  font-display: swap;
-  src: url("../fonts/RFDewiExpanded-Ultrabold.woff2") format("woff2"), url("../fonts/RFDewiExpanded-Ultrabold.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "RFDewiExpanded";
-  font-display: swap;
-  src: url("../fonts/RFDewiExpanded-Ultralight.woff2") format("woff2"), url("../fonts/RFDewiExpanded-Ultralight.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
   font-family: "RFDewiExtended";
   font-display: swap;
   src: url("../fonts/RFDewiExtended-Black.woff2") format("woff2"), url("../fonts/RFDewiExtended-Black.woff") format("woff");
@@ -189,45 +21,24 @@
   font-style: normal;
 }
 @font-face {
-  font-family: RFDewiExtended;
+  font-family: "RFDewiExtended";
   font-display: swap;
   src: url("../fonts/RFDewiExtended-Regular.woff2") format("woff2"), url("../fonts/RFDewiExtended-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
-  font-family: RFDewiExtended;
+  font-family: "RFDewiExtended";
   font-display: swap;
   src: url("../fonts/RFDewiExtended-Semibold.woff2") format("woff2"), url("../fonts/RFDewiExtended-Semibold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
 }
 @font-face {
-  font-family: RFDewiExtended;
-  font-display: swap;
-  src: url("../fonts/RFDewiExtended-Thin.woff2") format("woff2"), url("../fonts/RFDewiExtended-Thin.woff") format("woff");
-  font-weight: 100;
-  font-style: normal;
-}
-@font-face {
-  font-family: RFDewiExtended;
+  font-family: "RFDewiExtended";
   font-display: swap;
   src: url("../fonts/RFDewiExtended-Light.woff2") format("woff2"), url("../fonts/RFDewiExtended-Light.woff") format("woff");
   font-weight: 300;
-  font-style: normal;
-}
-@font-face {
-  font-family: RFDewiExtended;
-  font-display: swap;
-  src: url("../fonts/RFDewiExtended-Ultrabold.woff2") format("woff2"), url("../fonts/RFDewiExtended-Ultrabold.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "RFDewiExtended";
-  font-display: swap;
-  src: url("../fonts/RFDewiExtended-Ultralight.woff2") format("woff2"), url("../fonts/RFDewiExtended-Ultralight.woff") format("woff");
-  font-weight: 400;
   font-style: normal;
 }
 [class*=_icon-]:before {
@@ -1629,6 +1440,7 @@ h6 {
 .form-body-basket {
   display: flex;
   flex-direction: column;
+  margin-top: 15px;
 }
 .form-body-basket__body {
   position: relative;
