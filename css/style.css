@@ -23,6 +23,13 @@
 @font-face {
   font-family: "RFDewiExtended";
   font-display: swap;
+  src: url("../fonts/RFDewiExtended-Light.woff2") format("woff2"), url("../fonts/RFDewiExtended-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "RFDewiExtended";
+  font-display: swap;
   src: url("../fonts/RFDewiExtended-Regular.woff2") format("woff2"), url("../fonts/RFDewiExtended-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
@@ -37,8 +44,8 @@
 @font-face {
   font-family: "RFDewiExtended";
   font-display: swap;
-  src: url("../fonts/RFDewiExtended-Light.woff2") format("woff2"), url("../fonts/RFDewiExtended-Light.woff") format("woff");
-  font-weight: 300;
+  src: url("../fonts/RFDewiExtended-Thin.woff2") format("woff2"), url("../fonts/RFDewiExtended-Thin.woff") format("woff");
+  font-weight: 100;
   font-style: normal;
 }
 [class*=_icon-]:before {
