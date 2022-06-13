@@ -124,7 +124,7 @@ body {
 body {
   color: #4E4E4E;
   line-height: 1;
-  font-family: "RFDewiExpanded";
+  font-family: "RFDewiExtended";
   font-size: 0.875rem;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
@@ -136,7 +136,7 @@ body {
 input,
 button,
 textarea {
-  font-family: "RFDewiExpanded";
+  font-family: "RFDewiExtended";
   font-size: inherit;
 }
 
