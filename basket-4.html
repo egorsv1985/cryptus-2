@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220610112942">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220613172155">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -118,11 +118,13 @@
 										<div class="basket__box">
 											<div class="basket__box-content">
 												<p class="basket__instruction">Имя Фамилия Отчество</p>
-												<p class="basket__instruction basket__instruction--check">Петровский бульвар 7,
+												<p class="basket__instruction basket__instruction--check">Петровский
+													бульвар 7,
 													1426, Санкт-Петербург +7 912 345 67 89</p>
 											</div>
 
-											<a href="#" class="basket__link basket__link--end">Изменить адрес доставки</a>
+											<a href="#" class="basket__link basket__link--end">Изменить адрес
+												доставки</a>
 										</div>
 										<h3 class="form-body-basket__subtitle">Оплата</h3>
 										<div class="form-body-basket__body">
@@ -142,19 +144,22 @@
 
 											</div>
 											<div class="form-body-basket__box">
+												<input type="text" id="wallet" name="form[]" data-error="Ошибка" placeholder="" class="form-body-basket__input form-body-basket--wallet" required>
 												<label for="wallet" class="form-body-basket__label">Адрес кошелька
 													(BEP20) :</label>
-												<input type="text" id="wallet" name="form[]" data-error="Ошибка" placeholder="0x9f9be35c51af4eb1fa6ffd9d44c2506976867edc" class="form-body-basket__input form-body-basket--wallet">
+
 											</div>
 											<div class="form-body-basket__box">
+												<input type="text" id="hash" name="form[]" data-error="Ошибка" placeholder="" class="form-body-basket__input" required>
 												<label for="hash" class="form-body-basket__label">Введите хэш
 													транзакции</label>
-												<input type="text" id="hash" name="form[]" data-error="Ошибка" placeholder="хэш транзакции" class="form-body-basket__input">
+
 											</div>
 											<div class="form-body-basket__box">
-												<label for="telegram" class="form-body-basket__label">Укажите адресс
+												<textarea name="telegram" id="telegram" placeholder="" class="form-body-basket__textarea" required></textarea>
+												<label for="telegram" class="form-body-basket__label">Укажите адрес
 													вашего телеграма или других соц сетей</label>
-												<textarea name="telegram" id="telegram" placeholder="Ваш @telegram" class="form-body-basket__textarea"></textarea>
+
 											</div>
 										</div>
 
@@ -212,7 +217,7 @@
 </div>
  -->
 
-	<script src="js/app.min.js?_v=20220610112942"></script>
+	<script src="js/app.min.js?_v=20220613172155"></script>
 </body>
 
 </html>

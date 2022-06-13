@@ -9,6 +9,20 @@
 @font-face {
   font-family: RFDewi;
   font-display: swap;
+  src: url("../fonts/RFDewi-Black.woff2") format("woff2"), url("../fonts/RFDewi-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: RFDewi;
+  font-display: swap;
+  src: url("../fonts/RFDewi-Bold.woff2") format("woff2"), url("../fonts/RFDewi-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: RFDewi;
+  font-display: swap;
   src: url("../fonts/RFDewi-Light.woff2") format("woff2"), url("../fonts/RFDewi-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
@@ -23,6 +37,13 @@
 @font-face {
   font-family: RFDewi;
   font-display: swap;
+  src: url("../fonts/RFDewi-Thin.woff2") format("woff2"), url("../fonts/RFDewi-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: RFDewi;
+  font-display: swap;
   src: url("../fonts/RFDewi-Regular.woff2") format("woff2"), url("../fonts/RFDewi-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
@@ -30,8 +51,183 @@
 @font-face {
   font-family: RFDewi;
   font-display: swap;
+  src: url("../fonts/RFDewi-Ultrabold.woff2") format("woff2"), url("../fonts/RFDewi-Ultrabold.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: RFDewi;
+  font-display: swap;
   src: url("../fonts/RFDewi-Ultralight.woff2") format("woff2"), url("../fonts/RFDewi-Ultralight.woff") format("woff");
-  font-weight: 200;
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "RFDewiCondensed";
+  font-display: swap;
+  src: url("../fonts/RFDewiCondensed-Black.woff2") format("woff2"), url("../fonts/RFDewiCondensed-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "RFDewiCondensed";
+  font-display: swap;
+  src: url("../fonts/RFDewiCondensed-Bold.woff2") format("woff2"), url("../fonts/RFDewiCondensed-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "RFDewiCondensed";
+  font-display: swap;
+  src: url("../fonts/RFDewiCondensed-Light.woff2") format("woff2"), url("../fonts/RFDewiCondensed-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "RFDewiCondensed";
+  font-display: swap;
+  src: url("../fonts/RFDewiCondensed-Semibold.woff2") format("woff2"), url("../fonts/RFDewiCondensed-Semibold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "RFDewiCondensed";
+  font-display: swap;
+  src: url("../fonts/RFDewiCondensed-Thin.woff2") format("woff2"), url("../fonts/RFDewiCondensed-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "RFDewiCondensed";
+  font-display: swap;
+  src: url("../fonts/RFDewiCondensed-Ultrabold.woff2") format("woff2"), url("../fonts/RFDewiCondensed-Ultrabold.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "RFDewiCondensed";
+  font-display: swap;
+  src: url("../fonts/RFDewiCondensed-Regular.woff2") format("woff2"), url("../fonts/RFDewiCondensed-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "RFDewiCondensed";
+  font-display: swap;
+  src: url("../fonts/RFDewiCondensed-Ultralight.woff2") format("woff2"), url("../fonts/RFDewiCondensed-Ultralight.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "RFDewiExpanded";
+  font-display: swap;
+  src: url("../fonts/RFDewiExpanded-Bold.woff2") format("woff2"), url("../fonts/RFDewiExpanded-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "RFDewiExpanded";
+  font-display: swap;
+  src: url("../fonts/RFDewiExpanded-Black.woff2") format("woff2"), url("../fonts/RFDewiExpanded-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "RFDewiExpanded";
+  font-display: swap;
+  src: url("../fonts/RFDewiExpanded-Light.woff2") format("woff2"), url("../fonts/RFDewiExpanded-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "RFDewiExpanded";
+  font-display: swap;
+  src: url("../fonts/RFDewiExpanded-Regular.woff2") format("woff2"), url("../fonts/RFDewiExpanded-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "RFDewiExpanded";
+  font-display: swap;
+  src: url("../fonts/RFDewiExpanded-Semibold.woff2") format("woff2"), url("../fonts/RFDewiExpanded-Semibold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "RFDewiExpanded";
+  font-display: swap;
+  src: url("../fonts/RFDewiExpanded-Thin.woff2") format("woff2"), url("../fonts/RFDewiExpanded-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "RFDewiExpanded";
+  font-display: swap;
+  src: url("../fonts/RFDewiExpanded-Ultrabold.woff2") format("woff2"), url("../fonts/RFDewiExpanded-Ultrabold.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "RFDewiExpanded";
+  font-display: swap;
+  src: url("../fonts/RFDewiExpanded-Ultralight.woff2") format("woff2"), url("../fonts/RFDewiExpanded-Ultralight.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "RFDewiExtended";
+  font-display: swap;
+  src: url("../fonts/RFDewiExtended-Black.woff2") format("woff2"), url("../fonts/RFDewiExtended-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "RFDewiExtended";
+  font-display: swap;
+  src: url("../fonts/RFDewiExtended-Bold.woff2") format("woff2"), url("../fonts/RFDewiExtended-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: RFDewiExtended;
+  font-display: swap;
+  src: url("../fonts/RFDewiExtended-Regular.woff2") format("woff2"), url("../fonts/RFDewiExtended-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: RFDewiExtended;
+  font-display: swap;
+  src: url("../fonts/RFDewiExtended-Semibold.woff2") format("woff2"), url("../fonts/RFDewiExtended-Semibold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: RFDewiExtended;
+  font-display: swap;
+  src: url("../fonts/RFDewiExtended-Thin.woff2") format("woff2"), url("../fonts/RFDewiExtended-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: RFDewiExtended;
+  font-display: swap;
+  src: url("../fonts/RFDewiExtended-Light.woff2") format("woff2"), url("../fonts/RFDewiExtended-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: RFDewiExtended;
+  font-display: swap;
+  src: url("../fonts/RFDewiExtended-Ultrabold.woff2") format("woff2"), url("../fonts/RFDewiExtended-Ultrabold.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "RFDewiExtended";
+  font-display: swap;
+  src: url("../fonts/RFDewiExtended-Ultralight.woff2") format("woff2"), url("../fonts/RFDewiExtended-Ultralight.woff") format("woff");
+  font-weight: 400;
   font-style: normal;
 }
 [class*=_icon-]:before {
@@ -110,7 +306,7 @@ body {
 body {
   color: #4E4E4E;
   line-height: 1;
-  font-family: "RFDewi";
+  font-family: "RFDewiExpanded";
   font-size: 0.875rem;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
@@ -122,7 +318,7 @@ body {
 input,
 button,
 textarea {
-  font-family: "RFDewi";
+  font-family: "RFDewiExpanded";
   font-size: inherit;
 }
 
@@ -193,6 +389,157 @@ h6 {
   padding: 0 0.9375rem;
 }
 
+.select {
+  position: relative;
+}
+.select::before {
+  display: block;
+  content: "";
+  background: url("../img/icons/arrow-select.svg") center no-repeat;
+  width: 14px;
+  height: 7px;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+.select__body {
+  position: relative;
+}
+.select__title {
+  color: inherit;
+  text-align: left;
+  border: 1px solid #d9d9d9;
+  background-color: #fff;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 4px;
+}
+.select__value {
+  display: flex;
+  align-items: center;
+  height: 30px;
+  padding: 0px 15px;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+.select__value:before {
+  content: "";
+  align-self: stretch;
+  flex: 0 0 10px;
+  transition: all 0.3s ease 0s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+._select-open .select__value:before {
+  transform: rotate(-180deg);
+}
+.select__text {
+  flex: 1 1 auto;
+}
+.select__input {
+  width: 100%;
+  background-color: transparent;
+  height: 100%;
+}
+.select__options {
+  color: #000;
+  position: absolute;
+  top: 29px;
+  border-radius: 0 0 4px 4px;
+  min-width: 100%;
+  left: 0;
+  background-color: #fff;
+  border-top: 0;
+  border: 1px solid #d9d9d9;
+  border-top: 0;
+  padding: 10px 0px 5px 0px;
+  max-height: 250px;
+  overflow-y: auto;
+}
+@media (max-width: 48rem) {
+  .select__options {
+    position: fixed;
+    top: 10px;
+    max-height: 100vh;
+    height: 100vh;
+    min-width: 95%;
+    left: 10px;
+    padding-top: 0;
+  }
+}
+.select__scroll {
+  overflow-y: auto;
+  overflow-x: hidden;
+  max-height: 200px;
+}
+.select__option {
+  width: 100%;
+  display: block;
+  text-align: left;
+  cursor: pointer;
+  padding: 5px 15px;
+  color: inherit;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #7B7B7B;
+  position: relative;
+}
+@media (max-width: 48rem) {
+  .select__option {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    color: #292929;
+    padding: 15px 20px;
+    border-bottom: 0.33px solid #C2C2C2;
+  }
+  .select__option::before {
+    display: block;
+    content: "";
+    width: 18px;
+    height: 18px;
+    background-color: #FFFFFF;
+    border: 1px solid #000000;
+    position: absolute;
+    top: 50%;
+    right: 35px;
+    transform: translateY(-50%);
+    z-index: 1;
+  }
+}
+.select__option:active::before, .select__option:focus::before, .select__option:hover::before {
+  background: url("../img/icons/arrow-select-active.svg") center no-repeat;
+}
+.select__option._select-selected {
+  background-color: #eee;
+}
+@media (any-hover: hover) {
+  .select__option:hover {
+    background: #222222;
+    color: #09DC77;
+  }
+  .select__option:hover::before {
+    background: url("../img/icons/arrow-select-active.svg") center no-repeat;
+  }
+}
+.select__row {
+  display: inline-flex;
+  align-items: center;
+}
+.select._select-open {
+  z-index: 5;
+}
+.select._select-open::before {
+  display: none;
+}
+._select-tag {
+  cursor: pointer;
+}
+
 [class*=-ibg] {
   position: relative;
 }
@@ -214,7 +561,6 @@ h6 {
   font-size: 22px;
   line-height: 1.2;
   color: #000;
-  letter-spacing: 1.6px;
 }
 @media (max-width: 47.99875em) {
   .title {
@@ -342,7 +688,6 @@ h6 {
   text-transform: uppercase;
   font-size: 12px;
   line-height: 14px;
-  letter-spacing: 0.8px;
 }
 @media (any-hover: hover) {
   .menu__link:hover .menu__text {
@@ -697,7 +1042,6 @@ h6 {
 @media (max-width: 47.99875em) {
   .catalog__title {
     margin-bottom: 0.8125rem;
-    letter-spacing: 2px;
   }
 }
 .catalog__body {
@@ -781,7 +1125,6 @@ h6 {
   font-size: 0.8125rem;
   font-weight: 400;
   transition: all 0.3s ease 0s;
-  letter-spacing: 0.4px;
   margin-bottom: 5px;
 }
 .card-catalog__category {
@@ -796,7 +1139,6 @@ h6 {
   font-size: 13px;
   line-height: 1.2;
   color: #000;
-  letter-spacing: 1.8px;
   margin-bottom: 15px;
 }
 .card-catalog__price span {
@@ -1301,22 +1643,72 @@ h6 {
     height: 1.625rem;
   }
 }
-.form-body-basket__input {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+.form-body-basket input {
   font-weight: 300;
   font-size: 14px;
   line-height: 1.2;
   color: #767676;
   padding: 0 0.625rem;
+  position: relative;
+  min-width: 265px;
+  max-width: 614px;
+  width: 100%;
+  height: 44px;
+  background-color: #FFFFFF;
+  border: 1px solid #C6C6C6;
+}
+.form-body-basket input::placeholder {
+  font-size: 14px;
+  line-height: 1.2;
+  color: #2B2B2B;
+}
+.form-body-basket input:focus-visible, .form-body-basket input:focus, .form-body-basket input:active {
+  border: 1px solid #606060;
+}
+.form-body-basket input:focus, .form-body-basket input:focus-visible {
+  outline-color: #606060;
+}
+.form-body-basket input:focus ~ label, .form-body-basket input:valid ~ label {
+  top: -20px;
 }
 @media (max-width: 48rem) {
-  .form-body-basket__input {
+  .form-body-basket input {
     font-size: 0.75rem;
   }
+}
+.form-body-basket textarea {
+  position: relative;
+  width: 100%;
+  max-width: 614px;
+  height: 71px;
+  padding: 10px;
+  background: #FFFFFF;
+  border: 1px solid #C6C6C6;
+  resize: vertical;
+}
+.form-body-basket textarea::placeholder {
+  font-size: 14px;
+  line-height: 1.2;
+  color: #2B2B2B;
+}
+.form-body-basket textarea:focus-visible, .form-body-basket textarea:focus, .form-body-basket textarea:active {
+  border: 1px solid #606060;
+}
+.form-body-basket textarea:focus, .form-body-basket textarea:focus-visible {
+  outline-color: #606060;
+}
+.form-body-basket textarea:focus ~ label, .form-body-basket textarea:valid ~ label {
+  top: -20px;
+}
+.form-body-basket label {
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 600;
+  position: absolute;
+  top: 12px;
+  left: 20px;
+  color: #7B7B7B;
+  transition: 0.5s;
 }
 .form-body-basket__checkbox {
   margin-bottom: 1.1875rem;
@@ -1459,7 +1851,6 @@ h6 {
   font-size: 16px;
   line-height: 19px;
   color: #000000;
-  letter-spacing: 1.6px;
   margin-bottom: 20px;
 }
 @media (max-width: 48rem) {
@@ -1470,7 +1861,8 @@ h6 {
 .basket_delivery .form-body-basket__body {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  gap: 14px;
+  row-gap: 25px;
+  column-gap: 15px;
   max-width: 614px;
   height: 100%;
   border: none;
@@ -1478,6 +1870,7 @@ h6 {
 @media (max-width: 48rem) {
   .basket_delivery .form-body-basket__body {
     grid-template-columns: 1fr;
+    gap: 30px;
   }
 }
 .basket_delivery .form-body-basket__box {
@@ -1489,6 +1882,8 @@ h6 {
 @media (max-width: 48rem) {
   .basket_delivery .form-body-basket__box:first-child {
     grid-area: unset;
+    position: relative;
+    z-index: 999;
   }
 }
 .basket_delivery .form-body-basket__box:nth-child(4) {
@@ -1499,31 +1894,72 @@ h6 {
     grid-area: unset;
   }
 }
-.basket_delivery .form-body-basket__label {
-  font-weight: 400;
-  font-size: 8px;
-  line-height: 10px;
-  color: #7B7B7B;
-  position: absolute;
-  top: 2px;
-  left: 10px;
-  z-index: 1;
-}
-.basket_delivery .form-body-basket__input {
-  max-width: 614px;
-  width: 100%;
-  height: 38px;
-  padding-left: 10px;
-  background: #FFFFFF;
-  border: 1px solid #C6C6C6;
+.basket_delivery .form-body-basket__box input {
   font-weight: 300;
   font-size: 14px;
-  line-height: 17px;
-  color: #7B7B7B;
+  line-height: 1.2;
+  color: #767676;
+  padding: 0 0.625rem;
   position: relative;
+  min-width: 265px;
+  max-width: 614px;
+  width: 100%;
+  height: 44px;
+  background-color: #FFFFFF;
+  border: 1px solid #C6C6C6;
 }
-.basket_delivery .form-body-basket__input:focus, .basket_delivery .form-body-basket__input:focus-visible {
+.basket_delivery .form-body-basket__box input::placeholder {
+  font-size: 14px;
+  line-height: 1.2;
+  color: #2B2B2B;
+}
+.basket_delivery .form-body-basket__box input:focus-visible, .basket_delivery .form-body-basket__box input:focus, .basket_delivery .form-body-basket__box input:active {
+  border: 1px solid #606060;
+}
+.basket_delivery .form-body-basket__box input:focus, .basket_delivery .form-body-basket__box input:focus-visible {
   outline-color: #606060;
+}
+.basket_delivery .form-body-basket__box input:focus ~ label, .basket_delivery .form-body-basket__box input:valid ~ label {
+  top: -20px;
+}
+@media (max-width: 48rem) {
+  .basket_delivery .form-body-basket__box input {
+    font-size: 0.75rem;
+  }
+}
+.basket_delivery .form-body-basket__box textarea {
+  position: relative;
+  width: 100%;
+  max-width: 614px;
+  height: 71px;
+  padding: 10px;
+  background: #FFFFFF;
+  border: 1px solid #C6C6C6;
+  resize: vertical;
+}
+.basket_delivery .form-body-basket__box textarea::placeholder {
+  font-size: 14px;
+  line-height: 1.2;
+  color: #2B2B2B;
+}
+.basket_delivery .form-body-basket__box textarea:focus-visible, .basket_delivery .form-body-basket__box textarea:focus, .basket_delivery .form-body-basket__box textarea:active {
+  border: 1px solid #606060;
+}
+.basket_delivery .form-body-basket__box textarea:focus, .basket_delivery .form-body-basket__box textarea:focus-visible {
+  outline-color: #606060;
+}
+.basket_delivery .form-body-basket__box textarea:focus ~ label, .basket_delivery .form-body-basket__box textarea:valid ~ label {
+  top: -20px;
+}
+.basket_delivery .form-body-basket__box label {
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 600;
+  position: absolute;
+  top: 12px;
+  left: 20px;
+  color: #7B7B7B;
+  transition: 0.5s;
 }
 
 .basket_payment .body-basket {
@@ -1543,7 +1979,6 @@ h6 {
   font-size: 16px;
   line-height: 19px;
   color: #000000;
-  letter-spacing: 1.6px;
   margin-bottom: 10px;
   margin-top: 40px;
 }
@@ -1554,19 +1989,88 @@ h6 {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  position: relative;
 }
 .basket_payment .form-body-basket__box {
   display: flex;
   flex-direction: column;
   gap: 8px;
   margin-bottom: 15px;
+  position: relative;
 }
-.basket_payment .form-body-basket__label {
+.basket_payment .form-body-basket__box input {
   font-weight: 300;
+  font-size: 14px;
+  line-height: 1.2;
+  color: #767676;
+  padding: 0 0.625rem;
+  position: relative;
+  min-width: 265px;
+  max-width: 614px;
+  width: 100%;
+  height: 44px;
+  background-color: #FFFFFF;
+  border: 1px solid #C6C6C6;
+}
+.basket_payment .form-body-basket__box input::placeholder {
+  font-size: 14px;
+  line-height: 1.2;
+  color: #2B2B2B;
+}
+.basket_payment .form-body-basket__box input:focus-visible, .basket_payment .form-body-basket__box input:focus, .basket_payment .form-body-basket__box input:active {
+  border: 1px solid #606060;
+}
+.basket_payment .form-body-basket__box input:focus, .basket_payment .form-body-basket__box input:focus-visible {
+  outline-color: #606060;
+}
+.basket_payment .form-body-basket__box input:focus ~ label, .basket_payment .form-body-basket__box input:valid ~ label {
+  top: -20px;
+}
+@media (max-width: 48rem) {
+  .basket_payment .form-body-basket__box input {
+    font-size: 0.75rem;
+  }
+}
+.basket_payment .form-body-basket__box textarea {
+  position: relative;
+  width: 100%;
+  max-width: 614px;
+  height: 71px;
+  padding: 10px;
+  background: #FFFFFF;
+  border: 1px solid #C6C6C6;
+  resize: vertical;
+}
+.basket_payment .form-body-basket__box textarea::placeholder {
+  font-size: 14px;
+  line-height: 1.2;
+  color: #2B2B2B;
+}
+.basket_payment .form-body-basket__box textarea:focus-visible, .basket_payment .form-body-basket__box textarea:focus, .basket_payment .form-body-basket__box textarea:active {
+  border: 1px solid #606060;
+  outline-color: #606060;
+}
+.basket_payment .form-body-basket__box textarea:focus ~ label, .basket_payment .form-body-basket__box textarea:valid ~ label {
+  top: -20px;
+}
+.basket_payment .form-body-basket__box label {
   font-size: 12px;
   line-height: 14px;
-  color: #4F4F4F;
-  letter-spacing: 1.6px;
+  font-weight: 600;
+  position: absolute;
+  top: 12px;
+  left: 20px;
+  color: #7B7B7B;
+  transition: 0.5s;
+}
+.basket_payment .form-body-basket__box .form-body-basket--wallet {
+  height: 30px;
+  background-color: rgba(114, 255, 136, 0.1);
+  border: none;
+}
+.basket_payment .form-body-basket__box .form-body-basket--wallet:focus-visible, .basket_payment .form-body-basket__box .form-body-basket--wallet:focus, .basket_payment .form-body-basket__box .form-body-basket--wallet:active {
+  border: none;
+  outline-color: transparent;
 }
 .basket_payment .form-body-basket__list {
   display: flex;
@@ -1592,33 +2096,6 @@ h6 {
   display: flex;
   align-items: center;
   padding: 15px 55px;
-}
-.basket_payment .form-body-basket__input {
-  position: relative;
-  min-width: 265px;
-  max-width: 614px;
-  width: 100%;
-  height: 44px;
-  background: #FFFFFF;
-  border: 1px solid #C6C6C6;
-}
-.basket_payment .form-body-basket__input::placeholder {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 14px;
-  color: #2B2B2B;
-}
-.basket_payment .form-body-basket__input:focus-visible, .basket_payment .form-body-basket__input:focus, .basket_payment .form-body-basket__input:active {
-  border: 1px solid #606060;
-}
-.basket_payment .form-body-basket__textarea {
-  width: 100%;
-  max-width: 614px;
-  height: 71px;
-  padding: 10px;
-  background: #FFFFFF;
-  border: 1px solid #C6C6C6;
-  resize: vertical;
 }
 .basket_payment .form-body-basket__button {
   margin-bottom: 30px;
@@ -1649,12 +2126,6 @@ h6 {
   top: 50%;
   left: -30px;
   transform: translateY(-50%);
-}
-.basket_payment .form-body-basket--wallet {
-  width: 511px;
-  height: 23px;
-  background: rgba(114, 255, 136, 0.1);
-  border: none;
 }
 .basket__box {
   display: flex;

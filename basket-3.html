@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220610112942">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220613172155">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -117,30 +117,54 @@
 										<div class="form-body-basket__body">
 
 											<div class="form-body-basket__box">
-												<label for="country" class="form-body-basket__label"></label>
-												<input type="text" id="country" name="form[]" data-error="Ошибка" placeholder="Россия" class="form-body-basket__input">
+												<select class="select" name="country[]" id="country" size="4">
+
+													<option class="select__option" value="1" selected="selected">
+														Россия</option>
+													<option class="select__option" value="2">Лихтенштейн</option>
+													<option class="select__option" value="3">Литва</option>
+													<option class="select__option" value="4">Латвия</option>
+													<option class="select__option" value="5">Индонезия</option>
+													<option class="select__option" value="6">Китай</option>
+													<option class="select__option" value="7">Узбекистан</option>
+													<option class="select__option" value="8">Норвегия</option>
+													<option class="select__option" value="9">Голландия</option>
+													<option class="select__option" value="10">Ливан</option>
+													<option class="select__option" value="11">Великобритания
+													</option>
+													<option class="select__option" value="12">Лаос</option>
+
+
+												</select>
 											</div>
 											<div class="form-body-basket__box">
-												<label for="name" class="form-body-basket__label"></label>
-												<input type="text" id="name" name="form[]" data-error="Ошибка" placeholder="Имя, Фамилия, Отчество" class="form-body-basket__input">
+												<input type="text" id="name" name="form[]" data-error="Ошибка" placeholder="" class="form-body-basket__input" required>
+												<label for="name" class="form-body-basket__label">Имя, Фамилия,
+													Отчество</label>
+
 											</div>
 											<div class="form-body-basket__box">
-												<label for="tel" class="form-body-basket__label"></label>
-												<input type="tel" id="tel" name="form[]" data-error="Ошибка" placeholder="+7 912 345 67 89" class="form-body-basket__input">
+												<input type="tel" id="tel" name="form[]" data-error="Ошибка" placeholder="" class="form-body-basket__input" required>
+												<label for="tel" class="form-body-basket__label">+7 912 345 67
+													89</label>
+
 											</div>
 											<div class="form-body-basket__box">
+												<input type="text" id="address" name="form[]" data-error="Ошибка" placeholder="" class="form-body-basket__input" required>
 												<label for="address" class="form-body-basket__label">Улица,дом,квартира
 													(Укажите свой адрес полностью)</label>
-												<input type="text" id="address" name="form[]" data-error="Ошибка" placeholder="Петровский бульвар 7, 1426" class="form-body-basket__input">
+
 											</div>
 											<div class="form-body-basket__box">
+												<input type="text" id="city" name="form[]" data-error="Ошибка" placeholder="" class="form-body-basket__input" required>
 												<label for="city" class="form-body-basket__label">Город</label>
-												<input type="text" id="city" name="form[]" data-error="Ошибка" placeholder="Мурино" class="form-body-basket__input">
+
 											</div>
 											<div class="form-body-basket__box">
+												<input type="text" id="city" name="form[]" data-error="Ошибка" placeholder="" class="form-body-basket__input" required>
 												<label for="city" class="form-body-basket__label">Индекс
 													(необязательно)</label>
-												<input type="text" id="city" name="form[]" data-error="Ошибка" placeholder="188662" class="form-body-basket__input">
+
 											</div>
 
 
@@ -200,7 +224,7 @@
 </div>
  -->
 
-	<script src="js/app.min.js?_v=20220610112942"></script>
+	<script src="js/app.min.js?_v=20220613172155"></script>
 </body>
 
 </html>
