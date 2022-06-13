@@ -6,7 +6,6 @@
 	font-style: normal;
 }
 
-
 @font-face {
 	font-family: "RFDewiExtended";
 	font-display: swap;
@@ -14,7 +13,6 @@
 	font-weight: 900;
 	font-style: normal;
 }
-
 
 @font-face {
 	font-family: "RFDewiExtended";
@@ -24,6 +22,13 @@
 	font-style: normal;
 }
 
+@font-face {
+	font-family: "RFDewiExtended";
+	font-display: swap;
+	src: url("../fonts/RFDewiExtended-Light.woff2") format("woff2"), url("../fonts/RFDewiExtended-Light.woff") format("woff");
+	font-weight: 300;
+	font-style: normal;
+}
 
 @font-face {
 	font-family: "RFDewiExtended";
@@ -41,12 +46,10 @@
 	font-style: normal;
 }
 
-
-
 @font-face {
 	font-family: "RFDewiExtended";
 	font-display: swap;
-	src: url("../fonts/RFDewiExtended-Light.woff2") format("woff2"), url("../fonts/RFDewiExtended-Light.woff") format("woff");
-	font-weight: 300;
+	src: url("../fonts/RFDewiExtended-Thin.woff2") format("woff2"), url("../fonts/RFDewiExtended-Thin.woff") format("woff");
+	font-weight: 100;
 	font-style: normal;
 }
