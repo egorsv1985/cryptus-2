@@ -1483,8 +1483,6 @@ h6 {
 }
 .form-body-basket input:focus-visible, .form-body-basket input:focus, .form-body-basket input:active {
   border: 1px solid #606060;
-}
-.form-body-basket input:focus, .form-body-basket input:focus-visible {
   outline-color: #606060;
 }
 .form-body-basket input:focus ~ label, .form-body-basket input:valid ~ label {
@@ -1512,8 +1510,6 @@ h6 {
 }
 .form-body-basket textarea:focus-visible, .form-body-basket textarea:focus, .form-body-basket textarea:active {
   border: 1px solid #606060;
-}
-.form-body-basket textarea:focus, .form-body-basket textarea:focus-visible {
   outline-color: #606060;
 }
 .form-body-basket textarea:focus ~ label, .form-body-basket textarea:valid ~ label {
@@ -1528,6 +1524,12 @@ h6 {
   left: 20px;
   color: #7B7B7B;
   transition: 0.5s;
+}
+@media (max-width: 26.25rem) {
+  .form-body-basket label {
+    font-size: 10px;
+    left: 15px;
+  }
 }
 .form-body-basket__checkbox {
   margin-bottom: 1.1875rem;
@@ -1713,20 +1715,6 @@ h6 {
     grid-area: unset;
   }
 }
-.basket_delivery .form-body-basket__box input {
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 1.2;
-  color: #767676;
-  padding: 0 0.625rem;
-  position: relative;
-  min-width: 265px;
-  max-width: 614px;
-  width: 100%;
-  height: 44px;
-  background-color: #FFFFFF;
-  border: 1px solid #C6C6C6;
-}
 .basket_delivery .form-body-basket__box input::placeholder {
   font-size: 14px;
   line-height: 1.2;
@@ -1734,8 +1722,6 @@ h6 {
 }
 .basket_delivery .form-body-basket__box input:focus-visible, .basket_delivery .form-body-basket__box input:focus, .basket_delivery .form-body-basket__box input:active {
   border: 1px solid #606060;
-}
-.basket_delivery .form-body-basket__box input:focus, .basket_delivery .form-body-basket__box input:focus-visible {
   outline-color: #606060;
 }
 .basket_delivery .form-body-basket__box input:focus ~ label, .basket_delivery .form-body-basket__box input:valid ~ label {
@@ -1769,16 +1755,6 @@ h6 {
 }
 .basket_delivery .form-body-basket__box textarea:focus ~ label, .basket_delivery .form-body-basket__box textarea:valid ~ label {
   top: -20px;
-}
-.basket_delivery .form-body-basket__box label {
-  font-size: 12px;
-  line-height: 14px;
-  font-weight: 600;
-  position: absolute;
-  top: 12px;
-  left: 20px;
-  color: #7B7B7B;
-  transition: 0.5s;
 }
 
 .basket_payment .body-basket {
@@ -1871,16 +1847,6 @@ h6 {
 }
 .basket_payment .form-body-basket__box textarea:focus ~ label, .basket_payment .form-body-basket__box textarea:valid ~ label {
   top: -20px;
-}
-.basket_payment .form-body-basket__box label {
-  font-size: 12px;
-  line-height: 14px;
-  font-weight: 600;
-  position: absolute;
-  top: 12px;
-  left: 20px;
-  color: #7B7B7B;
-  transition: 0.5s;
 }
 .basket_payment .form-body-basket__box .form-body-basket--wallet {
   height: 30px;

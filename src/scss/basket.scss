@@ -405,13 +405,10 @@
         &:active {
 
             border: 1px solid #606060;
-
-        }
-
-        &:focus,
-        &:focus-visible {
             outline-color: #606060;
+
         }
+
 
         &:focus~label,
         &:valid~label {
@@ -446,13 +443,10 @@
         &:active {
 
             border: 1px solid #606060;
-
-        }
-
-        &:focus,
-        &:focus-visible {
             outline-color: #606060;
+
         }
+
 
         &:focus~label,
         &:valid~label {
@@ -470,6 +464,10 @@
         left: 20px;
         color: #7B7B7B;
         transition: .5s;
+        @media (max-width:rem(420)) {
+            font-size: 10px;
+            left: 15px;
+        }
     }
 
     // .form-body-basket__checkbox
@@ -718,19 +716,6 @@
 
             input {
 
-                font-weight: 300;
-                font-size: 14px;
-                line-height: 1.2;
-                color: #767676;
-                padding: 0 rem(10);
-                position: relative;
-                min-width: 265px;
-                max-width: 614px;
-                width: 100%;
-                height: 44px;
-
-                background-color: #FFFFFF;
-                border: 1px solid #C6C6C6;
 
                 &::placeholder {
                     font-size: 14px;
@@ -743,13 +728,10 @@
                 &:active {
 
                     border: 1px solid #606060;
-
-                }
-
-                &:focus,
-                &:focus-visible {
                     outline-color: #606060;
                 }
+
+               
 
                 &:focus~label,
                 &:valid~label {
@@ -799,16 +781,7 @@
 
             }
 
-            label {
-                font-size: 12px;
-                line-height: 14px;
-                font-weight: 600;
-                position: absolute;
-                top: 12px;
-                left: 20px;
-                color: #7B7B7B;
-                transition: .5s;
-            }
+            
 
         }
 
@@ -958,16 +931,7 @@
 
                 }
 
-                label {
-                    font-size: 12px;
-                    line-height: 14px;
-                    font-weight: 600;
-                    position: absolute;
-                    top: 12px;
-                    left: 20px;
-                    color: #7B7B7B;
-                    transition: .5s;
-                }
+               
 
                 .form-body-basket--wallet {
 
