@@ -794,7 +794,7 @@
   function w(e, t) {
     return Array.prototype.filter.call(e, t);
   }
-  function C(e, t) {
+  function y(e, t) {
     const s = v(),
       i = f();
     let a = [];
@@ -835,14 +835,14 @@
       })(a)
     );
   }
-  C.fn = b.prototype;
-  const y = "resize scroll".split(" ");
+  y.fn = b.prototype;
+  const C = "resize scroll".split(" ");
   function T(e) {
     return function (...t) {
       if (void 0 === t[0]) {
         for (let t = 0; t < this.length; t += 1)
-          y.indexOf(e) < 0 &&
-            (e in this[t] ? this[t][e]() : C(this[t]).trigger(e));
+          C.indexOf(e) < 0 &&
+            (e in this[t] ? this[t][e]() : y(this[t]).trigger(e));
         return this;
       }
       return this.on(e, ...t);
@@ -932,11 +932,11 @@
         const t = e.target;
         if (!t) return;
         const a = e.target.dom7EventData || [];
-        if ((a.indexOf(e) < 0 && a.unshift(e), C(t).is(s))) i.apply(t, a);
+        if ((a.indexOf(e) < 0 && a.unshift(e), y(t).is(s))) i.apply(t, a);
         else {
-          const e = C(t).parents();
+          const e = y(t).parents();
           for (let t = 0; t < e.length; t += 1)
-            C(e[t]).is(s) && i.apply(e[t], a);
+            y(e[t]).is(s) && i.apply(e[t], a);
         }
       }
       function n(e) {
@@ -1126,7 +1126,7 @@
         if (i.matches) return i.matches(e);
         if (i.webkitMatchesSelector) return i.webkitMatchesSelector(e);
         if (i.msMatchesSelector) return i.msMatchesSelector(e);
-        for (a = C(e), l = 0; l < a.length; l += 1) if (a[l] === i) return !0;
+        for (a = y(e), l = 0; l < a.length; l += 1) if (a[l] === i) return !0;
         return !1;
       }
       if (e === s) return i === s;
@@ -1150,12 +1150,12 @@
     eq: function (e) {
       if (void 0 === e) return this;
       const t = this.length;
-      if (e > t - 1) return C([]);
+      if (e > t - 1) return y([]);
       if (e < 0) {
         const s = t + e;
-        return C(s < 0 ? [] : [this[s]]);
+        return y(s < 0 ? [] : [this[s]]);
       }
-      return C([this[e]]);
+      return y([this[e]]);
     },
     append: function (...e) {
       let t;
@@ -1190,67 +1190,67 @@
     next: function (e) {
       return this.length > 0
         ? e
-          ? this[0].nextElementSibling && C(this[0].nextElementSibling).is(e)
-            ? C([this[0].nextElementSibling])
-            : C([])
+          ? this[0].nextElementSibling && y(this[0].nextElementSibling).is(e)
+            ? y([this[0].nextElementSibling])
+            : y([])
           : this[0].nextElementSibling
-          ? C([this[0].nextElementSibling])
-          : C([])
-        : C([]);
+          ? y([this[0].nextElementSibling])
+          : y([])
+        : y([]);
     },
     nextAll: function (e) {
       const t = [];
       let s = this[0];
-      if (!s) return C([]);
+      if (!s) return y([]);
       for (; s.nextElementSibling; ) {
         const i = s.nextElementSibling;
-        e ? C(i).is(e) && t.push(i) : t.push(i), (s = i);
+        e ? y(i).is(e) && t.push(i) : t.push(i), (s = i);
       }
-      return C(t);
+      return y(t);
     },
     prev: function (e) {
       if (this.length > 0) {
         const t = this[0];
         return e
-          ? t.previousElementSibling && C(t.previousElementSibling).is(e)
-            ? C([t.previousElementSibling])
-            : C([])
+          ? t.previousElementSibling && y(t.previousElementSibling).is(e)
+            ? y([t.previousElementSibling])
+            : y([])
           : t.previousElementSibling
-          ? C([t.previousElementSibling])
-          : C([]);
+          ? y([t.previousElementSibling])
+          : y([]);
       }
-      return C([]);
+      return y([]);
     },
     prevAll: function (e) {
       const t = [];
       let s = this[0];
-      if (!s) return C([]);
+      if (!s) return y([]);
       for (; s.previousElementSibling; ) {
         const i = s.previousElementSibling;
-        e ? C(i).is(e) && t.push(i) : t.push(i), (s = i);
+        e ? y(i).is(e) && t.push(i) : t.push(i), (s = i);
       }
-      return C(t);
+      return y(t);
     },
     parent: function (e) {
       const t = [];
       for (let s = 0; s < this.length; s += 1)
         null !== this[s].parentNode &&
           (e
-            ? C(this[s].parentNode).is(e) && t.push(this[s].parentNode)
+            ? y(this[s].parentNode).is(e) && t.push(this[s].parentNode)
             : t.push(this[s].parentNode));
-      return C(t);
+      return y(t);
     },
     parents: function (e) {
       const t = [];
       for (let s = 0; s < this.length; s += 1) {
         let i = this[s].parentNode;
-        for (; i; ) e ? C(i).is(e) && t.push(i) : t.push(i), (i = i.parentNode);
+        for (; i; ) e ? y(i).is(e) && t.push(i) : t.push(i), (i = i.parentNode);
       }
-      return C(t);
+      return y(t);
     },
     closest: function (e) {
       let t = this;
-      return void 0 === e ? C([]) : (t.is(e) || (t = t.parents(e).eq(0)), t);
+      return void 0 === e ? y([]) : (t.is(e) || (t = t.parents(e).eq(0)), t);
     },
     find: function (e) {
       const t = [];
@@ -1258,19 +1258,19 @@
         const i = this[s].querySelectorAll(e);
         for (let e = 0; e < i.length; e += 1) t.push(i[e]);
       }
-      return C(t);
+      return y(t);
     },
     children: function (e) {
       const t = [];
       for (let s = 0; s < this.length; s += 1) {
         const i = this[s].children;
         for (let s = 0; s < i.length; s += 1)
-          (e && !C(i[s]).is(e)) || t.push(i[s]);
+          (e && !y(i[s]).is(e)) || t.push(i[s]);
       }
-      return C(t);
+      return y(t);
     },
     filter: function (e) {
-      return C(w(this, e));
+      return y(w(this, e));
     },
     remove: function () {
       for (let e = 0; e < this.length; e += 1)
@@ -1279,9 +1279,9 @@
     },
   };
   Object.keys(E).forEach((e) => {
-    Object.defineProperty(C.fn, e, { value: E[e], writable: !0 });
+    Object.defineProperty(y.fn, e, { value: E[e], writable: !0 });
   });
-  const x = C;
+  const x = y;
   function L(e, t) {
     return void 0 === t && (t = 0), setTimeout(e, t);
   }
@@ -1406,7 +1406,7 @@
       };
     p();
   }
-  let I, z, D;
+  let I, D, z;
   function B() {
     return (
       I ||
@@ -1441,8 +1441,8 @@
   function q(e) {
     return (
       void 0 === e && (e = {}),
-      z ||
-        (z = (function (e) {
+      D ||
+        (D = (function (e) {
           let { userAgent: t } = void 0 === e ? {} : e;
           const s = B(),
             i = v(),
@@ -1483,13 +1483,13 @@
             n
           );
         })(e)),
-      z
+      D
     );
   }
   function G() {
     return (
-      D ||
-        (D = (function () {
+      z ||
+        (z = (function () {
           const e = v();
           return {
             isSafari: (function () {
@@ -1505,7 +1505,7 @@
             ),
           };
         })()),
-      D
+      z
     );
   }
   const N = {
@@ -1662,8 +1662,8 @@
         b = e.slidesGrid.length;
       let S = i.spaceBetween,
         w = -f,
-        C = 0,
-        y = 0;
+        y = 0,
+        C = 0;
       if (void 0 === l) return;
       "string" == typeof S &&
         S.indexOf("%") >= 0 &&
@@ -1725,22 +1725,22 @@
           d[a] && (d[a].swiperSlideSize = E),
             m.push(E),
             i.centeredSlides
-              ? ((w = w + E / 2 + C / 2 + S),
-                0 === C && 0 !== a && (w = w - l / 2 - S),
+              ? ((w = w + E / 2 + y / 2 + S),
+                0 === y && 0 !== a && (w = w - l / 2 - S),
                 0 === a && (w = w - l / 2 - S),
                 Math.abs(w) < 0.001 && (w = 0),
                 i.roundLengths && (w = Math.floor(w)),
-                y % i.slidesPerGroup == 0 && u.push(w),
+                C % i.slidesPerGroup == 0 && u.push(w),
                 h.push(w))
               : (i.roundLengths && (w = Math.floor(w)),
-                (y - Math.min(e.params.slidesPerGroupSkip, y)) %
+                (C - Math.min(e.params.slidesPerGroupSkip, C)) %
                   e.params.slidesPerGroup ==
                   0 && u.push(w),
                 h.push(w),
                 (w = w + E + S)),
             (e.virtualSize += E + S),
-            (C = E),
-            (y += 1);
+            (y = E),
+            (C += 1);
         }
       }
       if (
@@ -4709,6 +4709,29 @@
               document.documentElement.classList.contains("lock") ? l(e) : n(e);
             })(),
             document.documentElement.classList.toggle("menu-open"));
+        });
+    })(),
+    (function () {
+      let e = document.querySelectorAll(".form-body-basket__delivery");
+      const t = document.getElementById("delivery"),
+        s = document.getElementById("self-delivery");
+      console.log("selfDelivery"),
+        e.forEach((i) => {
+          i.addEventListener("click", () => {
+            e &&
+              (e.forEach((e) => {
+                e.classList.remove("active");
+              }),
+              i.classList.contains("del")
+                ? (i.classList.add("active"),
+                  (t.style.display = "grid"),
+                  (s.style.display = "none"))
+                : i.classList.contains("selfDelivery")
+                ? (i.classList.add("active"),
+                  (t.style.display = "none"),
+                  (s.style.display = "grid"))
+                : ((t.style.display = "grid"), (s.style.display = "none")));
+          });
         });
     })(),
     (function () {

@@ -1462,7 +1462,7 @@ h6 {
     height: 1.625rem;
   }
 }
-.form-body-basket input {
+.form-body-basket__input {
   font-weight: 300;
   font-size: 14px;
   line-height: 1.2;
@@ -1476,20 +1476,20 @@ h6 {
   background-color: #FFFFFF;
   border: 1px solid #C6C6C6;
 }
-.form-body-basket input::placeholder {
+.form-body-basket__input::placeholder {
   font-size: 14px;
   line-height: 1.2;
   color: #2B2B2B;
 }
-.form-body-basket input:focus-visible, .form-body-basket input:focus, .form-body-basket input:active {
+.form-body-basket__input:focus-visible, .form-body-basket__input:focus, .form-body-basket__input:active {
   border: 1px solid #606060;
   outline-color: #606060;
 }
-.form-body-basket input:focus ~ label, .form-body-basket input:valid ~ label {
+.form-body-basket__input:focus ~ .form-body-basket__input__label, .form-body-basket__input:valid ~ .form-body-basket__input__label {
   top: -20px;
 }
 @media (max-width: 48rem) {
-  .form-body-basket input {
+  .form-body-basket__input {
     font-size: 0.75rem;
   }
 }
@@ -1512,10 +1512,10 @@ h6 {
   border: 1px solid #606060;
   outline-color: #606060;
 }
-.form-body-basket textarea:focus ~ label, .form-body-basket textarea:valid ~ label {
+.form-body-basket textarea:focus ~ .form-body-basket textarea__label, .form-body-basket textarea:valid ~ .form-body-basket textarea__label {
   top: -20px;
 }
-.form-body-basket label {
+.form-body-basket__label {
   font-size: 12px;
   line-height: 14px;
   font-weight: 600;
@@ -1526,7 +1526,7 @@ h6 {
   transition: 0.5s;
 }
 @media (max-width: 26.25rem) {
-  .form-body-basket label {
+  .form-body-basket__label {
     font-size: 10px;
     left: 15px;
   }
@@ -1667,12 +1667,61 @@ h6 {
     display: flex;
   }
 }
+.basket_delivery .form-body-basket {
+  margin-top: 0;
+}
+.basket_delivery .form-body-basket__text {
+  font-family: "RF Dewi Extended";
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+  margin-bottom: 17px;
+}
+.basket_delivery .form-body-basket__btn-text {
+  font-family: "RFDewiExtended";
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+}
+.basket_delivery .form-body-basket__box-btns {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+.basket_delivery .form-body-basket__delivery {
+  width: 100%;
+  max-width: 346px;
+  height: 109px;
+  background: #FFFFFF;
+  border: 1.14835px solid #C6C6C6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding-top: 38px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.basket_delivery .form-body-basket__delivery svg {
+  stroke: #292D32;
+}
+.basket_delivery .form-body-basket__delivery.active {
+  background-color: #E4F9E7;
+  border: 1.14835px solid #09DC77;
+}
+.basket_delivery .form-body-basket__delivery.active svg {
+  stroke: #09DC77;
+}
 .basket_delivery .form-body-basket__subtitle {
   font-weight: 600;
   font-size: 16px;
   line-height: 19px;
   color: #000000;
-  margin-bottom: 20px;
+  margin-bottom: 8px;
+}
+.basket_delivery .form-body-basket__subtitle--small {
+  font-size: 14px;
+  line-height: 17px;
 }
 @media (max-width: 48rem) {
   .basket_delivery .form-body-basket__subtitle {
@@ -1684,7 +1733,7 @@ h6 {
   grid-template-columns: 2fr 1fr;
   row-gap: 25px;
   column-gap: 15px;
-  max-width: 614px;
+  max-width: 705px;
   height: 100%;
   border: none;
 }
@@ -1715,46 +1764,25 @@ h6 {
     grid-area: unset;
   }
 }
-.basket_delivery .form-body-basket__box input::placeholder {
+.basket_delivery .form-body-basket__box .form-body-basket__input {
+  max-width: 705px;
+}
+.basket_delivery .form-body-basket__box .form-body-basket__input::placeholder {
   font-size: 14px;
   line-height: 1.2;
   color: #2B2B2B;
 }
-.basket_delivery .form-body-basket__box input:focus-visible, .basket_delivery .form-body-basket__box input:focus, .basket_delivery .form-body-basket__box input:active {
+.basket_delivery .form-body-basket__box .form-body-basket__input:focus-visible, .basket_delivery .form-body-basket__box .form-body-basket__input:focus, .basket_delivery .form-body-basket__box .form-body-basket__input:active {
   border: 1px solid #606060;
   outline-color: #606060;
 }
-.basket_delivery .form-body-basket__box input:focus ~ label, .basket_delivery .form-body-basket__box input:valid ~ label {
+.basket_delivery .form-body-basket__box .form-body-basket__input:focus ~ .form-body-basket__label, .basket_delivery .form-body-basket__box .form-body-basket__input:valid ~ .form-body-basket__label {
   top: -20px;
 }
 @media (max-width: 48rem) {
-  .basket_delivery .form-body-basket__box input {
+  .basket_delivery .form-body-basket__box .form-body-basket__input {
     font-size: 0.75rem;
   }
-}
-.basket_delivery .form-body-basket__box textarea {
-  position: relative;
-  width: 100%;
-  max-width: 614px;
-  height: 71px;
-  padding: 10px;
-  background: #FFFFFF;
-  border: 1px solid #C6C6C6;
-  resize: vertical;
-}
-.basket_delivery .form-body-basket__box textarea::placeholder {
-  font-size: 14px;
-  line-height: 1.2;
-  color: #2B2B2B;
-}
-.basket_delivery .form-body-basket__box textarea:focus-visible, .basket_delivery .form-body-basket__box textarea:focus, .basket_delivery .form-body-basket__box textarea:active {
-  border: 1px solid #606060;
-}
-.basket_delivery .form-body-basket__box textarea:focus, .basket_delivery .form-body-basket__box textarea:focus-visible {
-  outline-color: #606060;
-}
-.basket_delivery .form-body-basket__box textarea:focus ~ label, .basket_delivery .form-body-basket__box textarea:valid ~ label {
-  top: -20px;
 }
 
 .basket_payment .body-basket {
@@ -1793,7 +1821,7 @@ h6 {
   margin-bottom: 15px;
   position: relative;
 }
-.basket_payment .form-body-basket__box input {
+.basket_payment .form-body-basket__box .form-body-basket__input {
   font-weight: 300;
   font-size: 14px;
   line-height: 1.2;
@@ -1807,22 +1835,22 @@ h6 {
   background-color: #FFFFFF;
   border: 1px solid #C6C6C6;
 }
-.basket_payment .form-body-basket__box input::placeholder {
+.basket_payment .form-body-basket__box .form-body-basket__input::placeholder {
   font-size: 14px;
   line-height: 1.2;
   color: #2B2B2B;
 }
-.basket_payment .form-body-basket__box input:focus-visible, .basket_payment .form-body-basket__box input:focus, .basket_payment .form-body-basket__box input:active {
+.basket_payment .form-body-basket__box .form-body-basket__input:focus-visible, .basket_payment .form-body-basket__box .form-body-basket__input:focus, .basket_payment .form-body-basket__box .form-body-basket__input:active {
   border: 1px solid #606060;
 }
-.basket_payment .form-body-basket__box input:focus, .basket_payment .form-body-basket__box input:focus-visible {
+.basket_payment .form-body-basket__box .form-body-basket__input:focus, .basket_payment .form-body-basket__box .form-body-basket__input:focus-visible {
   outline-color: #606060;
 }
-.basket_payment .form-body-basket__box input:focus ~ label, .basket_payment .form-body-basket__box input:valid ~ label {
+.basket_payment .form-body-basket__box .form-body-basket__input:focus ~ .form-body-basket__label, .basket_payment .form-body-basket__box .form-body-basket__input:valid ~ .form-body-basket__label {
   top: -20px;
 }
 @media (max-width: 48rem) {
-  .basket_payment .form-body-basket__box input {
+  .basket_payment .form-body-basket__box .form-body-basket__input {
     font-size: 0.75rem;
   }
 }
@@ -1845,7 +1873,7 @@ h6 {
   border: 1px solid #606060;
   outline-color: #606060;
 }
-.basket_payment .form-body-basket__box textarea:focus ~ label, .basket_payment .form-body-basket__box textarea:valid ~ label {
+.basket_payment .form-body-basket__box textarea:focus ~ .basket_payment .form-body-basket__box textarea__label, .basket_payment .form-body-basket__box textarea:valid ~ .basket_payment .form-body-basket__box textarea__label {
   top: -20px;
 }
 .basket_payment .form-body-basket__box .form-body-basket--wallet {
