@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Корзина с товаром</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20220617194126">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__top top-header">
+				<a href="#" class="top-header__logo logo _icon-logo"></a>
+				<div class="top-header__right-block">
+					<a href="#" class="top-header__search _icon-search"></a>
+				</div>
+
+			</div>
+			<h1 class="header-main-title">CRYPTUS SHOP - Магазин мерча от команды CRYPTUS</h1>
+			<div class="header__container">
+				<div class="header__menu menu">
+					<!-- <button type="button" class="menu__icon icon-menu"><span></span></button> -->
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="#" class="menu__link"><span class="menu__text">ГЛАВНАЯ</span></a></li>
+							<li class="menu__item"><a href="#" class="menu__link"><span class="menu__text">КАТАЛОГ</span></a></li>
+							<li class="menu__item"><a href="#" data-goto="#information" class="menu__link"><span class="menu__text">ДОСТАВКА И ОПЛАТА</span> </a></li>
+							<li class="menu__item"><a href="#" data-goto="#contacts" class="menu__link"><span class="menu__text">КОНТАКТЫ</span></a></li>
+							<li class="menu__item"><a href="#" data-da=".top-header__right-block,767,98" class="menu__link link-basket"><span class="link-basket__text">КОРЗИНА</span><span class="link-basket__basket _icon-cart"><span>1</span></span></a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+		<main id="page" class="page">
+			<section class="page__basket basket basket_delivery">
+				<div class="basket__container">
+					<form action="#" class="basket__wrapper">
+						<div class="basket__header">
+							<div class="basket__header-item">
+								<h2 class="basket__title title">Корзина</h2>
+								<div class="basket__breadcrumbs breadcrumbs">
+									<ul class="breadcrumbs__list">
+										<li><a href="#" class="breadcrumbs__link">Магазин</a></li>
+										<li><a href="#" class="breadcrumbs__link">Корзина</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="basket__header-item">
+								<h2 class="basket__title title">Оформление заказа</h2>
+								<div class="basket__box">
+									<p class="basket__instruction basket__instruction--check">pochtausera@gmal.com</p>
+									<a href="#" class="basket__link">Изменить адрес почты</a>
+								</div>
+
+							</div>
+						</div>
+						<div class="basket__body body-basket">
+							<div class="body-basket__row">
+								<div class="body-basket__column">
+									<div class="body-basket__order order-basket">
+										<div class="order-basket__list">
+											<div class="order-basket__item item-order">
+												<div class="item-order__image">
+													<picture><source srcset="img/product/1.webp" type="image/webp"><img src="img/product/1.jpg" alt="Photo"></picture>
+												</div>
+												<div class="item-order__content">
+													<div class="item-order__header">
+														<a href="#" class="item-order__title">Футболка “HODL”</a>
+														<button class="item-order__delete _icon-delet"></button>
+													</div>
+													<p class="item-order__sizes">Размер: <span>S-M</span></p>
+													<div class="item-order__footer">
+														<p class="item-order__quantity">Кол-во: <span>1</span></p>
+														<p class="item-order__price"><span>3890</span>₽</p>
+													</div>
+												</div>
+											</div>
+											<div class="order-basket__item item-order">
+												<div class="item-order__image">
+													<picture><source srcset="img/product/2.webp" type="image/webp"><img src="img/product/2.jpg" alt="Photo"></picture>
+												</div>
+												<div class="item-order__content">
+													<div class="item-order__header">
+														<a href="#" class="item-order__title">Футболка “HODL”</a>
+														<button class="item-order__delete _icon-delet"></button>
+													</div>
+													<p class="item-order__sizes">Размер: <span>S-M</span></p>
+													<div class="item-order__footer">
+														<p class="item-order__quantity">Кол-во: <span>2</span></p>
+														<p class="item-order__price"><span>3890</span>₽</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="order-basket__total">
+											<p class="order-basket__total-text">Итого</p>
+											<p class="order-basket__total-price"><span>6780</span>₽</p>
+										</div>
+									</div>
+									<div class="basket__box basket__box--none">
+										<p class="basket__instruction basket__instruction--check">pochtausera@gmal.com
+										</p>
+										<a href="#" class="basket__link">Изменить адрес почты</a>
+									</div>
+								</div>
+
+								<div class="body-basket__column">
+									<div class="body-basket__form form-body-basket">
+										<h3 class="form-body-basket__subtitle">Доставка</h3>
+										<p class="form-body-basket__text">Выберите, как хотите получить заказ:</p>
+										<div class="form-body-basket__box-btns">
+											<div class="form-body-basket__delivery del">
+												<svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M18.9999 22.1667H20.5833C22.3249 22.1667 23.7499 20.7417 23.7499 19.0001V3.16675H9.49994C7.12494 3.16675 5.05079 4.4809 3.97412 6.41256" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+													<path d="M3.1665 26.9167C3.1665 29.5451 5.28817 31.6667 7.9165 31.6667H9.49984C9.49984 29.9251 10.9248 28.5001 12.6665 28.5001C14.4082 28.5001 15.8332 29.9251 15.8332 31.6667H22.1665C22.1665 29.9251 23.5915 28.5001 25.3332 28.5001C27.0748 28.5001 28.4998 29.9251 28.4998 31.6667H30.0832C32.7115 31.6667 34.8332 29.5451 34.8332 26.9167V22.1667H30.0832C29.2123 22.1667 28.4998 21.4542 28.4998 20.5834V15.8334C28.4998 14.9626 29.2123 14.2501 30.0832 14.2501H32.1256L29.4182 9.51593C28.8482 8.53426 27.8032 7.91675 26.6632 7.91675H23.7498V19.0001C23.7498 20.7417 22.3248 22.1667 20.5832 22.1667H18.9998" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+													<path d="M12.6667 34.8333C14.4156 34.8333 15.8333 33.4156 15.8333 31.6667C15.8333 29.9178 14.4156 28.5 12.6667 28.5C10.9178 28.5 9.5 29.9178 9.5 31.6667C9.5 33.4156 10.9178 34.8333 12.6667 34.8333Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+													<path d="M25.3332 34.8333C27.0821 34.8333 28.4998 33.4156 28.4998 31.6667C28.4998 29.9178 27.0821 28.5 25.3332 28.5C23.5843 28.5 22.1665 29.9178 22.1665 31.6667C22.1665 33.4156 23.5843 34.8333 25.3332 34.8333Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+													<path d="M34.8333 19V22.1667H30.0833C29.2125 22.1667 28.5 21.4542 28.5 20.5833V15.8333C28.5 14.9625 29.2125 14.25 30.0833 14.25H32.1258L34.8333 19Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+													<path d="M3.1665 12.6667H12.6665" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+													<path d="M3.1665 17.4167H9.49984" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+													<path d="M3.1665 22.1667H6.33317" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+												</svg>
+												<p class="form-body-basket__btn-text">Доставка по адресу</p>
+											</div>
+											<div class="form-body-basket__delivery selfDelivery">
+												<svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M33 13.5V22.5C33 26.25 32.25 28.875 30.57 30.57L21 21L32.595 9.40503C32.865 10.59 33 11.94 33 13.5Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+													<path d="M32.595 9.40501L9.40498 32.595C4.88998 31.56 3 28.44 3 22.5V13.5C3 6 6 3 13.5 3H22.5C28.44 3 31.56 4.89001 32.595 9.40501Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+													<path d="M30.5701 30.57C28.8751 32.25 26.25 33 22.5 33H13.5C11.94 33 10.59 32.865 9.40503 32.595L21 21L30.5701 30.57Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+													<path d="M9.35991 11.9701C10.3799 7.57508 16.9799 7.57508 17.9999 11.9701C18.5849 14.5501 16.9649 16.7401 15.5399 18.0901C14.5049 19.0801 12.8699 19.0801 11.8199 18.0901C10.3949 16.7401 8.75991 14.5501 9.35991 11.9701Z" stroke-width="1.5" />
+													<path d="M13.6419 13.05H13.6554" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+												</svg>
+												<p class="form-body-basket__btn-text">Самовывоз</p>
+											</div>
+										</div>
+										<div class="form-body-basket__body" id="delivery">
+											<div class="form-body-basket__box">
+												<select class="select" name="country[]" id="country" size="4">
+
+													<option class="select__option" value="1" selected="selected">
+														Россия</option>
+													<option class="select__option" value="2">Лихтенштейн
+													</option>
+													<option class="select__option" value="3">Литва</option>
+													<option class="select__option" value="4">Латвия</option>
+													<option class="select__option" value="5">Индонезия</option>
+													<option class="select__option" value="6">Китай</option>
+													<option class="select__option" value="7">Узбекистан</option>
+													<option class="select__option" value="8">Норвегия</option>
+													<option class="select__option" value="9">Голландия</option>
+													<option class="select__option" value="10">Ливан</option>
+													<option class="select__option" value="11">Великобритания
+													</option>
+													<option class="select__option" value="12">Лаос</option>
+
+
+												</select>
+											</div>
+											<div class="form-body-basket__box">
+												<input type="text" id="name" name="form[]" data-error="Ошибка" placeholder="" class="form-body-basket__input" required>
+												<label for="name" class="form-body-basket__label">Имя, Фамилия,
+													Отчество</label>
+
+											</div>
+											<div class="form-body-basket__box">
+												<input type="tel" id="tel" name="form[]" data-error="Ошибка" placeholder="" class="form-body-basket__input" required>
+												<label for="tel" class="form-body-basket__label">+7 912 345 67
+													89</label>
+
+											</div>
+											<div class="form-body-basket__box">
+												<input type="text" id="address" name="form[]" data-error="Ошибка" placeholder="" class="form-body-basket__input form-body-basket__input--address" required>
+												<label for="address" class="form-body-basket__label">Улица,дом,квартира
+													(Укажите свой адрес полностью)</label>
+
+											</div>
+											<div class="form-body-basket__box">
+												<input type="text" id="city" name="form[]" data-error="Ошибка" placeholder="" class="form-body-basket__input" required>
+												<label for="city" class="form-body-basket__label">Город</label>
+
+											</div>
+											<div class="form-body-basket__box">
+												<input type="text" id="index" name="form[]" data-error="Ошибка" placeholder="" class="form-body-basket__input" required>
+												<label for="index" class="form-body-basket__label">Индекс
+													(необязательно)</label>
+
+											</div>
+										</div>
+										<div class="form-body-basket__body" id="self-delivery">
+
+											<div class="form-body-basket__box">
+												<h3 class="form-body-basket__subtitle form-body-basket__subtitle--small">
+													Самовывоз доступен только в г.Санкт-Петербург </h3>
+												<p class="form-body-basket__text">Введите свою контактную
+													информацию:</p>
+											</div>
+											<div class="form-body-basket__box">
+												<input type="text" id="name" name="form[]" data-error="Ошибка" placeholder="" class="form-body-basket__input" required>
+												<label for="name" class="form-body-basket__label">Имя, Фамилия,
+													Отчество</label>
+
+											</div>
+											<div class="form-body-basket__box">
+												<input type="tel" id="tel" name="form[]" data-error="Ошибка" placeholder="" class="form-body-basket__input" required>
+												<label for="tel" class="form-body-basket__label">+7 912 345 67
+													89</label>
+
+											</div>
+										</div>
+										<button type="submit" class="form-body-basket__button">Продолжить</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</section>
+		</main>
+		<a href="#" data-goto="#page" class="go-top _icon-arrow"></a>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__body">
+					<div class="footer__main main-footer">
+						<a href="#" class="main-footer__logo logo _icon-logo"></a>
+						<div class="main-footer__socials">
+							<a href="#" class="main-footer__social _icon-youtube"></a>
+							<a href="#" class="main-footer__social _icon-instagram"></a>
+							<a href="#" class="main-footer__social _icon-telegram"></a>
+						</div>
+						<p class="main-footer__copy">© 2022 CRYPTUS</p>
+					</div>
+					<div class="footer__info info-footer">
+						<h4 class="info-footer__title footer-title">ИНФОРМАЦИЯ</h4>
+						<ul class="info-footer__list">
+							<li><a href="#" class="info-footer__link">Главная</a></li>
+							<li><a href="#" class="info-footer__link">Каталог</a></li>
+							<li><a href="#" class="info-footer__link">Контакты</a></li>
+							<li><a href="#" class="info-footer__link">Доставка и оплата</a></li>
+							<li><a href="#" class="info-footer__link">Обработка персональных данных</a></li>
+						</ul>
+					</div>
+					<div class="footer__email email-footer">
+						<h4 class="email-footer__title footer-title">почта</h4>
+						<a href="mailto:shop@cryptus.media" class="email-footer__link">shop@cryptus.media</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<!-- 
+<div id="popup" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">Закрыть</button>
+			<div class="popup__text">
+			</div>
+		</div>
+	</div>
+</div>
+ -->
+
+	<script src="js/app.min.js?_v=20220617194126"></script>
+</body>
+
+</html>
