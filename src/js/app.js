@@ -33,7 +33,19 @@ flsFunctions.isWebp();
 flsFunctions.menuInit();
 /* Учет плавающей панели на мобильных устройствах при 100vh */
 // flsFunctions.fullVHfix();
+flsFunctions.deliveryOption();
 
+// document.getElementById('delivery').onclick = function () {
+// 	document.getElementById('delivery').classList.add('active');
+// }
+// function myFunction() {
+// 	var x = document.getElementById("myDIV");
+// 	if (x.style.display === "none") {
+// 	  x.style.display = "block";
+// 	} else {
+// 	  x.style.display = "none";
+// 	}
+//   }
 /*
 Модуль работы со спойлерами
 Документация:

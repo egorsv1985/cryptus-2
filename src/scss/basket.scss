@@ -378,7 +378,7 @@
     }
 
 
-    input {
+    &__input {
 
         font-weight: 300;
         font-size: 14px;
@@ -410,8 +410,8 @@
         }
 
 
-        &:focus~label,
-        &:valid~label {
+        &:focus~&__label,
+        &:valid~&__label {
             top: -20px;
         }
 
@@ -448,14 +448,14 @@
         }
 
 
-        &:focus~label,
-        &:valid~label {
+        &:focus~&__label,
+        &:valid~&__label {
             top: -20px;
         }
 
     }
 
-    label {
+    &__label {
         font-size: 12px;
         line-height: 14px;
         font-weight: 600;
@@ -464,6 +464,7 @@
         left: 20px;
         color: #7B7B7B;
         transition: .5s;
+
         @media (max-width:rem(420)) {
             font-size: 10px;
             left: 15px;
@@ -655,6 +656,80 @@
     }
 
     .form-body-basket {
+        margin-top: 0;
+
+
+        // .form-body-basket__text
+        &__text {
+
+            font-family: 'RF Dewi Extended';
+            font-weight: 300;
+            font-size: 12px;
+            line-height: 14px;
+            margin-bottom: 17px;
+
+        }
+
+
+
+        // .form-body-basket__btn-text
+        &__btn-text {
+
+            font-family: 'RFDewiExtended';
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 17px;
+
+        }
+
+        // .form-body-basket__box-btns
+        &__box-btns {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        // .form-body-basket__delivery
+        &__delivery {
+            width: 100%;
+            max-width: 346px;
+            height: 109px;
+            background: #FFFFFF;
+            border: 1.14835px solid #C6C6C6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 6px;
+            padding-top: 38px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            svg{
+                stroke:#292D32;
+            }
+
+            &.active {
+                background-color: #E4F9E7;
+                border: 1.14835px solid #09DC77;
+    
+                svg {
+                    stroke: #09DC77;
+                    
+    
+                }
+            }
+
+            &:active,
+            &:hover {}
+        }
+
+        // .form-body-basket__button
+        &__button {}
+
+
+
+
+        
+
 
 
         // .form-body-basket__subtitle
@@ -666,7 +741,14 @@
 
             color: #000000;
 
-            margin-bottom: 20px;
+            margin-bottom: 8px;
+
+            &--small {
+
+                font-size: 14px;
+                line-height: 17px;
+
+            }
 
             @media (max-width: rem(768)) {
                 margin-top: 20px;
@@ -675,13 +757,16 @@
 
         }
 
+
+
+
         // .form-body-basket__body
         &__body {
             display: grid;
             grid-template-columns: 2fr 1fr;
             row-gap: 25px;
             column-gap: 15px;
-            max-width: 614px;
+            max-width: 705px;
             height: 100%;
             border: none;
 
@@ -714,7 +799,8 @@
                 }
             }
 
-            input {
+            .form-body-basket__input {
+                max-width: 705px;
 
 
                 &::placeholder {
@@ -731,10 +817,10 @@
                     outline-color: #606060;
                 }
 
-               
 
-                &:focus~label,
-                &:valid~label {
+
+                &:focus~.form-body-basket__label,
+                &:valid~.form-body-basket__label {
                     top: -20px;
                 }
 
@@ -743,45 +829,6 @@
                 }
             }
 
-            textarea {
-                position: relative;
-                width: 100%;
-
-                max-width: 614px;
-                height: 71px;
-                padding: 10px;
-
-                background: #FFFFFF;
-                border: 1px solid #C6C6C6;
-                resize: vertical;
-
-                &::placeholder {
-                    font-size: 14px;
-                    line-height: 1.2;
-                    color: #2B2B2B;
-                }
-
-                &:focus-visible,
-                &:focus,
-                &:active {
-
-                    border: 1px solid #606060;
-
-                }
-
-                &:focus,
-                &:focus-visible {
-                    outline-color: #606060;
-                }
-
-                &:focus~label,
-                &:valid~label {
-                    top: -20px;
-                }
-
-            }
-
-            
 
         }
 
@@ -850,7 +897,7 @@
                 margin-bottom: 15px;
                 position: relative;
 
-                input {
+                .form-body-basket__input {
 
                     font-weight: 300;
                     font-size: 14px;
@@ -885,8 +932,8 @@
                         outline-color: #606060;
                     }
 
-                    &:focus~label,
-                    &:valid~label {
+                    &:focus~.form-body-basket__label,
+                    &:valid~.form-body-basket__label {
                         top: -20px;
                     }
 
@@ -922,24 +969,25 @@
 
                     }
 
-                  
 
-                    &:focus~label,
-                    &:valid~label {
+
+                    &:focus~&__label,
+                    &:valid~&__label {
                         top: -20px;
                     }
 
                 }
 
-               
+
 
                 .form-body-basket--wallet {
 
                     height: 30px;
-        
-        
+
+
                     background-color: rgba(114, 255, 136, 0.1);
                     border: none;
+
                     &:focus-visible,
                     &:focus,
                     &:active {
@@ -948,8 +996,8 @@
                         outline-color: transparent;
 
                     }
-        
-        
+
+
                 }
 
             }
@@ -1037,7 +1085,7 @@
             }
         }
 
-        
+
 
 
     }
